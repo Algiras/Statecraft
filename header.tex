@@ -1,0 +1,45 @@
+\usepackage{geometry}
+\geometry{
+  paper=letterpaper,
+  top=1.25in,
+  bottom=1.25in,
+  left=1.25in,
+  right=1.25in
+}
+
+\usepackage{fontspec}
+\setmainfont{Georgia}[
+  Scale = 1.0,
+  Ligatures = TeX
+]
+\setsansfont{Helvetica Neue}[
+  Scale = 0.95
+]
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[LE]{\sffamily\small\leftmark}
+\fancyhead[RO]{\sffamily\small\rightmark}
+\fancyfoot[C]{\sffamily\small\thepage}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\sffamily\Large\bfseries}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\sffamily\large\bfseries}
+  {\thesubsection}{1em}{}
+
+% Custom cover/title page styling adjustments
+\usepackage{titling}
+\pretitle{\begin{center}\sffamily\Huge\bfseries}
+\posttitle{\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\sffamily\large\itshape}
+\postauthor{\end{center}\vskip 0.5em}
+\predate{\begin{center}\sffamily\small}
+\postdate{\end{center}}
