@@ -1,4 +1,4 @@
-name: Release — PDF & Markdown Book
+name: Release — PDF, EPUB & Markdown Book
 
 on:
   push:
@@ -31,6 +31,9 @@ jobs:
       - name: Compile PDF
         run: bash compile_pdf.sh
 
+      - name: Compile EPUB
+        run: bash compile_epub.sh
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
@@ -41,9 +44,11 @@ jobs:
             Download the full book in your preferred format:
 
             - 📄 **statecraft_manual.pdf** — Typeset PDF (print-ready)
+            - 📚 **statecraft.epub** — E-reader edition (Kindle, Apple Books, etc.)
             - 📖 **book.md** — Full Markdown manuscript (67,600+ words)
 
             > Audiobook edition coming soon — voiced with Resemble AI's Chatterbox.
           files: |
             statecraft_manual.pdf
+            statecraft.epub
             book.md

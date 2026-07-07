@@ -1,4 +1,4 @@
-# Chapter 7: Conclusion: The Architecture of the Accidental State
+# Conclusion: The Architecture of the Accidental State
 
 ## I. The Hook: The Shifting Sands of Gornja Siga
 

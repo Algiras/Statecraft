@@ -1,6 +1,7 @@
 # Generated / compiled book artifacts (distributed via GitHub Releases)
 book.md
 statecraft_manual.pdf
+statecraft.epub
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
