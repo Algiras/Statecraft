@@ -2,11 +2,13 @@
 """
 Compiles the book.md markdown to index.html with a premium, modern reading layout.
 Charts are embedded inline as <img> elements at the right conceptual points.
+Fixes: mermaid rendering, table overflow wrapping, MathJax.
 """
 
 import os
 import re
 import subprocess
+import html as htmllib
 
 CHARTS = {
     "hardware_vs_software": "img_hardware_vs_software.jpg",
@@ -38,6 +40,27 @@ def main():
 
     with open("body.html", "r", encoding="utf-8") as f:
         body = f.read()
+
+    # ── Fix 1: Mermaid — Pandoc wraps in <pre class="mermaid"><code>...</code></pre>
+    # Mermaid.js needs plain text inside <pre class="mermaid"> (no inner <code> tag)
+    def fix_mermaid(m):
+        inner = m.group(1)
+        # Pandoc HTML-escapes the content inside <code>; unescape it
+        inner = inner.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"')
+        return f'<pre class="mermaid">{inner}</pre>'
+    body = re.sub(
+        r'<pre class="mermaid"><code>(.*?)</code></pre>',
+        fix_mermaid,
+        body,
+        flags=re.DOTALL
+    )
+
+    # ── Fix 2: Tables — wrap every <table> in a scrollable div
+    body = re.sub(
+        r'(<table\b)',
+        r'<div class="table-wrap"><\1',
+        body
+    ).replace('</table>', '</table></div>')
 
     # Inject charts at the right positions in the compiled HTML
     def chart_html(src, caption, alt):
@@ -440,15 +463,39 @@ pre {
   font-size: 14px;
   margin: 24px 0;
 }
+
+/* ── Mermaid diagrams ── */
+pre.mermaid {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 32px 20px;
+  text-align: center;
+  overflow: visible;
+  font-size: inherit;
+}
+pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Tables ── */
+.table-wrap {
+  overflow-x: auto;
+  margin: 32px 0;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+}
 code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9em; color: var(--accent2); }
 pre code { color: var(--text); }
 
-/* ── Tables ── */
-table { width: 100%; border-collapse: collapse; margin: 32px 0; font-family: var(--sans); font-size: 15px; }
+/* ── Tables (inside .table-wrap) ── */
+table { width: 100%; border-collapse: collapse; margin: 0; font-family: var(--sans); font-size: 15px; min-width: 500px; }
 thead { background: var(--surface2); }
-th { padding: 12px 16px; text-align: left; font-weight: 600; color: var(--text); border-bottom: 1px solid var(--border); }
-td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
-tr:hover td { background: rgba(255,255,255,0.02); }
+th { padding: 12px 16px; text-align: left; font-weight: 600; color: var(--text); border-bottom: 2px solid var(--border); white-space: nowrap; }
+td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
 
 /* ── Chapter drop caps ── */
 .chapter-start > p:first-of-type::first-letter {
@@ -503,6 +550,8 @@ tr:hover td { background: rgba(255,255,255,0.02); }
   <title>STATECRAFT — A How-To Guide for the Accidental Founder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({{ startOnLoad: true, theme: 'dark', themeVariables: {{ background: '#17171e', primaryColor: '#7c6af7', primaryTextColor: '#e8e8f0', lineColor: '#4a4a6a', fontSize: '15px' }} }});</script>
   <style>{css}</style>
 </head>
 <body>

@@ -10,6 +10,8 @@
   <title>STATECRAFT — A How-To Guide for the Accidental Founder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark', themeVariables: { background: '#17171e', primaryColor: '#7c6af7', primaryTextColor: '#e8e8f0', lineColor: '#4a4a6a', fontSize: '15px' } });</script>
   <style>/* ===== STATECRAFT — Premium Reading Stylesheet ===== */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -349,15 +351,39 @@ pre {
   font-size: 14px;
   margin: 24px 0;
 }
+
+/* ── Mermaid diagrams ── */
+pre.mermaid {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 32px 20px;
+  text-align: center;
+  overflow: visible;
+  font-size: inherit;
+}
+pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Tables ── */
+.table-wrap {
+  overflow-x: auto;
+  margin: 32px 0;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+}
 code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9em; color: var(--accent2); }
 pre code { color: var(--text); }
 
-/* ── Tables ── */
-table { width: 100%; border-collapse: collapse; margin: 32px 0; font-family: var(--sans); font-size: 15px; }
+/* ── Tables (inside .table-wrap) ── */
+table { width: 100%; border-collapse: collapse; margin: 0; font-family: var(--sans); font-size: 15px; min-width: 500px; }
 thead { background: var(--surface2); }
-th { padding: 12px 16px; text-align: left; font-weight: 600; color: var(--text); border-bottom: 1px solid var(--border); }
-td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
-tr:hover td { background: rgba(255,255,255,0.02); }
+th { padding: 12px 16px; text-align: left; font-weight: 600; color: var(--text); border-bottom: 2px solid var(--border); white-space: nowrap; }
+td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
 
 /* ── Chapter drop caps ── */
 .chapter-start > p:first-of-type::first-letter {
@@ -845,7 +871,7 @@ legalistic strategy had failed because Casley had confused the
 complexity of legal arguments with the raw power of administrative
 enforcement.</p>
 <hr />
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 20%" />
@@ -904,7 +930,7 @@ laws</td>
 Australian tax debt</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <p>What these stories teach us is that sovereignty is not a game of
 legal hide-and-seek. You cannot find a loophole so clever that the state
@@ -1564,7 +1590,7 @@ capable of surviving in hostile environments.</p>
 class="header-section-number">2.4.1</span> A. The Core Concepts</h3>
 <p>Before you design an institution, you must master three fundamental
 concepts:</p>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1601,7 +1627,7 @@ software with your new organizational hardware.”</td>
 only rules that govern your members’ behavior.”</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="2.4.2"
 id="b.-the-borama-process-a-policy-framework-for-local-institutional-design"><span
@@ -1611,11 +1637,11 @@ Policy Framework for Local Institutional Design</h3>
 low and formal institutions are weak, you must follow the Borama
 Process. This is a five-stage framework designed to cultivate bottom-up
 legitimacy.</p>
-<pre class="mermaid"><code>graph LR
-    A[1. Identify Existing Software] --&gt; B[2. Establish Local Financing]
-    B --&gt; C[3. Design the Hybrid Interface]
-    C --&gt; D[4. Accept Polycentric Rule-Making]
-    D --&gt; E[5. Test via Stress and Resolve]</code></pre>
+<pre class="mermaid">graph LR
+    A[1. Identify Existing Software] --> B[2. Establish Local Financing]
+    B --> C[3. Design the Hybrid Interface]
+    C --> D[4. Accept Polycentric Rule-Making]
+    D --> E[5. Test via Stress and Resolve]</pre>
 <h4 data-number="2.4.2.1"
 id="step-1-identify-the-existing-software-the-diagnostic-stage"><span
 class="header-section-number">2.4.2.1</span> Step 1: Identify the
@@ -1704,7 +1730,7 @@ trap).</label></li>
 id="d.-the-statecraft-matrix-top-down-vs.-bottom-up-design"><span
 class="header-section-number">2.4.4</span> D. The Statecraft Matrix:
 Top-Down vs. Bottom-Up Design</h3>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1758,7 +1784,7 @@ prisons).</td>
 groups.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>The lesson for the accidental founder is clear: when you build a
 state or an organization, resist the temptation to build a hoverfly. Do
 not paint yellow and black stripes on a fragile structure and call it a
@@ -3759,7 +3785,7 @@ infrastructure).</p></li>
 id="ii.-comparative-matrix-of-defense-paradigms-for-small-states"><span
 class="header-section-number">5.4.2</span> II. Comparative Matrix of
 Defense Paradigms for Small States</h3>
-<table style="width:100%;">
+<div class="table-wrap"><<table style="width:100%;">
 <colgroup>
 <col style="width: 16%" />
 <col style="width: 16%" />
@@ -3832,7 +3858,7 @@ deficits.</td>
 enclaves</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="5.4.3" id="iii.-the-demilitarization-checklist"><span
 class="header-section-number">5.4.3</span> III. The Demilitarization
@@ -4813,7 +4839,7 @@ standard data formats for all queries.</li>
 id="operational-rules-for-data-exchanges"><span
 class="header-section-number">6.4.0.2</span> Operational Rules for Data
 Exchanges:</h4>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -4849,7 +4875,7 @@ signature of the querying system, matching an active certificate in the
 Central Registry.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="6.4.1" id="digital-identity-eid-infrastructure"><span
 class="header-section-number">6.4.1</span> 4.2 Digital Identity (eID)
@@ -5540,7 +5566,7 @@ class="header-section-number">7.4.1.3</span> 3. The Response Trigger
 Matrix</h4>
 <p>The state must establish a clear, automated escalation protocol based
 on surveillance data:</p>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -5583,7 +5609,7 @@ non-coercive containment.</td>
 <td style="text-align: left;">Head of State / Prime Minister</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="7.4.2"
 id="ii.-guidelines-for-public-health-communication"><span
@@ -5645,7 +5671,7 @@ Healthcare Models</h3>
 <p>The administrative structure of a state’s healthcare system
 determines its resilience during a crisis. The founder must choose a
 model that balances daily efficiency with emergency scalability.</p>
-<table style="width:100%;">
+<div class="table-wrap"><<table style="width:100%;">
 <colgroup>
 <col style="width: 16%" />
 <col style="width: 16%" />
@@ -5708,7 +5734,7 @@ directives.</td>
 planning, price schedules, and infrastructure.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><em>Statecraft Recommendation:</em> For the accidental founder, the
 <strong>Public-Private Hybrid (Singapore Model)</strong> offers the
 highest resilience and financial sustainability. It preserves market
@@ -6340,7 +6366,7 @@ class="math inline">\(ASR_{adult}\)</span>, the probability that a
 <h4 data-number="8.4.1.2" id="operationalization-matrix"><span
 class="header-section-number">8.4.1.2</span> Operationalization
 Matrix:</h4>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -6405,7 +6431,7 @@ childhood nutrition support</td>
 incentives</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="8.4.2" id="educational-model-comparison-matrix"><span
 class="header-section-number">8.4.2</span> 8.2 Educational Model
@@ -6421,7 +6447,7 @@ defines the three dominant paradigms:</p>
    | - Obedience Focus   |   | - Individualized    |   | - Equitably Scaled    |
    | - Low Cost/Low Val  |   | - High Cost/Teacher |   | - Modular Competency  |
    +---------------------+   +---------------------+   +-----------------------+</code></pre>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -6490,7 +6516,7 @@ citizens.</td>
 lifelong learners.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="8.4.3" id="step-by-step-implementation-framework"><span
 class="header-section-number">8.4.3</span> 8.3 Step-by-Step
@@ -7124,7 +7150,7 @@ product.</p>
 id="state-capacity-classification-table"><span
 class="header-section-number">9.4.1.2.1</span> State Capacity
 Classification Table:</h5>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -7168,7 +7194,7 @@ infrastructure.</td>
 institutional trust.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h4 data-number="9.4.1.3"
 id="ii.-taxation-structures-design-and-comparison"><span
@@ -7838,7 +7864,7 @@ class="header-section-number">10.4.1</span> A. The Core Concepts</h3>
 <p>Before designing a national energy grid, the state founder must
 master the four thermodynamic variables that dictate national
 survival:</p>
-<table>
+<div class="table-wrap"><<table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -7890,7 +7916,7 @@ inertia (provided by large nuclear, hydro, or fossil turbines) prevents
 immediate blackout during a sudden fault.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
 <h3 data-number="10.4.2"
 id="b.-the-fuel-mix-guidelines-the-diversity-matrix"><span
@@ -8410,18 +8436,18 @@ loops. These six pillars are:</p>
 other five. If you attempt to manipulate a single lever in isolation,
 the system will self-correct, often with catastrophic consequences for
 the founder.</p>
-<pre class="mermaid"><code>graph TD
-    Legitimacy[1. Legitimacy: Social Software] &lt;--&gt; Money[2. Money: Trust Engine]
-    Money &lt;--&gt; Society[3. Society: Spatial Architecture]
-    Society &lt;--&gt; Security[4. Security: Paradox of Shield]
-    Security &lt;--&gt; Law[5. Law: Sovereign Club]
-    Law &lt;--&gt; Digital[6. Digital: Cloud Registry]
-    Digital &lt;--&gt; Legitimacy
-    Legitimacy &lt;--&gt; Society
-    Money &lt;--&gt; Security
-    Law &lt;--&gt; Legitimacy
-    Digital &lt;--&gt; Money
-    Security &lt;--&gt; Digital</code></pre>
+<pre class="mermaid">graph TD
+    Legitimacy[1. Legitimacy: Social Software] <--> Money[2. Money: Trust Engine]
+    Money <--> Society[3. Society: Spatial Architecture]
+    Society <--> Security[4. Security: Paradox of Shield]
+    Security <--> Law[5. Law: Sovereign Club]
+    Law <--> Digital[6. Digital: Cloud Registry]
+    Digital <--> Legitimacy
+    Legitimacy <--> Society
+    Money <--> Security
+    Law <--> Legitimacy
+    Digital <--> Money
+    Security <--> Digital</pre>
 <p>Consider the relationship between <strong>Legitimacy</strong> and
 <strong>Money</strong>. The standard textbook economics view is that a
 currency is backed by the productive capacity of an economy. But as
