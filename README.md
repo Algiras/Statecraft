@@ -68,7 +68,8 @@ This book argues that a state is actually a **Psychological Operating System (So
 This repository includes:
 * **[book.md](book.md)**: The full markdown manuscript (44,500+ words).
 * **[statecraft_manual.pdf](statecraft_manual.pdf)**: A professionally styled, typeset PDF compiled using Pandoc & XeLaTeX in Georgia/Helvetica typography.
-* **[statecraft_audiobook.mp3](statecraft_audiobook.mp3)**: A complete, ~5-hour audiobook generated using advanced neural TTS (Microsoft Edge Neural Narrator). Individual chapter files are available in the `audiobook/` directory.
+* **Audiobook Edition (Coming Soon)**: A complete, ~7.5-hour local audiobook, voiced paragraph-by-paragraph using Resemble AI's Chatterbox model with custom emotional transitions.
+
 
 ---
 

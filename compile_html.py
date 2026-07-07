@@ -47,7 +47,7 @@ def main():
             <nav class="header-nav">
                 <a href="#TOC">Table of Contents</a>
                 <a href="statecraft_manual.pdf" target="_blank">Download PDF</a>
-                <a href="statecraft_audiobook.mp3" target="_blank">Download Audiobook</a>
+                <span class="nav-disabled">Audiobook (Coming Soon)</span>
             </nav>
         </div>
     </header>
@@ -71,8 +71,8 @@ def main():
             </div>
             <div class="download-card">
                 <h3>Audiobook Edition</h3>
-                <p>Listen to the complete 5-hour Gladwellian narrator audio (44,500+ words).</p>
-                <a href="statecraft_audiobook.mp3" class="btn" target="_blank">Download MP3</a>
+                <p>Listen to the complete 7.5-hour Gladwellian narrator audio (67,600+ words).</p>
+                <a href="#" class="btn disabled" onclick="return false;">Coming Soon</a>
             </div>
         </section>
 

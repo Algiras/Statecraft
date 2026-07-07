@@ -269,3 +269,22 @@ code {
   padding: 30px;
   margin: 40px 0;
 }
+
+/* Disabled button and card styles for Coming Soon assets */
+.btn.disabled {
+  background-color: #86868b;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn.disabled:hover {
+  background-color: #86868b;
+}
+
+.nav-disabled {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: #86868b;
+  margin-left: 20px;
+  cursor: not-allowed;
+}
