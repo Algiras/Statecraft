@@ -39,7 +39,9 @@ jobs:
         run: python compile_html.py
         
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
         
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
