@@ -1,0 +1,49 @@
+name: Release — PDF & Markdown Book
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Pandoc & XeLaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-fonts-extra
+
+      - name: Merge chapters into book.md
+        run: python merge_chapters.py
+
+      - name: Compile PDF
+        run: bash compile_pdf.sh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Statecraft ${{ github.ref_name }}"
+          body: |
+            ## Statecraft: A How-To Guide for the Accidental Founder
+
+            Download the full book in your preferred format:
+
+            - 📄 **statecraft_manual.pdf** — Typeset PDF (print-ready)
+            - 📖 **book.md** — Full Markdown manuscript (67,600+ words)
+
+            > Audiobook edition coming soon — voiced with Resemble AI's Chatterbox.
+          files: |
+            statecraft_manual.pdf
+            book.md

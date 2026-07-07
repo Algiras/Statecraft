@@ -1,56 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STATECRAFT: A How-To Guide for the Accidental Founder</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Statecraft: A How-To Guide for the Accidental Founder — an open-access narrative non-fiction book on state-building written in the style of Malcolm Gladwell.">
+  <meta property="og:title" content="STATECRAFT — A How-To Guide for the Accidental Founder">
+  <meta property="og:description" content="Why building a country is harder than you think. 67,600 words on sovereignty, legitimacy, currency, housing, and digital governance.">
+  <meta property="og:image" content="statecraft_book_cover.jpg">
+  <title>STATECRAFT — A How-To Guide for the Accidental Founder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>/* ===== STATECRAFT — Premium Reading Stylesheet ===== */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg:          #0f0f13;
+  --surface:     #17171e;
+  --surface2:    #1e1e28;
+  --border:      #2a2a38;
+  --text:        #e8e8f0;
+  --text-muted:  #7a7a9a;
+  --accent:      #7c6af7;
+  --accent2:     #4fc3f7;
+  --accent3:     #66bb6a;
+  --gold:        #ffd54f;
+  --serif:       'Lora', Georgia, serif;
+  --sans:        'Inter', system-ui, sans-serif;
+  --max-w:       780px;
+  --r:           14px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Header ── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15,15,19,0.85);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  max-width: calc(var(--max-w) + 120px);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.header-wordmark {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+nav a, .nav-pill {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+nav a:hover { color: var(--text); border-color: var(--accent); background: rgba(124,106,247,0.1); }
+.nav-pill.disabled { cursor: not-allowed; opacity: 0.4; }
+.nav-pill.coming-soon { color: var(--gold); border-color: rgba(255,213,79,0.3); background: rgba(255,213,79,0.05); }
+
+/* ── Hero / Cover ── */
+.hero {
+  max-width: calc(var(--max-w) + 120px);
+  margin: 0 auto;
+  padding: 80px 24px 60px;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: center;
+}
+@media (max-width: 768px) { .hero { grid-template-columns: 1fr; text-align: center; } }
+.hero-text {}
+.hero-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: block;
+}
+.hero-title {
+  font-family: var(--sans);
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.hero-subtitle {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+.hero-meta {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+.hero-meta strong { color: var(--text); }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 0 24px rgba(124,106,247,0.3);
+}
+.btn-primary:hover { background: #9681ff; box-shadow: 0 0 32px rgba(124,106,247,0.5); transform: translateY(-1px); }
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); background: rgba(124,106,247,0.08); }
+.btn-disabled {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,213,79,0.25);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.cover-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+  display: block;
+}
+
+/* ── Stats Strip ── */
+.stats-strip {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.stats-inner {
+  max-width: calc(var(--max-w) + 120px);
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+.stat-num {
+  font-family: var(--sans);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ── Reading container ── */
+.content-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 64px 24px 120px;
+}
+
+/* ── TOC ── */
+#TOC {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 28px 32px;
+  margin-bottom: 64px;
+}
+#TOC h2 {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+#TOC ul { list-style: none; display: grid; gap: 4px; }
+#TOC li { font-family: var(--sans); font-size: 15px; }
+#TOC a {
+  color: var(--text-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.15s;
+}
+#TOC a::before { content: '→'; color: var(--accent); opacity: 0; transition: opacity 0.15s; font-size: 13px; }
+#TOC a:hover { background: rgba(124,106,247,0.08); color: var(--text); }
+#TOC a:hover::before { opacity: 1; }
+
+/* ── Headings ── */
+h1, h2, h3, h4 { font-family: var(--sans); line-height: 1.2; }
+h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 24px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+h1:first-of-type { margin-top: 0; border-top: none; padding-top: 0; }
+h2 { font-size: 24px; font-weight: 600; color: var(--text); margin-top: 48px; margin-bottom: 16px; }
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+h4 { font-size: 18px; font-weight: 600; color: var(--text); margin-top: 32px; margin-bottom: 10px; }
+
+/* ── Body text ── */
+p { margin-bottom: 1.4em; color: var(--text); }
+strong { color: #fff; font-weight: 600; }
+em { font-style: italic; color: var(--text-muted); }
+a { color: var(--accent2); text-decoration: none; border-bottom: 1px solid rgba(79,195,247,0.3); transition: border-color 0.15s; }
+a:hover { border-color: var(--accent2); }
+
+/* ── Blockquote ── */
+blockquote {
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  padding: 20px 24px;
+  margin: 32px 0;
+  border-radius: 0 var(--r) var(--r) 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ── Lists ── */
+ul, ol { padding-left: 28px; margin-bottom: 1.4em; }
+li { margin-bottom: 8px; }
+
+/* ── Chart figures ── */
+.chart-figure {
+  margin: 48px -32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+@media (max-width: 840px) { .chart-figure { margin: 40px 0; } }
+.chart-img { display: block; width: 100%; height: auto; }
+figcaption {
+  padding: 14px 20px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  font-style: italic;
+}
+
+/* ── Manual / callout boxes ── */
+.manual-box, .callout {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 28px 32px;
+  margin: 40px 0;
+}
+.manual-box strong { color: var(--accent); }
+
+/* ── Code / pre ── */
+pre {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 20px;
+  overflow-x: auto;
+  font-size: 14px;
+  margin: 24px 0;
+}
+code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9em; color: var(--accent2); }
+pre code { color: var(--text); }
+
+/* ── Tables ── */
+table { width: 100%; border-collapse: collapse; margin: 32px 0; font-family: var(--sans); font-size: 15px; }
+thead { background: var(--surface2); }
+th { padding: 12px 16px; text-align: left; font-weight: 600; color: var(--text); border-bottom: 1px solid var(--border); }
+td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+tr:hover td { background: rgba(255,255,255,0.02); }
+
+/* ── Chapter drop caps ── */
+.chapter-start > p:first-of-type::first-letter {
+  float: left;
+  font-size: 4.2em;
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 0.8;
+  margin: 4px 12px -4px 0;
+  color: var(--accent);
+}
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding: 40px 24px;
+  text-align: center;
+}
+.site-footer p { font-family: var(--sans); font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+.site-footer a { color: var(--accent); border-bottom: none; }
+
+/* ── Reading progress bar ── */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  z-index: 9999;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 8px rgba(124,106,247,0.6);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1 class="header-title">STATECRAFT</h1>
-            <nav class="header-nav">
-                <a href="#TOC">Table of Contents</a>
-                <a href="statecraft_manual.pdf" target="_blank">Download PDF</a>
-                <span class="nav-disabled">Audiobook (Coming Soon)</span>
-            </nav>
-        </div>
-    </header>
+<div id="progress-bar"></div>
 
-    <div class="content-container">
-        
-        <div class="title-block">
-            <h1>STATECRAFT</h1>
-            <div class="subtitle">A How-To Guide for the Accidental Founder</div>
-            <div class="author">Antigravity & Algimantas</div>
-            <div class="date">July 2026</div>
-            
-            <img src="statecraft_book_cover.jpg" class="cover-img" alt="Statecraft Book Cover">
-        </div>
+<header>
+  <div class="header-inner">
+    <a href="#" class="header-wordmark">Statecraft</a>
+    <nav>
+      <a href="#TOC">Contents</a>
+      <a href="statecraft_manual.pdf" target="_blank">↓ PDF</a>
+      <span class="nav-pill coming-soon">🎧 Audiobook Coming Soon</span>
+    </nav>
+  </div>
+</header>
 
-        <section class="download-section">
-            <div class="download-card">
-                <h3>PDF Edition</h3>
-                <p>Read a beautifully styled, typeset version of the manual in print-ready layout.</p>
-                <a href="statecraft_manual.pdf" class="btn" target="_blank">Download PDF</a>
-            </div>
-            <div class="download-card">
-                <h3>Audiobook Edition</h3>
-                <p>Listen to the complete 7.5-hour Gladwellian narrator audio (67,600+ words).</p>
-                <a href="#" class="btn disabled" onclick="return false;">Coming Soon</a>
-            </div>
-        </section>
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-label">Open Access · July 2026</span>
+    <h1 class="hero-title">STATECRAFT</h1>
+    <p class="hero-subtitle">A How-To Guide for the Accidental Founder<br><em>Or: Why Building a Country is Harder Than You Think</em></p>
+    <p class="hero-meta">By <strong>Antigravity &amp; Algimantas</strong> · 67,600 words · 12 Chapters</p>
+    <div class="hero-actions">
+      <a href="#TOC" class="btn-primary">📖 Start Reading</a>
+      <a href="statecraft_manual.pdf" class="btn-secondary" target="_blank">↓ Download PDF</a>
+      <span class="btn-disabled">🎧 Audiobook Soon</span>
+    </div>
+  </div>
+  <div>
+    <img src="statecraft_book_cover.jpg" class="cover-img" alt="Statecraft Book Cover" width="340">
+  </div>
+</section>
 
-        <div class="manual-box">
-            <strong>Open Access License:</strong> This book is licensed under the 
-            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. 
-            You are free to share, adapt, and build upon this material for any purpose.
-        </div>
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div><div class="stat-num">67,600</div><div class="stat-label">Words</div></div>
+    <div><div class="stat-num">12</div><div class="stat-label">Chapters</div></div>
+    <div><div class="stat-num">11</div><div class="stat-label">Countries Studied</div></div>
+    <div><div class="stat-num">7.5h</div><div class="stat-label">Audiobook (Soon)</div></div>
+    <div><div class="stat-num">CC BY</div><div class="stat-label">Open License</div></div>
+  </div>
+</div>
 
-        <!-- Book Content Starts Here -->
-        <h1 data-number="1" id="introduction-the-sandbox-fallacy"><span
+<div class="content-wrap">
+  <figure class="chart-figure">
+  <img src="img_hardware_vs_software.jpg" alt="Hardware vs Software of Statehood diagram" class="chart-img" loading="lazy">
+  <figcaption>The central thesis: nationhood is software, not hardware.</figcaption>
+</figure>
+<h1 data-number="1" id="introduction-the-sandbox-fallacy"><span
 class="header-section-number">1</span> Introduction: The Sandbox
 Fallacy</h1>
 <h2 data-number="1.1" id="the-hook-the-danube-anomaly"><span
@@ -710,6 +1107,10 @@ physical map.</li>
 </ol>
 <hr />
 <pre><code>[END OF SECTION 0]</code></pre>
+<figure class="chart-figure">
+  <img src="img_twelve_pillars.jpg" alt="12 Pillars of Statecraft wheel diagram" class="chart-img" loading="lazy">
+  <figcaption>The 12 pillars that a functional state must build, maintain, and integrate.</figcaption>
+</figure>
 <h1 data-number="2"
 id="chapter-1-the-parliament-of-elders-the-paradox-of-legitimacy"><span
 class="header-section-number">2</span> Chapter 1: The Parliament of
@@ -1425,6 +1826,10 @@ state’s encroachment as a hostile threat to their power. The accidental
 founder must remember: <strong>the goal of institutional development is
 not to reach the destination as quickly as possible, but to ensure that
 the travelers remain in the car.</strong></p>
+<figure class="chart-figure">
+  <img src="img_somaliland_vs_somalia.jpg" alt="Top-Down vs Bottom-Up State Building diagram" class="chart-img" loading="lazy">
+  <figcaption>Chapter 1: How Somaliland succeeded with $0 where Somalia failed with $4.2B in UN aid.</figcaption>
+</figure>
 <h1 data-number="3"
 id="chapter-2-the-infrastructure-of-trust-the-gold-in-the-vaults"><span
 class="header-section-number">3</span> Chapter 2: The Infrastructure of
@@ -1899,10 +2304,10 @@ and Sourcing</h5>
 reserve assets.</p>
 <ol type="1">
 <li><strong>Calculate the Minimum Reserve Requirement (MRR)</strong>:
-<span class="math display">MRR = Target Monetary Base (M0) × Exchange
-Rate (Peg)</span> The target M0 must include all physical banknotes in
-circulation plus all commercial bank clearing accounts held at the
-monetary authority.</li>
+<span class="math display">\[\text{MRR} = \text{Target Monetary Base
+(M0)} \times \text{Exchange Rate (Peg)}\]</span> The target M0 must
+include all physical banknotes in circulation plus all commercial bank
+clearing accounts held at the monetary authority.</li>
 <li><strong>Asset Mobilization</strong>:
 <ul>
 <li>Recover historical sovereign assets frozen in foreign
@@ -2098,6 +2503,10 @@ medieval walls and the modern glass offices of tech startups, you are
 walking on a foundation that was built in the dark, cold days of 1992,
 out of eleven tons of old gold and a collective hallucination that
 worked.</p>
+<figure class="chart-figure">
+  <img src="img_currency_board.jpg" alt="Currency Board System diagram" class="chart-img" loading="lazy">
+  <figcaption>Chapter 2: Estonia's Currency Board — the commitment device that ended hyperinflation.</figcaption>
+</figure>
 <h1 data-number="4"
 id="chapter-3-the-apartment-lottery-the-architecture-of-unity"><span
 class="header-section-number">4</span> Chapter 3: The Apartment Lottery
@@ -2625,37 +3034,35 @@ class="header-section-number">4.5.1</span> I. Mathematical Modeling: The
 Index of Dissimilarity</h3>
 <p>To manage spatial integration, you must first measure it. The primary
 tool for this is the <strong>Duncan Index of Dissimilarity (<span
-class="math inline"><em>D</em></span>)</strong>, a mathematical measure
-of the demographic difference between two spatial scales (e.g., a
+class="math inline">\(D\)</span>)</strong>, a mathematical measure of
+the demographic difference between two spatial scales (e.g., a
 neighborhood versus the city as a whole).</p>
-<p><span class="math display">$$D = \frac{1}{2} \sum_{i=1}^{N} \left|
-\frac{a_i}{A} - \frac{b_i}{B} \right|$$</span></p>
-<p>Where: * <span class="math inline"><em>N</em></span> is the number of
+<p><span class="math display">\[D = \frac{1}{2} \sum_{i=1}^{N} \left|
+\frac{a_i}{A} - \frac{b_i}{B} \right|\]</span></p>
+<p>Where: * <span class="math inline">\(N\)</span> is the number of
 spatial sub-units (e.g., blocks or tracts) in the larger area. * <span
-class="math inline"><em>a</em><sub><em>i</em></sub></span> is the
-population of Group A in sub-unit <span
-class="math inline"><em>i</em></span>. * <span
-class="math inline"><em>A</em></span> is the total population of Group A
+class="math inline">\(a_i\)</span> is the population of Group A in
+sub-unit <span class="math inline">\(i\)</span>. * <span
+class="math inline">\(A\)</span> is the total population of Group A
 across the entire metropolitan area. * <span
-class="math inline"><em>b</em><sub><em>i</em></sub></span> is the
-population of Group B in sub-unit <span
-class="math inline"><em>i</em></span>. * <span
-class="math inline"><em>B</em></span> is the total population of Group B
+class="math inline">\(b_i\)</span> is the population of Group B in
+sub-unit <span class="math inline">\(i\)</span>. * <span
+class="math inline">\(B\)</span> is the total population of Group B
 across the entire metropolitan area.</p>
 <h4 data-number="4.5.1.1" id="interpretation"><span
 class="header-section-number">4.5.1.1</span> Interpretation:</h4>
 <ul>
-<li><strong><span class="math inline"><em>D</em> = 0.0</span></strong>:
+<li><strong><span class="math inline">\(D = 0.0\)</span></strong>:
 Perfect integration. Every block has the exact same demographic ratio as
 the city.</li>
-<li><strong><span class="math inline"><em>D</em> = 1.0</span></strong>:
+<li><strong><span class="math inline">\(D = 1.0\)</span></strong>:
 Absolute segregation. Every block is occupied entirely by one
 group.</li>
 <li><strong>Threshold of Action</strong>: Any city or district where
-<span class="math inline"><em>D</em> &gt; 0.40</span> is at risk of
-structural polarization. If <span
-class="math inline"><em>D</em> &gt; 0.60</span>, the system is in a
-state of chronic segregation, and ethnic enclaves have hardened.</li>
+<span class="math inline">\(D &gt; 0.40\)</span> is at risk of
+structural polarization. If <span class="math inline">\(D &gt;
+0.60\)</span>, the system is in a state of chronic segregation, and
+ethnic enclaves have hardened.</li>
 </ul>
 <hr />
 <h3 data-number="4.5.2"
@@ -2688,22 +3095,20 @@ geographic resolutions:</p>
 class="header-section-number">4.5.2.1</span> 1. The Macro-Scale (The
 Neighborhood)</h4>
 <p>The cap for any single ethnic group within a neighborhood must be set
-at <strong><span
-class="math inline"><em>P</em><sub><em>n</em></sub> + 5%</span></strong>,
-where <span class="math inline"><em>P</em><sub><em>n</em></sub></span>
-is the group’s percentage of the national population. *
-<em>Rationale</em>: This allows for organic variation while preventing
-any group from establishing a geographic majority large enough to
-monopolize local civic institutions (schools, community boards).</p>
+at <strong><span class="math inline">\(P_n + 5\%\)</span></strong>,
+where <span class="math inline">\(P_n\)</span> is the group’s percentage
+of the national population. * <em>Rationale</em>: This allows for
+organic variation while preventing any group from establishing a
+geographic majority large enough to monopolize local civic institutions
+(schools, community boards).</p>
 <h4 data-number="4.5.2.2" id="the-micro-scale-the-buildingblock"><span
 class="header-section-number">4.5.2.2</span> 2. The Micro-Scale (The
 Building/Block)</h4>
 <p>The cap for any single ethnic group within an individual building or
-apartment block must be set at <strong><span
-class="math inline"><em>P</em><sub><em>n</em></sub> + 8%</span></strong>.
-* <em>Rationale</em>: This ensures that the immediate corridor-level
-peer group remains integrated, preventing vertical enclaves from forming
-within a larger diverse neighborhood.</p>
+apartment block must be set at <strong><span class="math inline">\(P_n +
+8\%\)</span></strong>. * <em>Rationale</em>: This ensures that the
+immediate corridor-level peer group remains integrated, preventing
+vertical enclaves from forming within a larger diverse neighborhood.</p>
 <h4 data-number="4.5.2.3" id="the-resale-matching-rule"><span
 class="header-section-number">4.5.2.3</span> 3. The Resale Matching
 Rule</h4>
@@ -2828,8 +3233,8 @@ class="header-section-number">4.5.6</span> Summary Checklist for the
 Founder</h3>
 <ul class="task-list">
 <li><label><input type="checkbox" />Calculated the <strong>Index of
-Dissimilarity (<span class="math inline"><em>D</em></span>)</strong> for
-all major urban centers.</label></li>
+Dissimilarity (<span class="math inline">\(D\)</span>)</strong> for all
+major urban centers.</label></li>
 <li><label><input type="checkbox" />Codified <strong>EIP block and
 neighborhood quotas</strong> based on national ratios.</label></li>
 <li><label><input type="checkbox" />Standardized <strong>single-loaded
@@ -3325,27 +3730,29 @@ new state requires discarding classical militarist assumptions. You must
 understand three core variables:</p>
 <ol type="1">
 <li><p><strong>The Praetorian Coefficient (<span
-class="math inline">𝒫𝒞</span>)</strong> The probability that the state’s
-military apparatus will intervene in domestic politics to overthrow the
-civilian administration. <span class="math display">$$\mathcal{PC} =
-\frac{\text{Internal Police Role} \times \text{Institutional
-Autonomy}}{\text{External Threat Salience} \times \text{Civilian
-Bureaucratic Strength}}$$</span> <em>Rule of Thumb:</em> If your state
-has low external threats but maintains a high-strength military with
-internal policing powers, your <span class="math inline">𝒫𝒞</span>
-approaches <span class="math inline">1.0</span> (guaranteed coup within
-a 20-year horizon).</p></li>
+class="math inline">\(\mathcal{PC}\)</span>)</strong> The probability
+that the state’s military apparatus will intervene in domestic politics
+to overthrow the civilian administration. <span
+class="math display">\[\mathcal{PC} = \frac{\text{Internal Police Role}
+\times \text{Institutional Autonomy}}{\text{External Threat Salience}
+\times \text{Civilian Bureaucratic Strength}}\]</span> <em>Rule of
+Thumb:</em> If your state has low external threats but maintains a
+high-strength military with internal policing powers, your <span
+class="math inline">\(\mathcal{PC}\)</span> approaches <span
+class="math inline">\(1.0\)</span> (guaranteed coup within a 20-year
+horizon).</p></li>
 <li><p><strong>Collective Security Arbitrage (<span
-class="math inline">𝒞𝒮𝒜</span>)</strong> The policy of outsourcing
-hard-power deterrence to a multilateral treaty network or a hegemonic
-protector, thereby reducing the state’s defense expenditure to near-zero
-while maintaining sovereign integrity.</p></li>
+class="math inline">\(\mathcal{CSA}\)</span>)</strong> The policy of
+outsourcing hard-power deterrence to a multilateral treaty network or a
+hegemonic protector, thereby reducing the state’s defense expenditure to
+near-zero while maintaining sovereign integrity.</p></li>
 <li><p><strong>The Peace Dividend Multiplier (<span
-class="math inline">𝒫𝒟ℳ</span>)</strong> The fiscal rate of return
-achieved by redirecting capital from non-productive, depreciating
-military assets (tanks, small arms ammunition, combat aircraft) to
-productive, appreciating human capital assets (public schools,
-preventative healthcare clinics, research infrastructure).</p></li>
+class="math inline">\(\mathcal{PDM}\)</span>)</strong> The fiscal rate
+of return achieved by redirecting capital from non-productive,
+depreciating military assets (tanks, small arms ammunition, combat
+aircraft) to productive, appreciating human capital assets (public
+schools, preventative healthcare clinics, research
+infrastructure).</p></li>
 </ol>
 <hr />
 <h3 data-number="5.4.2"
@@ -3378,8 +3785,8 @@ Demilitarization</strong></td>
 <td style="text-align: left;">Constitutional ban on standing army;
 security outsourced to international law and regional treaties.</td>
 <td style="text-align: left;">Zero defense budget; <span
-class="math inline">𝒫𝒞 = 0</span>; high moral and diplomatic
-leverage.</td>
+class="math inline">\(\mathcal{PC} = 0\)</span>; high moral and
+diplomatic leverage.</td>
 <td style="text-align: left;">Vulnerability to sudden, systemic collapse
 of international treaties.</td>
 <td style="text-align: left;">Insular/border states with strong regional
@@ -4518,16 +4925,15 @@ class="header-section-number">6.4.2.2</span> KSI Blockchain Integration
 Blueprint:</h4>
 <p>Every transaction log entry must be hashed and aggregated into a
 Merkle tree at the end of each block window (e.g., 1 second).</p>
-<p><span class="math display">Root Hash
-<em>R</em> = <em>H</em>(<em>H</em><em>a</em><em>s</em><em>h</em><sub>1</sub> ∥ <em>H</em><em>a</em><em>s</em><em>h</em><sub>2</sub> ∥ … ∥ <em>H</em><em>a</em><em>s</em><em>h</em><sub><em>n</em></sub>)</span></p>
-<p>The Root Hash <span class="math inline"><em>R</em></span> is
-published to a distributed ledger across multiple independent
-jurisdictions. If a malicious actor alters a log entry in the local
-database:</p>
-<p><span class="math display">Local Hash <em>H</em>(Modified
-Log) ≠ <em>H</em><em>a</em><em>s</em><em>h</em><sub><em>x</em></sub></span></p>
-<p><span class="math display">Recomputed Root
-<em>R</em><sup>′</sup> ≠ <em>R</em></span></p>
+<p><span class="math display">\[\text{Root Hash } R = H(Hash_1 \parallel
+Hash_2 \parallel \dots \parallel Hash_n)\]</span></p>
+<p>The Root Hash <span class="math inline">\(R\)</span> is published to
+a distributed ledger across multiple independent jurisdictions. If a
+malicious actor alters a log entry in the local database:</p>
+<p><span class="math display">\[\text{Local Hash } H(\text{Modified
+Log}) \neq Hash_x\]</span></p>
+<p><span class="math display">\[\text{Recomputed Root } R&#39; \neq
+R\]</span></p>
 <p>The system instantly detects the mismatch, flags the tampering, and
 invalidates the altered records in court proceedings.</p>
 <hr />
@@ -4608,6 +5014,10 @@ Citizens access services, banks verify balances, and foreign partners
 verify identities through the Data Embassy node, maintaining the
 continuity of the legal state.</li>
 </ol>
+<figure class="chart-figure">
+  <img src="img_sovereignty_spectrum.jpg" alt="The Sovereignty Spectrum diagram" class="chart-img" loading="lazy">
+  <figcaption>Chapter 5: The Sovereignty Spectrum — from zero recognition (Liberland) to de jure status (Malta SMOM).</figcaption>
+</figure>
 <h1 data-number="7"
 id="chapter-7-the-pump-handle-the-biosecurity-paradox"><span
 class="header-section-number">7</span> Chapter 7: The Pump Handle (The
@@ -5378,9 +5788,8 @@ Post-Action Review (PAR)</h4>
 <ul>
 <li><strong>Establish De-escalation Metrics</strong>: Containment
 measures must only be eased when the transmission rate (<span
-class="math inline"><em>R</em><sub><em>t</em></sub></span>) remains
-below 1.0 for fourteen consecutive days, and the test positivity rate
-falls below 5%.</li>
+class="math inline">\(R_t\)</span>) remains below 1.0 for fourteen
+consecutive days, and the test positivity rate falls below 5%.</li>
 <li><strong>Conduct the PAR</strong>: Within thirty days of
 de-escalating to Level 1, the Department of Health must publish a public
 report detailing the source of the outbreak, the efficacy of the
@@ -5887,49 +6296,46 @@ the country.</p>
 <h4 data-number="8.4.1.1" id="mathematical-representation-of-hci"><span
 class="header-section-number">8.4.1.1</span> Mathematical Representation
 of HCI:</h4>
-<p><span
-class="math display"><em>H</em><em>C</em><em>I</em> = Survival × School × Health</span></p>
+<p><span class="math display">\[HCI = \text{Survival} \times
+\text{School} \times \text{Health}\]</span></p>
 <p>Where:</p>
 <ol type="1">
 <li><p><strong>Survival (<span
-class="math inline"><em>S</em></span>)</strong>: The probability that a
-child born today survives to age 5.</p>
-<p><span class="math display"><em>S</em> = 1 − Under-5 Mortality
-Rate</span></p></li>
-<li><p><strong>School (<span
-class="math inline"><em>e</em><sup><em>ϕ</em> × <em>L</em><em>A</em><em>Y</em><em>S</em></sup></span>)</strong>:
-The contribution of quality-adjusted education, where <span
-class="math inline"><em>L</em><em>A</em><em>Y</em><em>S</em></span>
-represents Learning-Adjusted Years of Schooling, and <span
-class="math inline"><em>ϕ</em></span> is the return to an additional
-year of education (globally estimated at <span
-class="math inline">0.08</span> or <span
-class="math inline">8%</span>).</p>
-<p><span class="math display">$$LAYS = EYS \times \left(
-\frac{\text{Harmonized Test Score (HTS)}}{625} \right)$$</span></p>
+class="math inline">\(S\)</span>)</strong>: The probability that a child
+born today survives to age 5.</p>
+<p><span class="math display">\[S = 1 - \text{Under-5 Mortality
+Rate}\]</span></p></li>
+<li><p><strong>School (<span class="math inline">\(e^{\phi \times
+LAYS}\)</span>)</strong>: The contribution of quality-adjusted
+education, where <span class="math inline">\(LAYS\)</span> represents
+Learning-Adjusted Years of Schooling, and <span
+class="math inline">\(\phi\)</span> is the return to an additional year
+of education (globally estimated at <span
+class="math inline">\(0.08\)</span> or <span
+class="math inline">\(8\%\)</span>).</p>
+<p><span class="math display">\[LAYS = EYS \times \left(
+\frac{\text{Harmonized Test Score (HTS)}}{625} \right)\]</span></p>
 <ul>
 <li><p><strong>Expected Years of Schooling (<span
-class="math inline"><em>E</em><em>Y</em><em>S</em></span>)</strong>: The
-number of years of school a child can expect to complete by age 18,
-calculated from enrollment rates:</p>
-<p><span class="math display">$$EYS = \sum_{a=4}^{17} \text{Enrollment
-Rate at Age } a$$</span></p></li>
+class="math inline">\(EYS\)</span>)</strong>: The number of years of
+school a child can expect to complete by age 18, calculated from
+enrollment rates:</p>
+<p><span class="math display">\[EYS = \sum_{a=4}^{17} \text{Enrollment
+Rate at Age } a\]</span></p></li>
 <li><p><strong>Harmonized Test Score (<span
-class="math inline"><em>H</em><em>T</em><em>S</em></span>)</strong>:
-Standardized score based on international tests (PISA, TIMSS, PIRLS)
-mapped to a scale where <span class="math inline">625</span> represents
-advanced attainment and <span class="math inline">300</span> represents
-minimum competency.</p></li>
+class="math inline">\(HTS\)</span>)</strong>: Standardized score based
+on international tests (PISA, TIMSS, PIRLS) mapped to a scale where
+<span class="math inline">\(625\)</span> represents advanced attainment
+and <span class="math inline">\(300\)</span> represents minimum
+competency.</p></li>
 </ul></li>
-<li><p><strong>Health (<span
-class="math inline"><em>e</em><sup><em>γ</em> × Health
-Metrics</sup></span>)</strong>: The contribution of physical and
-cognitive development, measured by the fraction of children who are not
-stunted (<span
-class="math inline"><em>A</em><em>S</em><em>R</em><sub><em>s</em><em>t</em><em>u</em><em>n</em><em>t</em><em>i</em><em>n</em><em>g</em></sub></span>)
-and the adult survival rate (<span
-class="math inline"><em>A</em><em>S</em><em>R</em><sub><em>a</em><em>d</em><em>u</em><em>l</em><em>t</em></sub></span>,
-the probability that a 15-year-old survives to age 60).</p></li>
+<li><p><strong>Health (<span class="math inline">\(e^{\gamma \times
+\text{Health Metrics}}\)</span>)</strong>: The contribution of physical
+and cognitive development, measured by the fraction of children who are
+not stunted (<span class="math inline">\(ASR_{stunting}\)</span>) and
+the adult survival rate (<span
+class="math inline">\(ASR_{adult}\)</span>, the probability that a
+15-year-old survives to age 60).</p></li>
 </ol>
 <h4 data-number="8.4.1.2" id="operationalization-matrix"><span
 class="header-section-number">8.4.1.2</span> Operationalization
@@ -5952,48 +6358,48 @@ Matrix:</h4>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Survival</strong></td>
-<td style="text-align: left;"><span
-class="math inline"> &gt; 99.5%</span></td>
+<td style="text-align: left;"><span class="math inline">\(&gt;
+99.5\%\)</span></td>
 <td style="text-align: left;">Ministry of Health Birth Registries</td>
 <td style="text-align: left;">Universal maternal care; neonatal
 nutrition subsidies</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>EYS</strong></td>
-<td style="text-align: left;"><span class="math inline">14.0
-years</span></td>
+<td style="text-align: left;"><span class="math inline">\(14.0\text{
+years}\)</span></td>
 <td style="text-align: left;">e-School Attendance Log</td>
 <td style="text-align: left;">Mandatory early childhood education (ages
 3–5)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HTS</strong></td>
-<td style="text-align: left;"><span class="math inline"> &gt; 525
-points</span></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 525\text{
+points}\)</span></td>
 <td style="text-align: left;">National Competency Assessments</td>
 <td style="text-align: left;">Problem-based curriculum; teacher clinical
 training</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>LAYS</strong></td>
-<td style="text-align: left;"><span class="math inline"> &gt; 12.5
-years</span></td>
+<td style="text-align: left;"><span class="math inline">\(&gt;
+12.5\text{ years}\)</span></td>
 <td style="text-align: left;">Derived calculation</td>
 <td style="text-align: left;">Continuous teacher coaching; curriculum
 modernization</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Stunting</strong></td>
-<td style="text-align: left;"><span
-class="math inline"> &lt; 2.0%</span></td>
+<td style="text-align: left;"><span class="math inline">\(&lt;
+2.0\%\)</span></td>
 <td style="text-align: left;">Pediatric Clinical Records</td>
 <td style="text-align: left;">Maternal prenatal vitamins; early
 childhood nutrition support</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>ASR (Adult)</strong></td>
-<td style="text-align: left;"><span
-class="math inline"> &gt; 95.0%</span></td>
+<td style="text-align: left;"><span class="math inline">\(&gt;
+95.0\%\)</span></td>
 <td style="text-align: left;">Vital Statistics Registry</td>
 <td style="text-align: left;">Preventive public health; wellness
 incentives</td>
@@ -6051,8 +6457,8 @@ portal; digital portfolios.</td>
 <td style="text-align: left;">Technical executors; low-prestige;
 standardized pay.</td>
 <td style="text-align: left;">Highly selected (<span
-class="math inline"><em>M</em><em>A</em></span> required); elite social
-status; high autonomy.</td>
+class="math inline">\(MA\)</span> required); elite social status; high
+autonomy.</td>
 <td style="text-align: left;">Professional innovators; tech-fluent;
 data-informed pedagogy.</td>
 </tr>
@@ -6173,10 +6579,10 @@ or vocational training facilities.</li>
 citizen remains in the tax registry, the state credits their ILA with
 $500 equivalent. The credits accumulate tax-free and do not expire.</li>
 <li><strong>Corporate Co-Investment Tax Credits</strong>: Companies that
-spend more than <span class="math inline">3%</span> of their payroll on
-employee training receive a direct <span class="math inline">150%</span>
-tax deduction on the excess training expenditure, encouraging private
-sector upskilling.</li>
+spend more than <span class="math inline">\(3\%\)</span> of their
+payroll on employee training receive a direct <span
+class="math inline">\(150\%\)</span> tax deduction on the excess
+training expenditure, encouraging private sector upskilling.</li>
 </ol>
 <h1 data-number="9"
 id="chapter-9-the-extraction-engine-the-paradox-of-fiscal-capacity"><span
@@ -6711,9 +7117,9 @@ Metrics: Fiscal Capacity</h4>
 <strong>Tax-to-GDP Ratio</strong>, representing the total tax revenue
 collected by the government as a percentage of the gross domestic
 product.</p>
-<p><span class="math display">$$\text{Tax-to-GDP Ratio} = \left(
+<p><span class="math display">\[\text{Tax-to-GDP Ratio} = \left(
 \frac{\text{Total Tax Revenue}}{\text{Gross Domestic Product}} \right)
-\times 100$$</span></p>
+\times 100\]</span></p>
 <h5 data-number="9.4.1.2.1"
 id="state-capacity-classification-table"><span
 class="header-section-number">9.4.1.2.1</span> State Capacity
@@ -8381,9 +8787,22 @@ loops, and build with the patience of the elders under the acacia tree,
 the prize is immortality. You are building the home where humanity will
 survive the storms of tomorrow. Welcome to the club.</p>
 
-        <!-- Book Content Ends Here -->
+</div>
 
-    </div>
+<footer class="site-footer">
+  <p>Published under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> — free to share, adapt, and build upon with attribution.</p>
+  <p><a href="https://github.com/Algiras/Statecraft" target="_blank">github.com/Algiras/Statecraft</a></p>
+</footer>
+
+<script>
+// Reading progress bar
+const bar = document.getElementById('progress-bar');
+document.addEventListener('scroll', () => {
+  const docH = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (window.scrollY / docH) * 100;
+  bar.style.width = progress + '%';
+});
+</script>
 
 </body>
 </html>
