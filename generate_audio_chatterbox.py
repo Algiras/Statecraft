@@ -2,12 +2,13 @@
 """
 Chatterbox Audiobook Generator for Statecraft
 Uses Resemble AI's Chatterbox local TTS with emotional control and paralinguistic tags.
-Supports voice cloning (if reference WAV is provided) and paragraph-by-paragraph rendering.
+Uses MPS (Apple Silicon GPU) with explicit garbage collection and cache flushing to prevent memory crashes.
 """
 
 import os
 import re
 import sys
+import gc
 import subprocess
 import torch
 
@@ -21,9 +22,9 @@ except ImportError:
 
 BOOK_PATH = "book.md"
 OUTPUT_DIR = "audiobook_chatterbox"
-FINAL_AUDIO = "statecraft_audiobook_chatterbox.mp3"
+FINAL_AUDIO = "statecraft_audiobook.mp3"
 
-# Check device availability: mps (Apple Silicon GPU), cuda, or cpu
+# Detect device: use MPS for speed, fallback to CPU
 if torch.backends.mps.is_available():
     DEVICE = "mps"
 elif torch.cuda.is_available():
@@ -104,7 +105,6 @@ def make_audio_friendly(text):
     text = re.sub(r"^---[\s\S]*?---", "", text)
     text = re.sub(r"^##+\s+.*$", "", text, flags=re.MULTILINE)
     
-    # 1. Translate equations
     text = text.replace(r"\mathcal{PC} = \frac{\text{Internal Police Role} \times \text{Institutional Autonomy}}{\text{External Threat Salience} \times \text{Civilian Bureaucratic Strength}}",
                         "The Praetorian Coefficient is calculated by multiplying the internal police role by institutional autonomy, divided by the product of external threat salience and civilian bureaucratic strength.")
     text = text.replace(r"D = \frac{1}{2} \sum_{i=1}^{N} \left| \frac{a_i}{A} - \frac{b_i}{B} \right|",
@@ -133,7 +133,6 @@ def make_audio_friendly(text):
     text = text.replace("$1", "one dollar")
     text = text.replace("WPM", "words per minute")
     
-    # 2. Format acronyms
     text = re.sub(r"\bEIP\b", "E I P", text)
     text = re.sub(r"\bHDB\b", "H D B", text)
     text = re.sub(r"\beID\b", "e I D", text)
@@ -147,7 +146,6 @@ def make_audio_friendly(text):
     text = re.sub(r"\bPWR\b", "P W R", text)
     text = re.sub(r"\bEROI\b", "E R O I", text)
     
-    # 3. Strip links
     text = re.compile(r'\[([^\]]+)\]\([^\)]+\)').sub(r'\1', text)
     text = text.replace(r"\newpage", "")
     text = text.replace(r"\pagebreak", "")
@@ -206,8 +204,7 @@ def parse_chapters(file_path):
     return chapters
 
 def main():
-    print("Loading Chatterbox TTS model...")
-    # Resemble AI's Chatterbox loads weights from HF automatically
+    print(f"Loading Chatterbox TTS model on device: {DEVICE}...")
     model = ChatterboxTTS.from_pretrained(device=DEVICE)
     print("Model loaded successfully!")
     
@@ -219,12 +216,11 @@ def main():
     chapters = parse_chapters(BOOK_PATH)
     print(f"Found {len(chapters)} chapters.")
     
-    # 24kHz silent buffer (Chatterbox sample rate is 24000)
     p_silence_path = os.path.join(temp_dir, "p_silence.wav")
     c_silence_path = os.path.join(temp_dir, "c_silence.wav")
     t_silence_path = os.path.join(temp_dir, "t_silence.wav")
     
-    # Generate silence WAVs using ffmpeg
+    # Generate silence WAVs
     subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "1.8", p_silence_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
     subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "2.2", t_silence_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
     subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", "3.5", c_silence_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
@@ -266,25 +262,27 @@ def main():
             print(f"  -> Voicing paragraph {p_idx+1}/{len(paragraphs)}...")
             
             try:
-                # Generate audio array using Chatterbox
-                # Chatterbox allows optional voice reference via model.generate(p_text, reference_wav=...)
+                # Generate audio
                 wav_tensor = model.generate(p_text)
-                
-                # Save tensor as WAV file
                 torchaudio.save(p_file, wav_tensor.cpu(), model.sr)
                 
                 paragraph_files.append(p_file)
                 paragraph_files.append(silence_file)
+                
+                # MEMORY MANAGEMENT: Explicitly clean up tensors and flush cache after each paragraph
+                del wav_tensor
+                if DEVICE == "mps":
+                    torch.mps.empty_cache()
+                gc.collect()
+                
             except Exception as e:
                 print(f"  [ERROR] Failed generating paragraph {p_idx}: {e}")
                 
         if paragraph_files:
-            paragraph_files.pop()  # Strip trailing paragraph silence
-            
+            paragraph_files.pop()
             chapter_wav = os.path.join(OUTPUT_DIR, f"{chapter_filename}.wav")
             print(f"Merging paragraphs into chapter: {chapter_wav}...")
             
-            # Concatenate paragraphs using ffmpeg
             concat_list = chapter_wav + ".list.txt"
             with open(concat_list, "w", encoding="utf-8") as f:
                 for pf in paragraph_files:
@@ -300,10 +298,8 @@ def main():
                 if pf not in (p_silence_path, t_silence_path) and os.path.exists(pf):
                     os.remove(pf)
                     
-    # Merge chapters into final MP3
     if chapter_wav_files:
-        chapter_wav_files.pop()  # Remove trailing chapter silence
-        
+        chapter_wav_files.pop()
         final_wav = os.path.join(OUTPUT_DIR, "statecraft_full_chatterbox.wav")
         print("\nMerging all chapters into full WAV...")
         

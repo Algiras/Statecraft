@@ -3,7 +3,8 @@
 Audiobook Generator for Statecraft (Edge TTS Version)
 Uses Microsoft Edge's Neural TTS via edge-tts.
 Applies audio-friendly text translation (math, acronyms, lists), replaces subheadings
-with natural, context-aware conversational transitions, and uses SSML for Audible-style pacing.
+with natural transitions, and concatenates paragraphs with silent MP3 buffers using ffmpeg
+to achieve professional, human-like narration pacing.
 """
 
 import os
@@ -24,6 +25,11 @@ BOOK_PATH = "book.md"
 OUTPUT_DIR = "audiobook"
 VOICE = "en-US-ChristopherNeural"  # Warm, authoritative, non-fiction narrator style
 FINAL_AUDIO = "statecraft_audiobook.mp3"
+
+# Silence durations in seconds
+PARAGRAPH_SILENCE = 1.8
+TRANSITION_SILENCE = 2.2
+CHAPTER_SILENCE = 3.5
 
 # Transitions map: (chapter_index, heading_type) -> transition_text
 TRANSITIONS = {
@@ -89,19 +95,10 @@ TRANSITIONS = {
 }
 
 def get_heading_transition(chapter_index, subheading_text):
-    """
-    Determines if a paragraph is a subheading and maps it to a conversational transition.
-    """
-    # Clean text to search keywords
     text_lower = subheading_text.lower().strip()
-    
-    # Verify if it's actually formatted as a heading in Markdown
     if not text_lower.startswith("#"):
         return None
-        
-    # Strip leading hashes
     text_clean = re.sub(r"^#+\s+", "", text_lower)
-    
     h_type = None
     if "pivot" in text_clean or "section ii" in text_clean or "spectrum" in text_clean or "living" in text_clean or "standardized" in text_clean or "collector" in text_clean or "unseen" in text_clean or "matrix" in text_clean:
         h_type = "pivot"
@@ -109,7 +106,6 @@ def get_heading_transition(chapter_index, subheading_text):
         h_type = "investigation"
     elif "manual" in text_clean or "checklist" in text_clean or "section iv" in text_clean or "framework" in text_clean or "audit" in text_clean or "guidelines" in text_clean:
         h_type = "manual"
-        
     if h_type:
         return TRANSITIONS.get((chapter_index, h_type))
     return None
@@ -119,15 +115,11 @@ def make_audio_friendly(text):
     Translates mathematical formulas, acronyms, and visual markdown
     into spoken English suited for audiobook reading.
     """
-    # Remove YAML headers
     text = re.sub(r"^---[\s\S]*?---", "", text)
     
     # 1. Translate mathematical equations and symbols
-    # Praetorian Coefficient Formula
     text = text.replace(r"\mathcal{PC} = \frac{\text{Internal Police Role} \times \text{Institutional Autonomy}}{\text{External Threat Salience} \times \text{Civilian Bureaucratic Strength}}",
                         "The Praetorian Coefficient is calculated by multiplying the internal police role by institutional autonomy, divided by the product of external threat salience and civilian bureaucratic strength.")
-    
-    # Duncan Index of Dissimilarity
     text = text.replace(r"D = \frac{1}{2} \sum_{i=1}^{N} \left| \frac{a_i}{A} - \frac{b_i}{B} \right|",
                         "The Duncan Index of Dissimilarity is defined as half of the sum, across all neighborhoods, of the absolute difference between the proportion of group A in that neighborhood and the proportion of group B in the overall city.")
     
@@ -187,9 +179,6 @@ def make_audio_friendly(text):
     return text
 
 def clean_chapter_title(title):
-    """
-    Cleans chapter title to make it sound natural (e.g. removes parentheticals, translates numbers).
-    """
     title = re.sub(r"^---[\s\S]*?---", "", title)
     title = re.sub(r"\s*\([^)]*\)", "", title)
     
@@ -208,9 +197,6 @@ def clean_chapter_title(title):
     return title.strip()
 
 def parse_chapters(file_path):
-    """
-    Parses book.md into a list of chapters.
-    """
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Source manuscript '{file_path}' not found.")
         
@@ -246,72 +232,118 @@ def parse_chapters(file_path):
         
     return chapters
 
-def build_ssml_for_chapter(title, body, chapter_index):
+def generate_silence_mp3(duration, output_path):
     """
-    Wraps the chapter text in SSML format, adding natural narrator transitions and pauses.
+    Uses ffmpeg to generate a silent MP3 file with matching properties.
     """
-    # Split body into paragraphs
-    paragraphs = [p.strip() for p in body.split("\n\n") if p.strip()]
-    
-    clean_title = clean_chapter_title(title)
-    
-    ssml = f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">\n'
-    ssml += f'  <voice name="{VOICE}">\n'
-    
-    # Introduce chapter title
-    ssml += f'    <p>{clean_title}.</p>\n'
-    ssml += f'    <break time="3000ms"/>\n'
-    
-    for p in paragraphs:
-        # Check if the paragraph is a subheading and map it to a transition
-        transition = get_heading_transition(chapter_index, p)
-        if transition:
-            # We replace the subheading with a conversational transition phrase!
-            clean_text = transition
-            pause_time = "2200ms"  # Longer pause after a structural transition
-        else:
-            # If it's a regular subheading that we didn't map, skip it
-            if p.startswith("#"):
-                continue
-            clean_text = make_audio_friendly(p)
-            pause_time = "1800ms"  # Standard breath pause
-            
-        if not clean_text:
-            continue
-        
-        # Escape XML entities
-        clean_text = clean_text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        
-        ssml += f'    <p>{clean_text}</p>\n'
-        ssml += f'    <break time="{pause_time}"/>\n'
-        
-    ssml += f'  </voice>\n'
-    ssml += f'</speak>'
-    
-    return ssml
+    cmd = [
+        "ffmpeg", "-y",
+        "-f", "lavfi",
+        "-i", "anullsrc=r=24000:cl=mono",
+        "-t", str(duration),
+        "-codec:a", "libmp3lame",
+        "-b:a", "48k",
+        output_path
+    ]
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
 
-async def generate_chapter_audio(chapter):
+async def voice_paragraph(text, output_path):
     """
-    Generates neural audio for a single chapter using SSML pacing.
+    Sends a single paragraph of plain text to edge-tts.
+    """
+    communicate = edge_tts.Communicate(text, VOICE)
+    await communicate.save(output_path)
+
+def concatenate_mp3_files(file_list, output_path):
+    """
+    Concatenates multiple MP3 files using ffmpeg concat demuxer.
+    """
+    list_file_path = output_path + ".list.txt"
+    with open(list_file_path, "w", encoding="utf-8") as f:
+        for filepath in file_list:
+            f.write(f"file '{os.path.abspath(filepath)}'\n")
+            
+    cmd = [
+        "ffmpeg", "-y",
+        "-f", "concat",
+        "-safe", "0",
+        "-i", list_file_path,
+        "-c", "copy",
+        output_path
+    ]
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+    if os.path.exists(list_file_path):
+        os.remove(list_file_path)
+
+async def generate_chapter_audio(chapter, temp_dir, p_silence, t_silence):
+    """
+    Generates audio for a chapter paragraph-by-paragraph and merges them with silent buffers.
     """
     title = chapter["title"]
     filename = chapter["filename"]
     body = chapter["body"]
     chapter_index = chapter["index"]
-    
     dest_path = os.path.join(OUTPUT_DIR, filename)
-    print(f"Generating audio (Narrative Transitions) for: '{title}' -> {dest_path}...")
     
-    # Build the SSML content
-    ssml_content = build_ssml_for_chapter(title, body, chapter_index)
+    print(f"\nVoicing Chapter: '{title}' -> {dest_path}...")
     
-    # Call edge-tts
-    communicate = edge_tts.Communicate(ssml_content, VOICE)
-    await communicate.save(dest_path)
-    print(f"Finished: {dest_path}")
+    # Parse paragraphs
+    paragraphs = [p.strip() for p in body.split("\n\n") if p.strip()]
+    
+    # Clean the title and insert it as the first chunk
+    clean_title = clean_chapter_title(title)
+    paragraphs.insert(0, clean_title + ".")
+    
+    paragraph_files = []
+    
+    for p_idx, raw_p in enumerate(paragraphs):
+        transition = get_heading_transition(chapter_index, raw_p)
+        if transition:
+            p_text = transition
+            silence_file = t_silence
+        else:
+            if raw_p.startswith("#"):
+                continue
+            p_text = make_audio_friendly(raw_p)
+            silence_file = p_silence
+            
+        if not p_text:
+            continue
+            
+        p_file = os.path.join(temp_dir, f"ch{chapter_index:02d}_p{p_idx:03d}.mp3")
+        print(f"  -> Sending paragraph {p_idx+1}/{len(paragraphs)} to Edge-TTS...")
+        
+        try:
+            await voice_paragraph(p_text, p_file)
+            paragraph_files.append(p_file)
+            paragraph_files.append(silence_file)
+        except Exception as e:
+            print(f"  [ERROR] Failed generating paragraph {p_idx}: {e}")
+            
+    if paragraph_files:
+        paragraph_files.pop()  # Remove trailing paragraph silence
+        print(f"Merging paragraphs into chapter: {dest_path}...")
+        concatenate_mp3_files(paragraph_files, dest_path)
+        
+        # Clean up temporary paragraph MP3s to save space
+        for pf in paragraph_files:
+            if pf not in (p_silence, t_silence) and os.path.exists(pf):
+                os.remove(pf)
 
 async def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    temp_dir = os.path.join(OUTPUT_DIR, "temp")
+    os.makedirs(temp_dir, exist_ok=True)
+    
+    # Generate silent MP3 buffers
+    p_silence = os.path.join(temp_dir, "p_silence.mp3")
+    t_silence = os.path.join(temp_dir, "t_silence.mp3")
+    c_silence = os.path.join(temp_dir, "c_silence.mp3")
+    
+    print("Generating silent pacing buffers...")
+    generate_silence_mp3(PARAGRAPH_SILENCE, p_silence)
+    generate_silence_mp3(TRANSITION_SILENCE, t_silence)
+    generate_silence_mp3(CHAPTER_SILENCE, c_silence)
     
     print(f"Parsing manuscript from {BOOK_PATH}...")
     try:
@@ -320,45 +352,36 @@ async def main():
         print(f"Error parsing chapters: {e}")
         return
         
-    print(f"Found {len(chapters)} sections to convert:")
-    for ch in chapters:
-        print(f"  [{ch['index']}] {ch['title']}")
-        
-    # Generate audio files sequentially
+    print(f"Found {len(chapters)} sections to convert.")
+    
+    chapter_files = []
+    
+    # Process chapters sequentially
     for ch in chapters:
         if ch["filename"].startswith("00_"):
-            print("Skipping YAML block file...")
             continue
-        await generate_chapter_audio(ch)
+        await generate_chapter_audio(ch, temp_dir, p_silence, t_silence)
+        chapter_files.append(os.path.join(OUTPUT_DIR, ch["filename"]))
+        chapter_files.append(c_silence)
         
-    # Combine chapters into a single audiobook using ffmpeg
-    print("\nCombining chapters into a single audiobook file...")
-    concat_list_path = os.path.join(OUTPUT_DIR, "concat_list.txt")
-    with open(concat_list_path, "w", encoding="utf-8") as f:
-        for ch in chapters:
-            if ch["filename"].startswith("00_"):
-                continue
-            f.write(f"file '{ch['filename']}'\n")
-            
-    # ffmpeg concat demuxer command
-    cmd = [
-        "ffmpeg", "-y",
-        "-f", "concat",
-        "-safe", "0",
-        "-i", concat_list_path,
-        "-c", "copy",
-        FINAL_AUDIO
-    ]
-    
-    print(f"Running ffmpeg: {' '.join(cmd)}")
-    try:
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
-        print(f"\nSuccess! Full audiobook generated as '{FINAL_AUDIO}'")
-    except subprocess.CalledProcessError as e:
-        print(f"\nError running ffmpeg to combine files: {e}")
-        print("Standard error:")
-        print(e.stderr)
-        print("\nIndividual chapter files are still available in the '{OUTPUT_DIR}/' directory.")
+    # Combine chapters into the final master audiobook
+    if chapter_files:
+        chapter_files.pop()  # Remove trailing chapter silence
+        print("\nCombining all chapters into the final audiobook...")
+        concatenate_mp3_files(chapter_files, FINAL_AUDIO)
+        print(f"\n[SUCCESS] Custom-paced Edge TTS Audiobook generated as '{FINAL_AUDIO}'!")
+        
+        # Clean up temp files
+        for f in [p_silence, t_silence, c_silence]:
+            if os.path.exists(f):
+                os.remove(f)
+        if os.path.exists(temp_dir):
+            try:
+                os.rmdir(temp_dir)
+            except OSError:
+                pass
+    else:
+        print("[ERROR] No chapters were voiced.")
 
 if __name__ == "__main__":
     asyncio.run(main())
