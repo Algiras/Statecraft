@@ -8,13 +8,13 @@
 }
 
 \usepackage{fontspec}
-\setmainfont{Georgia}[
-  Scale = 1.0,
-  Ligatures = TeX
-]
-\setsansfont{Helvetica Neue}[
-  Scale = 0.95
-]
+\IfFontExistsTF{Georgia}{%
+  \setmainfont{Georgia}[Scale=1.0,Ligatures=TeX]%
+  \setsansfont{Helvetica Neue}[Scale=0.95]%
+}{%
+  \setmainfont{DejaVu Serif}[Scale=1.0,Ligatures=TeX]%
+  \setsansfont{DejaVu Sans}[Scale=0.95]%
+}
 
 \usepackage{setspace}
 \onehalfspacing
