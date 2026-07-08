@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="348" viewBox="0 0 900 348" role="img" aria-labelledby="title desc">
+  <title id="title">ARTICLE 4: INVIOLABILITY OF THE DATA EMBASSY</title>
+  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
+  <rect width="900" height="348" rx="14" fill="#171821"/>
+  <rect x="1" y="1" width="898" height="346" rx="13" fill="none" stroke="#32354a"/>
+  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
+  <text x="32" y="54" class="line">ARTICLE 4: INVIOLABILITY OF THE DATA EMBASSY</text>
+  <text x="32" y="76" class="line">1. The premises, server racks, network equipment, and digital storage devices</text>
+  <text x="32" y="98" class="line">   belonging to the Guest Country and located within the territory of the Host</text>
+  <text x="32" y="120" class="line">   Country shall be inviolable. </text>
+  <text x="32" y="142" class="line">2. Agents of the Host Country may not enter the server racks or access the data</text>
+  <text x="32" y="164" class="line">   stored therein without the express consent of the Ambassador of the Guest</text>
+  <text x="32" y="186" class="line">   Country.</text>
+  <text x="32" y="208" class="line">3. The servers and data shall be immune from search, requisition, attachment,</text>
+  <text x="32" y="230" class="line">   or execution by any administrative, judicial, or military authority of the</text>
+  <text x="32" y="252" class="line">   Host Country.</text>
+  <text x="32" y="274" class="line">4. The Host Country shall permit the Guest Country to import, install, and operate</text>
+  <text x="32" y="296" class="line">   cryptographic communication equipment under full diplomatic pouch privileges.</text>
+  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+</svg>

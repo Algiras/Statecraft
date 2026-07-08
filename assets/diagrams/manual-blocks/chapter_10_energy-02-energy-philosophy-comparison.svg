@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="436" viewBox="0 0 900 436" role="img" aria-labelledby="title desc">
+  <title id="title">ENERGY PHILOSOPHY COMPARISON</title>
+  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
+  <rect width="900" height="436" rx="14" fill="#171821"/>
+  <rect x="1" y="1" width="898" height="434" rx="13" fill="none" stroke="#32354a"/>
+  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
+  <text x="32" y="54" class="line">                  ENERGY PHILOSOPHY COMPARISON</text>
+  <text x="32" y="76" class="line">    +-------------------------------------------------------+</text>
+  <text x="32" y="98" class="line">    |                    FRANCE                             |</text>
+  <text x="32" y="120" class="line">    |  * Centralized, state-owned utility (EDF)             |</text>
+  <text x="32" y="142" class="line">    |  * High energy density (Nuclear baseload ~70%)        |</text>
+  <text x="32" y="164" class="line">    |  * Low strategic reliance on foreign fuel imports     |</text>
+  <text x="32" y="186" class="line">    |  * Standardized fleet, small spatial footprint        |</text>
+  <text x="32" y="208" class="line">    +-------------------------------------------------------+</text>
+  <text x="32" y="230" class="line">                              vs</text>
+  <text x="32" y="252" class="line">    +-------------------------------------------------------+</text>
+  <text x="32" y="274" class="line">    |                    GERMANY                            |</text>
+  <text x="32" y="296" class="line">    |  * Decentralized, market-driven subsidies             |</text>
+  <text x="32" y="318" class="line">    |  * Low energy density (Wind/Solar intermittent)       |</text>
+  <text x="32" y="340" class="line">    |  * High strategic reliance on Russian natural gas     |</text>
+  <text x="32" y="362" class="line">    |  * Bespoke installations, large spatial footprint     |</text>
+  <text x="32" y="384" class="line">    +-------------------------------------------------------+</text>
+  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+</svg>

@@ -69,6 +69,6 @@ The book maps nationhood as **software** — not merely borders and armies (**ha
 | 11 | **Recognition** | De facto vs. de jure statehood |
 | 12 | **Integration** | Do all pillars reinforce each other? |
 
-![The twelve pillars that a functional state must build, maintain, and integrate.](../img_twelve_pillars.jpg){#fig-twelve-pillars fig-align="center"}
+![The twelve pillars that a functional state must build, maintain, and integrate.](../assets/images/img_twelve_pillars.jpg){#fig-twelve-pillars fig-align="center"}
 
 The **Introduction** establishes the Sandbox Fallacy. **Chapters 1–10** each examine one pillar in depth. The **Conclusion** synthesizes the Statecraft Matrix and provides the Accidental Founder's Diagnostic Checklist.

@@ -1,6 +1,6 @@
 # Chapter 1: The Parliament of Elders (The Paradox of Legitimacy)
 
-![How Somaliland succeeded with bottom-up legitimacy where Somalia's top-down state-building failed.](../img_somaliland_vs_somalia.jpg){#fig-somaliland-somalia fig-align="center"}
+![How Somaliland succeeded with bottom-up legitimacy where Somalia's top-down state-building failed.](../assets/images/img_somaliland_vs_somalia.jpg){#fig-somaliland-somalia fig-align="center"}
 
 ## 1. The Hook: Mogadishu’s Mirage and the Acacia Tree
 
@@ -105,7 +105,7 @@ Under the *Xeer*, there is no distinction between civil and criminal law. All in
 
 Consider how a serious crime, such as a homicide, is resolved under the *Xeer*:
 
-![The Xeer dispute resolution flow converts revenge risk into compensated settlement.](../diagrams/xeer-dispute-resolution.svg){#fig-xeer-dispute-resolution fig-align="center"}
+![The Xeer dispute resolution flow converts revenge risk into compensated settlement.](../assets/diagrams/xeer-dispute-resolution.svg){#fig-xeer-dispute-resolution fig-align="center"}
 
 When a murder occurs, the victim's clan does not contact the police. Instead, the elders of the victim's clan and the killer's clan immediately step in to prevent a blood feud. A blood feud occurs when the victim's relatives seek revenge by killing any member of the killer's clan. To prevent this cycle of violence, the elders declare a temporary truce.
 
@@ -188,7 +188,7 @@ Before you design an institution, you must master three fundamental concepts:
 
 If you are building an organization in an environment where trust is low and formal institutions are weak, you must follow the Borama Process. This is a five-stage framework designed to cultivate bottom-up legitimacy.
 
-![The Borama Process is a five-stage framework for cultivating bottom-up legitimacy.](../diagrams/borama-process.svg){#fig-borama-process fig-align="center"}
+![The Borama Process is a five-stage framework for cultivating bottom-up legitimacy.](../assets/diagrams/borama-process.svg){#fig-borama-process fig-align="center"}
 
 #### Step 1: Identify the Existing Software (The Diagnostic Stage)
 Before you write a single rule or draft a charter, you must map the existing systems of authority and dispute resolution. 
@@ -253,7 +253,7 @@ A common criticism of hybrid political orders is that they are structurally stat
 
 Somaliland’s recent history offers an instructive, albeit imperfect, model for this transition. The country has spent the last two decades engaged in a slow, sometimes painful process of **rational-legal encroachment**. The strategy is not to replace the traditional software, but to slowly expand the domain of the modern hardware.
 
-![The transition path narrows traditional authority while modern institutions earn legitimacy.](../diagrams/hybrid-transition-path.svg){#fig-hybrid-transition-path fig-align="center"}
+![The transition path narrows traditional authority while modern institutions earn legitimacy.](../assets/diagrams/hybrid-transition-path.svg){#fig-hybrid-transition-path fig-align="center"}
 
 1.  **Phase 1: Stabilization (The Borama Era)**: Traditional structures are dominant. The modern state is a shell, and the *Guurti* acts as the primary executive and legislative arbitrator. The law is almost entirely *Xeer*.
 2.  **Phase 2: Encroachment (The Electoral Era)**: The state introduces political parties and popular elections, but limits them to three national parties to prevent direct alignment with the three major clans. The lower house becomes fully democratic, while the *Guurti* remains customary. The state begins to collect taxes and build a professional bureaucracy, slowly replacing the lineage-based dispute resolution with statutory courts for commercial and administrative disputes.

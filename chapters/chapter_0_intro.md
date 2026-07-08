@@ -1,6 +1,6 @@
 # Introduction: The Sandbox Fallacy
 
-![The central thesis: nationhood is software, not hardware.](../img_hardware_vs_software.jpg){#fig-hardware-software fig-align="center"}
+![The central thesis: nationhood is software, not hardware.](../assets/images/img_hardware_vs_software.jpg){#fig-hardware-software fig-align="center"}
 
 ## 1. The Hook: The Danube Anomaly
 
@@ -195,32 +195,13 @@ The state is not a computer program that can be hacked. It is a social, historic
 
 ## 4. The Manual Page: Technical Reference
 
-```
-STATECRAFT MANUAL                          SECTION 0: FOUNDATIONAL CONCEPTS
-REFERENCE: MONTEVIDEO & WESTPHALIA         EFFECTIVE: JULY 2026
-```
+![STATECRAFT MANUAL SECTION 0: FOUNDATIONAL CONCEPTS](../assets/diagrams/manual-blocks/chapter_0_intro-01-statecraft-manual-section-0-foundational-concepts.svg){#fig-chapter-0-intro-01-statecraft-manual-section-0-foundatio fig-align="center"}
 
 ### I. The Montevideo Convention Criteria (1933)
 
 The Montevideo Convention on the Rights and Duties of States remains the primary treaty governing the definition of statehood under public international law. While signed as a regional treaty in the Americas, its Article 1 is widely accepted as reflective of customary international law.
 
-```
-+-----------------------------------------------------------------+
-|               MONTEVIDEO CRITERIA FOR STATEHOOD                 |
-+------------------------------------+----------------------------+
-| 1. Permanent Population            | 2. Defined Territory       |
-|    - Numerical size irrelevant     |    - Borders may be        |
-|    - Must exhibit community life   |      disputed or narrow    |
-|    - Virtual/online presence       |    - Must be a natural     |
-|      does not qualify              |      portion of the earth  |
-+------------------------------------+----------------------------+
-| 3. Government                      | 4. Capacity for Relations  |
-|    - Must exercise effective administrative | - Ability to enter into  |
-|      control over territory and population   |   treaties and relations |
-|    - Monopoly on physical force    | - Requires recognition   |
-|      (Weberian criterion)          |   by existing states     |
-+------------------------------------+----------------------------+
-```
+![MONTEVIDEO CRITERIA FOR STATEHOOD](../assets/diagrams/manual-blocks/chapter_0_intro-02-montevideo-criteria-for-statehood.svg){#fig-chapter-0-intro-02-montevideo-criteria-for-statehood fig-align="center"}
 
 #### Legal Interpretations & Operational Constraints
 
@@ -242,25 +223,7 @@ In international law, two competing schools of thought explain how a state achie
 
 Westphalian Sovereignty is the foundational organizing principle of the modern international system. It emerged from the Peace of Westphalia in 1648, which ended the Thirty Years' War in the Holy Roman Empire and the Eighty Years' War between Spain and the Dutch Republic.
 
-```
-                   THE WESTPHALIAN MODEL
-                   
-     +-----------------------------------------------+
-     |              SOVEREIGN EQUALITY               |
-     |  - All states are legally equal under law    |
-     +-----------------------+-----------------------+
-                             |
-     +-----------------------v-----------------------+
-     |             TERRITORIAL INTEGRITY             |
-     |  - State has exclusive authority over land    |
-     +-----------------------+-----------------------+
-                             |
-     +-----------------------v-----------------------+
-     |               NON-INTERVENTION                |
-     |  - External powers cannot interfere in internal |
-     |    affairs of a sovereign state               |
-     +-----------------------------------------------+
-```
+![THE WESTPHALIAN MODEL](../assets/diagrams/manual-blocks/chapter_0_intro-03-the-westphalian-model.svg){#fig-chapter-0-intro-03-the-westphalian-model fig-align="center"}
 
 #### Core Tenets
 
@@ -274,28 +237,7 @@ Westphalian Sovereignty is the foundational organizing principle of the modern i
 
 The distinction between *de facto* (in fact) and *de jure* (in law) sovereignty is one of the most critical concepts for any founder to understand. It represents the divide between physical reality and legal recognition.
 
-```
-+-----------------------------------------------------------------------+
-|                 SOVEREIGNTY COMPARISON MATRIX                         |
-+----------------------+----------------------+-------------------------+
-| Feature              | De Facto Sovereignty | De Jure Sovereignty     |
-+----------------------+----------------------+-------------------------+
-| Definition           | Control in physical  | Recognition in law      |
-|                      | reality              |                         |
-+----------------------+----------------------+-------------------------+
-| Source of Authority  | Military control,    | UN membership, treaties,|
-|                      | police, tax systems  | diplomatic recognition  |
-+----------------------+----------------------+-------------------------+
-| Vulnerability        | High risk of military| High stability; borders |
-|                      | invasion or collapse | legally protected       |
-+----------------------+----------------------+-------------------------+
-| Example: Taiwan      | High (Full control   | Low (Only 12 states     |
-|                      | on the ground)       | recognize officially)   |
-+----------------------+----------------------+-------------------------+
-| Example: Order of    | Low (No territory or | High (Recognized by 113 |
-| Malta                | physical population) | states; UN observer)    |
-+----------------------+----------------------+-------------------------+
-```
+![SOVEREIGNTY COMPARISON MATRIX](../assets/diagrams/manual-blocks/chapter_0_intro-04-sovereignty-comparison-matrix.svg){#fig-chapter-0-intro-04-sovereignty-comparison-matrix fig-align="center"}
 
 #### Operational Definitions
 
@@ -310,6 +252,4 @@ The distinction between *de facto* (in fact) and *de jure* (in law) sovereignty 
 
 ---
 
-```
-[END OF SECTION 0]
-```
+![[END OF SECTION 0]](../assets/diagrams/manual-blocks/chapter_0_intro-05-end-of-section-0.svg){#fig-chapter-0-intro-05-end-of-section-0 fig-align="center"}

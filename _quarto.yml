@@ -9,7 +9,7 @@ book:
   date: "July 2026"
   site-url: "https://algiras.github.io/Statecraft/"
   repo-url: "https://github.com/Algiras/Statecraft"
-  favicon: statecraft_book_cover.jpg
+  favicon: assets/images/statecraft_book_cover.jpg
   downloads: [epub]
   sharing: [twitter, facebook, linkedin]
   search: true
@@ -52,16 +52,16 @@ format:
         <meta property="og:title" content="STATECRAFT — A How-To Guide for the Accidental Founder">
         <meta property="og:description" content="Why building a country is harder than you think. 67,600 words on sovereignty, legitimacy, currency, housing, and digital governance.">
         <meta property="og:url" content="https://algiras.github.io/Statecraft/">
-        <meta property="og:image" content="https://algiras.github.io/Statecraft/statecraft_book_cover.jpg">
+        <meta property="og:image" content="https://algiras.github.io/Statecraft/assets/images/statecraft_book_cover.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="https://algiras.github.io/Statecraft/statecraft_book_cover.jpg">
+        <meta name="twitter:image" content="https://algiras.github.io/Statecraft/assets/images/statecraft_book_cover.jpg">
   pdf:
     documentclass: book
     pdf-engine: xelatex
     toc: true
     number-sections: true
   epub:
-    cover-image: statecraft_book_cover.jpg
+    cover-image: assets/images/statecraft_book_cover.jpg
     toc: true
 
 execute:

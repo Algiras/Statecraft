@@ -17,7 +17,7 @@ number-sections: false
       <a href="chapters/front_matter.html" class="btn btn-primary">Start Reading</a>
     </p>
   </div>
-  <img src="statecraft_book_cover.jpg" class="cover" alt="Statecraft book cover">
+  <img src="assets/images/statecraft_book_cover.jpg" class="cover" alt="Statecraft book cover">
 </section>
 
 <section class="stats" aria-label="Book statistics">

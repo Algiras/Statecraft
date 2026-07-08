@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">┌─────────────────────────────────────────────────────────────┐</title>
+  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
+  <rect width="900" height="700" rx="14" fill="#171821"/>
+  <rect x="1" y="1" width="898" height="698" rx="13" fill="none" stroke="#32354a"/>
+  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
+  <text x="32" y="54" class="line">   ┌─────────────────────────────────────────────────────────────┐</text>
+  <text x="32" y="76" class="line">   │                     THE SOVEREIGN STATE                     │</text>
+  <text x="32" y="98" class="line">   │   (No fiscal printing authority; must balance budget or    │</text>
+  <text x="32" y="120" class="line">   │    borrow at market rates from commercial lenders)          │</text>
+  <text x="32" y="142" class="line">   └──────────────────────────────┬──────────────────────────────┘</text>
+  <text x="32" y="164" class="line">                                  │ (No Credit / No Deficit Financing)</text>
+  <text x="32" y="186" class="line">                                  ▼</text>
+  <text x="32" y="208" class="line">   ┌─────────────────────────────────────────────────────────────┐</text>
+  <text x="32" y="230" class="line">   │                  THE CURRENCY BOARD SYSTEM                  │</text>
+  <text x="32" y="252" class="line">   │                                                             │</text>
+  <text x="32" y="274" class="line">   │  ┌──────────────────────┐         ┌──────────────────────┐  │</text>
+  <text x="32" y="296" class="line">   │  │   ISSUE DEPARTMENT   │         │  BANKING DEPARTMENT  │  │</text>
+  <text x="32" y="318" class="line">   │  │                      │         │                      │  │</text>
+  <text x="32" y="340" class="line">   │  │ Holds 100% Backing   │         │ (Optional)           │  │</text>
+  <text x="32" y="362" class="line">   │  │ in foreign reserve   │         │ Clearing &amp; settlement│  │</text>
+  <text x="32" y="384" class="line">   │  │ assets (Gold/DEM/EUR)│         │ services for banks.  │  │</text>
+  <text x="32" y="406" class="line">   │  │                      │         │ No lender-of-last-   │  │</text>
+  <text x="32" y="428" class="line">   │  │ Prints domestic notes│         │ resort capability.   │  │</text>
+  <text x="32" y="450" class="line">   │  │ only upon receipt of │         └──────────────────────┘  │</text>
+  <text x="32" y="472" class="line">   │  │ anchor reserves.     │                                   │</text>
+  <text x="32" y="494" class="line">   │  └──────────┬───────────┘                                   │</text>
+  <text x="32" y="516" class="line">   └─────────────┼───────────────────────────────────────────────┘</text>
+  <text x="32" y="538" class="line">                 │ (100% Legal Peg: e.g., 8 EEK = 1 DEM)</text>
+  <text x="32" y="560" class="line">                 ▼</text>
+  <text x="32" y="582" class="line">   ┌─────────────────────────────────────────────────────────────┐</text>
+  <text x="32" y="604" class="line">   │                     THE REAL ECONOMY                        │</text>
+  <text x="32" y="626" class="line">   │    (Unlimited exchange: Domestic Notes &lt;──&gt; Foreign Reserves)│</text>
+  <text x="32" y="648" class="line">   └─────────────────────────────────────────────────────────────┘</text>
+  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+</svg>

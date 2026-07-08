@@ -1,6 +1,6 @@
 # Chapter 2: The Infrastructure of Trust (The Gold in the Vaults)
 
-![Estonia's currency board was a commitment device: every kroon issued had to be backed by reserves.](../img_currency_board.jpg){#fig-currency-board fig-align="center"}
+![Estonia's currency board was a commitment device: every kroon issued had to be backed by reserves.](../assets/images/img_currency_board.jpg){#fig-currency-board fig-align="center"}
 
 ## 1. The Hook: The Cold Winter of Tallinn
 
@@ -158,36 +158,7 @@ The currency board was the foundation of this miracle. It was not a perfect syst
 ### SECTION II: MONETARY INFRASTRUCTURE
 #### SYSTEM DESIGN: THE CURRENCY BOARD ARCHITECTURE
 
-```
-   ┌─────────────────────────────────────────────────────────────┐
-   │                     THE SOVEREIGN STATE                     │
-   │   (No fiscal printing authority; must balance budget or    │
-   │    borrow at market rates from commercial lenders)          │
-   └──────────────────────────────┬──────────────────────────────┘
-                                  │ (No Credit / No Deficit Financing)
-                                  ▼
-   ┌─────────────────────────────────────────────────────────────┐
-   │                  THE CURRENCY BOARD SYSTEM                  │
-   │                                                             │
-   │  ┌──────────────────────┐         ┌──────────────────────┐  │
-   │  │   ISSUE DEPARTMENT   │         │  BANKING DEPARTMENT  │  │
-   │  │                      │         │                      │  │
-   │  │ Holds 100% Backing   │         │ (Optional)           │  │
-   │  │ in foreign reserve   │         │ Clearing & settlement│  │
-   │  │ assets (Gold/DEM/EUR)│         │ services for banks.  │  │
-   │  │                      │         │ No lender-of-last-   │  │
-   │  │ Prints domestic notes│         │ resort capability.   │  │
-   │  │ only upon receipt of │         └──────────────────────┘  │
-   │  │ anchor reserves.     │                                   │
-   │  └──────────┬───────────┘                                   │
-   └─────────────┼───────────────────────────────────────────────┘
-                 │ (100% Legal Peg: e.g., 8 EEK = 1 DEM)
-                 ▼
-   ┌─────────────────────────────────────────────────────────────┐
-   │                     THE REAL ECONOMY                        │
-   │    (Unlimited exchange: Domestic Notes <──> Foreign Reserves)│
-   └─────────────────────────────────────────────────────────────┘
-```
+![┌─────────────────────────────────────────────────────────────┐](../assets/diagrams/manual-blocks/chapter_2_monetary-01-block.svg){#fig-chapter-2-monetary-01-block fig-align="center"}
 
 #### I. Core Operational Principles
 
@@ -238,20 +209,7 @@ The monetary authority must be split into two separate ledgers: the **Issue Depa
     *   *Assets*: Liquid deposits, clearing system assets.
     *   *Liabilities*: Government accounts, clearing accounts.
 
-```
-   TYPICAL BALANCE SHEET: ISSUE DEPARTMENT
-   ┌─────────────────────────────────────┬─────────────────────────────────────┐
-   │ ASSETS                              │ LIABILITIES                         │
-   ├─────────────────────────────────────┼─────────────────────────────────────┤
-   │ 1. Gold Reserves (Valued at market) │ 1. Banknotes in circulation         │
-   │ 2. Anchor Currency Cash Deposits    │ 2. Coins in circulation             │
-   │ 3. Anchor Government Bonds (Liquid) │ 3. Commercial Bank clearing deposits│
-   ├─────────────────────────────────────┼─────────────────────────────────────┤
-   │ TOTAL ASSETS (e.g., $110M)          │ TOTAL LIABILITIES (e.g., $100M)     │
-   ├─────────────────────────────────────┴─────────────────────────────────────┤
-   │ NET SURPLUS (RESERVE RATIO: 110%)                                         │
-   └───────────────────────────────────────────────────────────────────────────┘
-```
+![TYPICAL BALANCE SHEET: ISSUE DEPARTMENT](../assets/diagrams/manual-blocks/chapter_2_monetary-02-typical-balance-sheet-issue-department.svg){#fig-chapter-2-monetary-02-typical-balance-sheet-issue-depart fig-align="center"}
 
 ##### Step 5: Executing the Conversion Protocol
 1. **Declare a Conversion Window**: Typically 3 to 5 days.

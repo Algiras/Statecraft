@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="172" viewBox="0 0 900 172" role="img" aria-labelledby="title desc">
+  <title id="title">[ HIGH EXTRACTION ] &lt; &gt; [ LOW EXTRACTION ]</title>
+  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
+  <rect width="900" height="172" rx="14" fill="#171821"/>
+  <rect x="1" y="1" width="898" height="170" rx="13" fill="none" stroke="#32354a"/>
+  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
+  <text x="32" y="54" class="line">       [ HIGH EXTRACTION ]  &lt;============================&gt;  [ LOW EXTRACTION ]</text>
+  <text x="32" y="76" class="line">      Destroys legitimacy,                                  Starves the state,</text>
+  <text x="32" y="98" class="line">      drives capital underground,                           prevents service delivery,</text>
+  <text x="32" y="120" class="line">      triggers tax flight/rebellion.                        leads to collapse/weakness.</text>
+  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+</svg>

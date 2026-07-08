@@ -172,13 +172,7 @@ Don Pepe’s sledgehammer had not just broken a wall. It had rewritten the formu
 
 ## 4. The Manual Page: Founder's Manual: Defense & Security
 
-```
-================================================================================
-                    FOUNDER'S MANUAL: SYSTEM DEPLOYMENT
---------------------------------------------------------------------------------
-MODULE 4.1: THE DEMILITARIZATION PROTOCOL & ALTERNATIVE DEFENSE PARADIGMS
-================================================================================
-```
+![FOUNDER'S MANUAL: SYSTEM DEPLOYMENT](../assets/diagrams/manual-blocks/chapter_4_security-01-founder-s-manual-system-deployment.svg){#fig-chapter-4-security-01-founder-s-manual-system-deployment fig-align="center"}
 
 ### I. Conceptual Definitions
 
@@ -212,34 +206,7 @@ For the accidental founder, designing the security architecture of a new state r
 
 If your analysis indicates that complete demilitarization is the optimal path for your state, you must execute the transition systematically to prevent a security vacuum.
 
-```
-[ ] STEP 1: CONSTITUTIONAL DE-ESCALATION
-    Implement an absolute constitutional ban on the creation and maintenance of a
-    standing military. 
-    *Action:* Draft a clause similar to Article 12 of the Costa Rican Constitution: 
-    "The army as a permanent institution is proscribed. For the watch and preservation
-    of public order, there shall be the necessary police forces."
-
-[ ] STEP 2: LAW ENFORCEMENT BIFURCATION
-    Separate domestic police, border patrol, and intelligence services into distinct
-    civilian agencies. Do not allow them to share command structures, heavy weaponry, 
-    or military doctrines. 
-    *Rationale:* A militarized police force is simply a Praetorian army by another name.
-    Keep domestic police under the Ministry of Government, and border/coast guards under
-    the Ministry of Public Security.
-
-[ ] STEP 3: REGIONAL TREATY ARBITRAGE
-    Before formalizing disarmament, secure membership in a robust mutual defense pact
-    (e.g., Rio Treaty, NATO, or a bilateral defense treaty with a regional hegemon).
-    *Action:* Ensure the treaty contains a clear "an attack on one is an attack on all"
-    clause and that your state is recognized as a neutral, disarmed member.
-
-[ ] STEP 4: DIVIDEND RING-FENCING
-    Pass organic laws that legally bind the savings from the defense budget directly
-    to human capital trust funds.
-    *Warning:* If the savings are absorbed into general administrative expenses, they
-    will be captured by bureaucratic corruption, destroying the social cohesion dividend.
-```
+![[ ] STEP 1: CONSTITUTIONAL DE ESCALATION](../assets/diagrams/manual-blocks/chapter_4_security-02-step-1-constitutional-de-escalation.svg){#fig-chapter-4-security-02-step-1-constitutional-de-escalatio fig-align="center"}
 
 ---
 
@@ -249,26 +216,7 @@ If your analysis indicates that complete demilitarization is the optimal path fo
 
 For states where complete demilitarization is impossible due to immediate, hostile neighbors, the **Citizen Militia** model offers an alternative method to suppress the Praetorian Coefficient.
 
-```
-                     +---------------------------------------+
-                     |          UNIVERSAL CONSCRIPTION       |
-                     +---------------------------------------+
-                                         |
-                                         v
-                     +---------------------------------------+
-                     |    CIVIL-MILITARY BLENDING PROTOCOL   |
-                     +---------------------------------------+
-                                         |
-             +---------------------------+---------------------------+
-             |                                                       |
-             v                                                       v
-+---------------------------------------+               +---------------------------------------+
-|        CITIZEN-SOLDIER MATRIX         |               |          TOTAL DEFENSE SYSTEMS        |
-| - Weapons stored at citizen residences|               | - Roadways serve as emergency runways |
-| - Military rank tied to civilian job  |               | - Structural bunkers in all buildings |
-| - Annual training cycles (3-4 weeks)  |               | - Food and fuel stockpiles (2-year)   |
-+---------------------------------------+               +---------------------------------------+
-```
+![UNIVERSAL CONSCRIPTION](../assets/diagrams/manual-blocks/chapter_4_security-03-universal-conscription.svg){#fig-chapter-4-security-03-universal-conscription fig-align="center"}
 
 *   **Mechanic:** Every able-bodied citizen undergoes mandatory training, returning to civilian life with their basic infantry gear and service rifle. The army does not exist as a separate, isolated professional caste.
 *   **Result:** A professional officer corps cannot easily launch a coup, because the weapons and the bulk of the fighting force are distributed throughout the general population. If the generals try to seize the parliament, they face an armed, trained citizenry defending their own homes.
@@ -277,12 +225,7 @@ For states where complete demilitarization is impossible due to immediate, hosti
 
 For micro-states (population < 100,000), the administrative overhead of maintaining any military or militia is economically ruinous. The solution is **Hegemonic Underwriting**.
 
-```
-+------------------+     Defense Rights (Exclusive Access)     +------------------+
-|      PALAU       | ----------------------------------------> |  UNITED STATES   |
-| (Population: 18k)| <---------------------------------------- |   (Superpower)   |
-+------------------+     Financial Aid & Security Shield       +------------------+
-```
+![Defense Rights (Exclusive Access)](../assets/diagrams/manual-blocks/chapter_4_security-04-defense-rights-exclusive-access.svg){#fig-chapter-4-security-04-defense-rights-exclusive-access fig-align="center"}
 
 *   **Mechanic:** Under the Compact of Free Association (COFA), the United States provides direct financial assistance, access to federal programs, and full defense protection. In return, the U.S. receives exclusive military access to the island’s land, territorial waters, and airspace, with the right of veto over any third-party military presence.
 *   **Result:** Palau maintains sovereign control over its domestic affairs, currency, and culture, while paying zero dollars for national defense.
@@ -293,14 +236,7 @@ For micro-states (population < 100,000), the administrative overhead of maintain
 
 If you choose to dismantle your military, you must prepare for the **Disarmament Transition Phase (DTP)**. The most dangerous moment for a reforming state is the window *after* the decision is made but *before* the international treaties and social trust systems are fully mature.
 
-```
-       HIGH RISK ZONE: Disarmed but treaty not active
-       ==============================================
-       [Disarm Decision] --------------> [Treaty Active]
-              |                                 |
-              v                                 v
-       (No Military)                     (OAS / Superpower Shield)
-```
+![HIGH RISK ZONE: Disarmed but treaty not active](../assets/diagrams/manual-blocks/chapter_4_security-05-high-risk-zone-disarmed-but-treaty-not-active.svg){#fig-chapter-4-security-05-high-risk-zone-disarmed-but-treaty fig-align="center"}
 
 During this transitional window (typically 6 to 18 months), you must maintain a highly alert, covert intelligence unit to monitor internal military factions. The old guard of the military will seek to strike *before* they lose their weapons and their pensions. You must bribe the senior officer corps with generous early-retirement packages and land grants, converting their physical threat into economic complacency. 
 

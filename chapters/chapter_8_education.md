@@ -58,23 +58,7 @@ How do you install this software? In the ancient world, it was installed through
 
 That installer is the school system.
 
-```
-+---------------------------------------------------------+
-|                  THE STATE OPERATING SYSTEM             |
-+---------------------------------------------------------+
-|  [Hardware Layer]                                       |
-|  - Territory, Borders, Police, Currency, Infrastructure  |
-+---------------------------------------------------------+
-|  [Software Layer: Installed via School System]          |
-|  - Language Standardization (Shared Communication Protocol)|
-|  - National Mythos (Shared History & Group Identity)     |
-|  - Civic Norms (Voluntary Compliance & Punctuality)     |
-|  - Cognitive Alignment (Shared Value Framework)         |
-+---------------------------------------------------------+
-|  [User Layer: The Citizens]                             |
-|  - Uniform execution of state functions and civic duties|
-+---------------------------------------------------------+
-```
+![THE STATE OPERATING SYSTEM](../assets/diagrams/manual-blocks/chapter_8_education-01-the-state-operating-system.svg){#fig-chapter-8-education-01-the-state-operating-system fig-align="center"}
 
 When a child walks through the doors of a school for the first time, they are not just entering a building to learn how to read, write, and compute. They are entering the state's processing plant. The school is the place where the raw, diverse, and chaotic elements of human biology are refined and standardized into citizens. 
 
@@ -110,18 +94,7 @@ This is the industrial education model. It is so ubiquitous that we tend to view
 
 But it is not. The industrial school is a highly specific, historical piece of engineering. It was designed in the early nineteenth century in Prussia, not to optimize human learning, but to optimize human compliance. It was a model built to solve a very specific problem of the Industrial Revolution: how to take a population of independent, self-directed agricultural peasants and turn them into compliant, punctual, and reliable factory workers and infantrymen.
 
-```
-THE INDUSTRIAL ASSEMBLY LINE OF CITIZENSHIP (PRUSSIAN MODEL)
-+------------------+     +-------------------+     +------------------+
-|   Raw Material   |     |    Processing     |     |  Finished Output |
-| (Diverse Child)  | --> | (Grade/Bell/Test) | --> | (Standard Worker)|
-+------------------+     +-------------------+     +------------------+
-          ^                        ^                         ^
-          |                        |                         |
-      Age-Batched             Standardized               Compliant,
-    Raw Inputs Only           Instruction               Punctual, &
-                            & Rote Learning              Obedient
-```
+![THE INDUSTRIAL ASSEMBLY LINE OF CITIZENSHIP (PRUSSIAN MODEL)](../assets/diagrams/manual-blocks/chapter_8_education-02-the-industrial-assembly-line-of-citizenship-prussian-mod.svg){#fig-chapter-8-education-02-the-industrial-assembly-line-of-c fig-align="center"}
 
 Think about the requirements of an early industrial factory. The factory owner did not need creative thinkers. He did not need children who could question authority, collaborate on projects, or follow their own intellectual curiosities. In fact, those qualities were a liability. 
 
@@ -150,18 +123,7 @@ How do we build a different kind of human capital engine? How do we design a sch
 
 To answer this question, we must look at two modern outliers that have broken away from the Prussian blueprint: Finland and Estonia.
 
-```
-THE POST-INDUSTRIAL HUMAN CAPITAL NETWORK (MODERN BLUEPRINT)
-         +---------------------------------------+
-         |        Individualized Learner         |
-         +---------------------------------------+
-            /                 |                 \
-           /                  |                  \
-+-------------------+ +---------------+ +-------------------+
-| Professional      | | Digital eID   | | Competency-Based  |
-| Autonomous Teacher| | & e-School    | | Continuous Path   |
-+-------------------+ +---------------+ +-------------------+
-```
+![THE POST INDUSTRIAL HUMAN CAPITAL NETWORK (MODERN BLUEPRINT)](../assets/diagrams/manual-blocks/chapter_8_education-03-the-post-industrial-human-capital-network-modern-bluepri.svg){#fig-chapter-8-education-03-the-post-industrial-human-capital fig-align="center"}
 
 ### The Finnish Model: The Power of Trust and Autonomy
 
@@ -203,11 +165,7 @@ The payoff has been spectacular. In the 2018 PISA rankings, Estonia surpassed Fi
 
 ## 4. The Manual Page: Technical Reference
 
-```
-STATECRAFT MANUAL                          SECTION 8: HUMAN CAPITAL ENGINE
-DOCUMENT ID: HC-MAN-008-REV2026            EFFECTIVE: JULY 2026
-CLASSIFICATION: PUBLIC BLUEPRINT           TARGET AUDIENCE: NATION FOUNDERS
-```
+![STATECRAFT MANUAL SECTION 8: HUMAN CAPITAL ENGINE](../assets/diagrams/manual-blocks/chapter_8_education-04-statecraft-manual-section-8-human-capital-engine.svg){#fig-chapter-8-education-04-statecraft-manual-section-8-human fig-align="center"}
 
 This reference sheet outlines the specifications, metrics, and implementation frameworks required to establish a high-performance, non-industrial national human capital engine.
 
@@ -254,17 +212,7 @@ Where:
 
 Founders must choose an educational architecture. The matrix below defines the three dominant paradigms:
 
-```
-               [EDUCATIONAL ARCHITECTURAL SPECTRUM]
-                 
-   INDUSTRIAL (Prussian)     AUTONOMOUS (Finnish)     DIGITAL NATIVE (Estonian)
-   +---------------------+   +---------------------+   +-----------------------+
-   | - Centralized       |   | - Decentralized     |   | - Network-Centric     |
-   | - Standardized      |   | - High Trust        |   | - Cryptographic       |
-   | - Obedience Focus   |   | - Individualized    |   | - Equitably Scaled    |
-   | - Low Cost/Low Val  |   | - High Cost/Teacher |   | - Modular Competency  |
-   +---------------------+   +---------------------+   +-----------------------+
-```
+![[EDUCATIONAL ARCHITECTURAL SPECTRUM]](../assets/diagrams/manual-blocks/chapter_8_education-05-educational-architectural-spectrum.svg){#fig-chapter-8-education-05-educational-architectural-spectru fig-align="center"}
 
 | Dimension | Standardized Industrial (Prussian) | Decentralized Autonomous (Finnish) | Digital Native (Estonian) |
 | :--- | :--- | :--- | :--- |
@@ -281,23 +229,7 @@ Founders must choose an educational architecture. The matrix below defines the t
 
 To deploy a modern human capital engine, the state founder must execute the following three-phase transition framework:
 
-```
-+-----------------------------------------------------------------+
-|               HUMAN CAPITAL ENGINE ROLLOUT TIMELINE             |
-+-----------------------------------------------------------------+
-| Phase 1: Competency Deconstruction (Months 1–12)                 |
-| - Abolish traditional subjects. Create 5 core competency fields. |
-| - Deploy state e-School Identity Registry.                     |
-+-----------------------------------------------------------------+
-| Phase 2: Teacher Academy & Clinical Residency (Months 13–24)    |
-| - Transition teacher training to Clinical Residency model.      |
-| - Launch micro-credentialing certification framework.           |
-+-----------------------------------------------------------------+
-| Phase 3: Lifelong Learning Incentives (Months 25+)              |
-| - Initialize Individual Learning Accounts (ILA) for citizens.   |
-| - Launch State Skills Credit System and Corporate Tax Credits.  |
-+-----------------------------------------------------------------+
-```
+![HUMAN CAPITAL ENGINE ROLLOUT TIMELINE](../assets/diagrams/manual-blocks/chapter_8_education-06-human-capital-engine-rollout-timeline.svg){#fig-chapter-8-education-06-human-capital-engine-rollout-time fig-align="center"}
 
 #### Phase 1: Competency-Based Curriculum Design (Months 1–12)
 1.  **Abolish Subject Silos**: Replace traditional, isolated subjects (physics, history, geography) with five cross-disciplinary competency fields:

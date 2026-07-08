@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="392" viewBox="0 0 900 392" role="img" aria-labelledby="title desc">
+  <title id="title">[Open Air Contact Corridor Design Layout]</title>
+  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
+  <rect width="900" height="392" rx="14" fill="#171821"/>
+  <rect x="1" y="1" width="898" height="390" rx="13" fill="none" stroke="#32354a"/>
+  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
+  <text x="32" y="54" class="line">[Open-Air Contact Corridor Design Layout]</text>
+  <text x="32" y="76" class="line"></text>
+  <text x="32" y="98" class="line">┌─────────────────────────────────────────────────────────────┐</text>
+  <text x="32" y="120" class="line">│                       Common Walkway                        │</text>
+  <text x="32" y="142" class="line">│                                                             │</text>
+  <text x="32" y="164" class="line">│   [Door 1]     [Window 1]    [Trash Chute]   [Door 2]       │</text>
+  <text x="32" y="186" class="line">│   ┌──────┐      ┌──────┐       ┌───────┐     ┌──────┐       │</text>
+  <text x="32" y="208" class="line">│   │      │      │      │       │       │     │      │       │</text>
+  <text x="32" y="230" class="line">│   │  C1  │      │  C1  │       │ Shared│     │  M1  │       │</text>
+  <text x="32" y="252" class="line">│   │      │      │      │       │ Area  │     │      │       │</text>
+  <text x="32" y="274" class="line">│   └──────┘      └──────┘       └───────┘     └──────┘       │</text>
+  <text x="32" y="296" class="line">│  Chinese Owner               Shared Interaction              │</text>
+  <text x="32" y="318" class="line">│                              Node (Garbage/Mail)             │</text>
+  <text x="32" y="340" class="line">└─────────────────────────────────────────────────────────────┘</text>
+  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+</svg>

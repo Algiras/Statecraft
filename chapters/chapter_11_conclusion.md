@@ -81,20 +81,7 @@ Instead, a state is governed by what we can call the **Statecraft Matrix**: a cl
 
 In the matrix, you cannot touch one pillar without vibrating the other five. If you attempt to manipulate a single lever in isolation, the system will self-correct, often with catastrophic consequences for the founder. 
 
-```mermaid
-graph TD
-    Legitimacy[1. Legitimacy: Social Software] <--> Money[2. Money: Trust Engine]
-    Money <--> Society[3. Society: Spatial Architecture]
-    Society <--> Security[4. Security: Paradox of Shield]
-    Security <--> Law[5. Law: Sovereign Club]
-    Law <--> Digital[6. Digital: Cloud Registry]
-    Digital <--> Legitimacy
-    Legitimacy <--> Society
-    Money <--> Security
-    Law <--> Legitimacy
-    Digital <--> Money
-    Security <--> Digital
-```
+![The Statecraft Matrix: six pillars as one system](../assets/diagrams/statecraft-matrix.svg){#fig-statecraft-matrix fig-align="center"}
 
 Consider the relationship between **Legitimacy** and **Money**. The standard textbook economics view is that a currency is backed by the productive capacity of an economy. But as Estonia’s Siim Kallas understood, a currency is actually backed by *trust*. If a population does not believe in the legitimacy of the state, they will not hold its currency. They will dump it for dollars, gold, or stablecoins, triggering a run that destroys the state’s fiscal capacity. Conversely, if a currency collapses—as the rouble did in Estonia in 1991—it drags down the legitimacy of the government with it. Hyperinflation is not just an economic metric; it is a political acid that dissolves the social contract. Estonia’s Currency Board was not merely a monetary tool; it was a legitimacy machine. By tying the Kroon to the Deutsche Mark, Kallas was outsourcing Estonia’s monetary legitimacy to a country that already possessed it.
 
@@ -176,14 +163,7 @@ Before you plant your flag, write your constitution, or print your token, you mu
 
 Answer these questions honestly. If you cannot answer a question, or if your answer reveals a gap in your matrix, do not proceed. In the game of statecraft, an unbalanced matrix is a fatal flaw.
 
-```
-+-----------------------------------------------------------------------+
-|                 STATECRAFT VIABILITY DIAGNOSTIC TEST                  |
-|                                                                       |
-| Pillar Score: Rate each pillar from 1 (Fragile) to 5 (Resilient)      |
-| Minimum Viability Threshold: 20/30 total score, with no pillar < 3    |
-+-----------------------------------------------------------------------+
-```
+![STATECRAFT VIABILITY DIAGNOSTIC TEST](../assets/diagrams/manual-blocks/chapter_11_conclusion-01-statecraft-viability-diagnostic-test.svg){#fig-chapter-11-conclusion-01-statecraft-viability-diagnostic fig-align="center"}
 
 ### Pillar 1: Legitimacy (The Social Software)
 *Legitimacy is not imported; it must be grown from the soil of existing human relationships.*

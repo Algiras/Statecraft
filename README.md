@@ -7,7 +7,7 @@ Written by **Antigravity & Algimantas**
 ---
 
 <p align="center">
-  <img src="statecraft_book_cover.jpg" width="400" alt="Statecraft Book Cover">
+  <img src="assets/images/statecraft_book_cover.jpg" width="400" alt="Statecraft Book Cover">
 </p>
 
 ---
@@ -145,6 +145,7 @@ chapters/
   chapter_11_conclusion.md        ← Conclusion + diagnostic checklist
   back_matter.md                  ← Acknowledgments, references, sources, methods
 merge_chapters.py                 ← Merges all parts → book.md
+assets/diagrams/                 ← SVG diagrams and manual figures
 _quarto.yml                       ← Quarto book configuration
 index.qmd                         ← Quarto book landing page
 quarto-book.scss                  ← Custom Quarto book theme
@@ -152,8 +153,8 @@ quarto-book.css                   ← Optional CSS hook for Quarto overrides
 compile_html.py                   ← Legacy standalone HTML exporter
 compile_pdf.sh                    ← XeLaTeX PDF
 compile_epub.sh                   ← EPUB for e-readers
-statecraft_book_cover.jpg         ← Cover art
-img_*.jpg                         ← Inline infographic charts
+assets/images/statecraft_book_cover.jpg         ← Cover art
+assets/images/img_*.jpg          ← Inline infographic charts
 .github/workflows/deploy.yml       ← CI: Quarto render → GitHub Pages
 .github/workflows/release.yml     ← CD: tag → PDF + EPUB + book.md → Release
 ```
