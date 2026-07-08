@@ -24,32 +24,6 @@ The authors write in the tradition of accessible explanatory journalism — part
 
 ---
 
-## How to Use This Edition {#how-to-use}
-
-This edition is designed to work across three reading surfaces:
-
-| Surface | Best for | Access |
-|--------|----------|--------|
-| **Web** | Deep reading with diagrams, math, and interactive TOC | [algiras.github.io/Statecraft](https://algiras.github.io/Statecraft/) |
-| **PDF** | Print, annotation, offline archive | [Latest Release](https://github.com/Algiras/Statecraft/releases/latest) |
-| **EPUB** | Kindle, Apple Books, Kobo | [Latest Release](https://github.com/Algiras/Statecraft/releases/latest) |
-
-**Web reading controls** (sticky header toolbar):
-
-- **☰ Contents** — table of contents / chapter sidebar
-- **A− / A+** — adjust font size
-- **☀ / 🌙** — light and dark reading themes
-- **◎ Focus** — hide cover and sidebar for distraction-free reading
-
-Each chapter follows a consistent Gladwellian arc:
-
-1. **The Hook** — a specific historical scene
-2. **The Pivot** — the counter-intuitive research insight
-3. **The Investigation** — deeper analysis and case comparison
-4. **The Manual Page** — actionable checklists, protocols, and diagnostic tools
-
----
-
 ## The Twelve Pillars at a Glance {#pillars-glance}
 
 The book maps nationhood as **software** — not merely borders and armies (**hardware**). Twelve interdependent pillars recur across the narrative:

@@ -38,7 +38,6 @@ The book is published as a free, structured web edition at:
 | **Cover** | Hero | Title, cover art, stats, download buttons |
 | **Front Matter** | Copyright Notice | CC BY 4.0, citation, disclaimer |
 | | About the Authors | Who wrote the book and why |
-| | How to Use This Edition | Web / PDF / EPUB guide and reading controls |
 | | The Twelve Pillars at a Glance | Overview table of all statecraft pillars |
 | **Table of Contents** | TOC page | Linked index of every section |
 | **Introduction** | Ch. 0 — *The Sandbox Fallacy* | Liberland, Westphalia, hardware vs. software |
