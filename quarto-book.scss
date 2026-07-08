@@ -66,11 +66,11 @@ h1.title {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
-  gap: 56px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
   margin: 36px auto 48px;
-  max-width: 920px;
+  max-width: 720px;
 }
 
 .hero-copy {
@@ -115,7 +115,7 @@ h1.title {
   border-radius: 10px;
   box-shadow: 0 26px 52px rgba(0, 0, 0, 0.24);
   display: grid;
-  justify-self: end;
+  justify-self: center;
   max-height: 450px;
   overflow: hidden;
   padding: 10px;
@@ -177,6 +177,33 @@ figcaption {
   color: var(--statecraft-muted);
   font-family: $font-family-sans-serif;
   font-size: 0.9rem;
+}
+
+.manual-panel {
+  background: var(--statecraft-surface);
+  border: 1px solid var(--statecraft-border);
+  border-left: 4px solid var(--statecraft-accent);
+  border-radius: 8px;
+  font-family: $font-family-sans-serif;
+  margin-block: 1.6rem;
+  padding: 1rem 1.15rem;
+}
+
+.manual-panel > p:first-child {
+  color: var(--statecraft-accent);
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.manual-panel ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.manual-panel li {
+  margin: 0.4rem 0;
 }
 
 .table {

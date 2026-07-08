@@ -221,7 +221,12 @@ Only then can you secure the biological foundation of your sovereignty.
 
 This section outlines the technical protocols, administrative structures, and policy frameworks required to establish a resilient, legitimate public health infrastructure.
 
-![STATECRAFT MANUAL: VOLUME VII, SECTION 4](../assets/diagrams/manual-blocks/chapter_7_health-01-statecraft-manual-volume-vii-section-4.svg){#fig-chapter-7-health-01-statecraft-manual-volume-vii-section fig-align="center"}
+::: {.manual-panel}
+**STATECRAFT MANUAL: VOLUME VII, SECTION 4**
+
+- DOCUMENT CLASS: ADMINISTRATIVE PROTOCOL
+- SUBJECT: EPIDEMIC SURVEILLANCE, COMMUNICATION, AND CONTAINMENT
+:::
 
 ### I. Protocols for Epidemic Surveillance & Early Warning Systems (EWS)
 
@@ -306,4 +311,8 @@ When an outbreak is confirmed (Alert Level 3), the state must execute containmen
 *   **Establish De-escalation Metrics**: Containment measures must only be eased when the transmission rate ($R_t$) remains below 1.0 for fourteen consecutive days, and the test positivity rate falls below 5%.
 *   **Conduct the PAR**: Within thirty days of de-escalating to Level 1, the Department of Health must publish a public report detailing the source of the outbreak, the efficacy of the containment protocols, the failures of the logistics system, and amendments to the Statecraft Manual for future operations.
 
-![END OF FILE: STATECRAFT MANUAL, VOLUME VII](../assets/diagrams/manual-blocks/chapter_7_health-02-end-of-file-statecraft-manual-volume-vii.svg){#fig-chapter-7-health-02-end-of-file-statecraft-manual-volume fig-align="center"}
+::: {.manual-panel}
+**END OF FILE: STATECRAFT MANUAL, VOLUME VII**
+
+- Manual reference marker.
+:::

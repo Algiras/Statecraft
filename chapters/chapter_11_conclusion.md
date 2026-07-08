@@ -163,7 +163,12 @@ Before you plant your flag, write your constitution, or print your token, you mu
 
 Answer these questions honestly. If you cannot answer a question, or if your answer reveals a gap in your matrix, do not proceed. In the game of statecraft, an unbalanced matrix is a fatal flaw.
 
-![STATECRAFT VIABILITY DIAGNOSTIC TEST](../assets/diagrams/manual-blocks/chapter_11_conclusion-01-statecraft-viability-diagnostic-test.svg){#fig-chapter-11-conclusion-01-statecraft-viability-diagnostic fig-align="center"}
+::: {.manual-panel}
+**STATECRAFT VIABILITY DIAGNOSTIC TEST**
+
+- Pillar Score: Rate each pillar from 1 (Fragile) to 5 (Resilient)
+- Minimum Viability Threshold: 20/30 total score, with no pillar < 3
+:::
 
 ### Pillar 1: Legitimacy (The Social Software)
 *Legitimacy is not imported; it must be grown from the soil of existing human relationships.*

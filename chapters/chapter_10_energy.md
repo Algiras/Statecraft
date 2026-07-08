@@ -58,7 +58,13 @@ Energy is the physical lifeblood of industrial society. It is the fundamental in
 
 In his landmark research on energy and society, the scientist and polymath Vaclav Smil has argued that human history is best understood as a series of transitions between different energy regimes. The transition from human muscle power to draft animals; the transition from wood to coal; the transition from coal to oil and electricity. Each of these transitions was accompanied by an order-of-magnitude increase in **energy density**—the amount of energy stored in a given system or region of space per unit volume or mass.
 
-![WOOD COAL OIL URANIUM](../assets/diagrams/manual-blocks/chapter_10_energy-01-wood-coal-oil-uranium.svg){#fig-chapter-10-energy-01-wood-coal-oil-uranium fig-align="center"}
+::: {.manual-panel}
+**WOOD COAL OIL URANIUM**
+
+- [15-20 MJ/kg] [24-30 MJ/kg] [42-46 MJ/kg] [3,900,000 MJ/kg]
+- #### #### #### ####
+- Low Density Medium High Ultra High
+:::
 
 A kilogram of dry wood contains about 15 to 20 megajoules of energy. A kilogram of coal contains about 24 to 30 megajoules. A kilogram of crude oil contains about 42 to 46 megajoules. 
 
@@ -108,7 +114,20 @@ In 2000, a coalition government of the Social Democratic Party (SPD) and the Gre
 
 In 2011, following the Fukushima nuclear accident in Japan, Chancellor Angela Merkel—a trained physicist who had previously supported extending the lifetimes of Germany’s nuclear plants—made a sudden, dramatic U-turn. She announced that Germany would accelerate its nuclear phase-out, closing eight reactors immediately and committing to shut down the remaining nine by December 2022.
 
-![ENERGY PHILOSOPHY COMPARISON](../assets/diagrams/manual-blocks/chapter_10_energy-02-energy-philosophy-comparison.svg){#fig-chapter-10-energy-02-energy-philosophy-comparison fig-align="center"}
+::: {.manual-panel}
+**ENERGY PHILOSOPHY COMPARISON**
+
+- FRANCE
+- * Centralized, state-owned utility (EDF)
+- * High energy density (Nuclear baseload ~70%)
+- * Low strategic reliance on foreign fuel imports
+- * Standardized fleet, small spatial footprint
+- GERMANY
+- * Decentralized, market-driven subsidies
+- * Low energy density (Wind/Solar intermittent)
+- * High strategic reliance on Russian natural gas
+- * Bespoke installations, large spatial footprint
+:::
 
 To replace the lost nuclear capacity, Germany launched a massive expansion of renewable energy. They poured hundreds of billions of euros into subsidies for wind and solar power, funded through a surcharge on citizens' electricity bills. The landscape of Germany was transformed. Huge wind farms arose in the North Sea and across the plains of Lower Saxony; solar arrays covered the roofs of Bavarian villages.
 
@@ -132,7 +151,12 @@ The monument to this strategic belief was the Nord Stream pipeline system.
 
 Nord Stream 1, completed in 2011, and Nord Stream 2, completed in 2021, were engineered to carry natural gas directly from the Yamal Peninsula in Siberia, under the Baltic Sea, straight to the German coast at Lubmin. Crucially, these pipelines bypassed the traditional transit countries of Eastern Europe—Ukraine, Poland, and the Baltic states. 
 
-![[Siberia Gas Fields] > (Nord Stream Pipelines) > [Germany]](../assets/diagrams/manual-blocks/chapter_10_energy-03-siberia-gas-fields-nord-stream-pipelines-germany.svg){#fig-chapter-10-energy-03-siberia-gas-fields-nord-stream-pipe fig-align="center"}
+::: {.manual-panel}
+**Siberia Gas Fields] > (Nord Stream Pipelines) > [Germany**
+
+- [Siberia Gas Fields] > (Nord Stream Pipelines) > [Germany]
+- > (Transit via Poland/Ukraine) ===> [Eastern Europe]
+:::
 
 This pipeline geography was a geopolitical masterpiece for Moscow. It gave the Kremlin the power to cut off gas supplies to Kiev or Warsaw as a political lever, while keeping the gas flowing to Berlin, preventing a united European response. 
 
@@ -193,7 +217,16 @@ Before designing a national energy grid, the state founder must master the four 
 
 A sovereign grid must not rely on a single energy source. The founder must engineer a diversified national energy mix optimized for resilience, dispatchability, and physical security. The table below outlines the strategic parameters for the four primary generation baseloads:
 
-![IDEAL NATIONAL GRID PROFILE](../assets/diagrams/manual-blocks/chapter_10_energy-04-ideal-national-grid-profile.svg){#fig-chapter-10-energy-04-ideal-national-grid-profile fig-align="center"}
+::: {.manual-panel}
+**IDEAL NATIONAL GRID PROFILE**
+
+- Nuclear Baseload (40-60%) Renewable (20-30%)
+- * Ultra-high density * Distributed risk
+- * High grid inertia * Intermittent
+- Hydroelectric (10-20%) Fossil Backup (10-20%)
+- * Fast response * Dispatchable
+- * Natural battery storage * Strategic reserves
+:::
 
 #### 1. Nuclear Baseload (Target: 40% - 60% of total capacity)
 *   **Role**: Primary thermodynamic foundation. Provides high-inertia, zero-carbon, weather-independent power.
@@ -219,7 +252,19 @@ A sovereign grid must not rely on a single energy source. The founder must engin
 
 A nation's power grid is its most vulnerable physical system. The founder must implement a three-tiered security architecture to protect generation and transmission infrastructure:
 
-![GRID SECURITY ARCHITECTURE](../assets/diagrams/manual-blocks/chapter_10_energy-05-grid-security-architecture.svg){#fig-chapter-10-energy-05-grid-security-architecture fig-align="center"}
+::: {.manual-panel}
+**GRID SECURITY ARCHITECTURE**
+
+- [ LEVEL 1: CYBER PHYSICAL AIR-GAPPING ]
+- - Complete isolation of SCADA networks.
+- - Physical unidirectional data diodes.
+- [ LEVEL 2: PHYSICAL DEFENSE-IN-DEPTH ]
+- - Triple-layered perimeter fences with sensors.
+- - Hardened control rooms resistant to EMP.
+- [ LEVEL 3: DECENTRALIZED ISLANDING ]
+- - Microgrid switching to isolate local areas.
+- - Local generation capacity matching local load.
+:::
 
 #### Rule 1: Cyber-Physical Air-Gapping
 *   **SCADA Isolation**: The Supervisory Control and Data Acquisition (SCADA) systems that control power plants, substations, and transmission lines must be completely air-gapped. They must have no physical or wireless connection to the public internet or the utility's commercial business network.
@@ -238,7 +283,14 @@ A nation's power grid is its most vulnerable physical system. The founder must i
 
 For a newly founded state, transitioning from zero infrastructure to a resilient, sovereign energy system requires a phased development plan. The following five-stage blueprint outlines the transition from immediate survival to long-term energy independence:
 
-![STABILIZATION HYBRIDIZATION STANDARDIZATION SOVEREIGNTY CONSOLIDATION](../assets/diagrams/manual-blocks/chapter_10_energy-06-stabilization-hybridization-standardization-sovereignty-.svg){#fig-chapter-10-energy-06-stabilization-hybridization-standar fig-align="center"}
+::: {.manual-panel}
+**STABILIZATION HYBRIDIZATION STANDARDIZATION SOVEREIGNTY CONSOLIDATION**
+
+- (Months 1-6) (Years 1-3) (Years 3-7) (Years 7-12) (Years 12 )
+- Rapid LNG/ > Solar/Wind > Standard > Commission > Zero-Carbon
+- Diesel Hydro mix Reactor design Standard Grid
+- Baseload and Storage licensed Nuclear Complete
+:::
 
 #### Step 1: The Stabilization Phase (Months 1–6)
 *   **Objective**: Secure immediate electrical survival.

@@ -7,6 +7,12 @@ number-sections: false
 ---
 
 ```{=html}
+<style>
+#title-block-header {
+  display: none;
+}
+</style>
+
 <section class="hero">
   <div class="hero-copy">
     <p class="hero-label">Open Access · July 2026</p>

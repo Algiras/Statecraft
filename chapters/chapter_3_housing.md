@@ -205,7 +205,13 @@ Today, the map of Chicago remains virtually unchanged. The red lines drawn by th
 
 The functional distance between a white teenager in Lincoln Park and a Black teenager in Englewood is as vast as the distance between two planets. They do not attend the same schools, play in the same parks, or share the same tables. When racial tensions flare, there is no shared space to cushion the blow. The city is a collection of hostile enclaves, separated by expressways and decades of distrust.
 
-![[HOLC Map Designations: 1937]](../assets/diagrams/manual-blocks/chapter_3_housing-01-holc-map-designations-1937.svg){#fig-chapter-3-housing-01-holc-map-designations-1937 fig-align="center"}
+::: {.manual-panel}
+**HOLC Map Designations: 1937**
+
+- [HOLC Map Designations: 1937]
+- > A (Green): Affluent White > Capital Accumulation & Wealth Transfer
+- > D (Red): Black/Immigrant > Contract Buying, Disinvestment & Isolation
+:::
 
 ### The Parisian Banlieues: The Architecture of Isolation
 
@@ -231,7 +237,19 @@ Their deaths triggered three weeks of riots that tore through the banlieues of F
 
 The riots of 2005 were not a religious uprising. They were an architectural scream. The youth of the banlieues were protesting their geographic and social isolation. They were French citizens on paper, but in reality, they were prisoners of a concrete ring road.
 
-![[Urban Spatial Comparison]](../assets/diagrams/manual-blocks/chapter_3_housing-02-urban-spatial-comparison.svg){#fig-chapter-3-housing-02-urban-spatial-comparison fig-align="center"}
+::: {.manual-panel}
+**Urban Spatial Comparison**
+
+- [Urban Spatial Comparison]
+- Singapore (HDB/EIP):
+- Integrated High-Rises (Corridors, Void Decks, Hawker)
+- * Demographic Caps: Enforced mixing
+- * Public Spaces: Designed for passive contact
+- Paris (Banlieues):
+- Isolated Grands Ensembles (Cut off by Périphérique)
+- * Color-blind Policy: De facto enclaves
+- * Public Spaces: Disconnected, high unemployment zones
+:::
 
 The contrast between Singapore and the West is stark. Chicago used spatial planning to enforce racial division. Paris ignored spatial planning in the name of color-blind equality, allowing enclaves to form by default. 
 
@@ -271,7 +289,17 @@ Where:
 
 ### II. Regulatory Protocol: The Ethnic Integration Policy (EIP)
 
-![[Step by Step EIP Resale Transaction Flow]](../assets/diagrams/manual-blocks/chapter_3_housing-03-step-by-step-eip-resale-transaction-flow.svg){#fig-chapter-3-housing-03-step-by-step-eip-resale-transaction fig-align="center"}
+::: {.manual-panel}
+**Step-by-Step EIP Resale Transaction Flow**
+
+- [Step-by-Step EIP Resale Transaction Flow]
+- 1. Seller lists property on HDB Resale Portal
+- 2. Portal automatically checks Block & Neighborhood caps
+- ▼ (Below Quota) ▼ (At/Above Quota)
+- Transaction Approved Purchase Restricted
+- Open to all buyers Only open to under-
+- represented groups
+:::
 
 If your state allocates public housing or regulates the private real estate market, you must implement demographic caps at two distinct geographic resolutions:
 
@@ -295,7 +323,17 @@ When a property is sold:
 
 The design of multi-family housing must reject the "hotel corridor" model (double-loaded, enclosed hallways with doors facing each other directly across a narrow space) in favor of the **Open-Air Contact Corridor**.
 
-![[Open Air Contact Corridor Design Layout]](../assets/diagrams/manual-blocks/chapter_3_housing-04-open-air-contact-corridor-design-layout.svg){#fig-chapter-3-housing-04-open-air-contact-corridor-design-la fig-align="center"}
+::: {.manual-panel}
+**Open-Air Contact Corridor Design Layout**
+
+- [Open-Air Contact Corridor Design Layout]
+- Common Walkway
+- [Door 1] [Window 1] [Trash Chute] [Door 2]
+- C1 C1 Shared M1
+- Area
+- Chinese Owner Shared Interaction
+- Node (Garbage/Mail)
+:::
 
 #### 1. Single-Loaded Open Corridors
 Apartments must be built along single-loaded corridors (units are on one side only, with the other side open to the elements and protected by a waist-high parapet).
