@@ -220,15 +220,15 @@ UN membership is the ultimate legal shield, but it is defended by the five perma
 
 A mutual recognition agreement should use standard clauses that fit international legal norms.
 
-::: {.manual-panel}
 **Mutual Recognition Agreement: Core Clauses**
 
-- **Parties**: The State of [Founder’s State] and the Republic of [Partner State].
-- **Recognition of sovereignty**: Each party recognizes the other as sovereign and independent under international law.
-- **Diplomatic missions**: The parties establish formal diplomatic relations and exchange ambassadors.
-- **Immunities**: Missions receive the protections of the Vienna Convention on Diplomatic Relations.
-- **Asset protection**: Assets, accounts, and representative corporations remain immune from seizure or transfer to third-party succession claimants.
-:::
+| Clause | Purpose |
+|---|---|
+| Parties | The State of [Founder’s State] and the Republic of [Partner State]. |
+| Recognition of sovereignty | Each party recognizes the other as sovereign and independent under international law. |
+| Diplomatic missions | The parties establish formal diplomatic relations and exchange ambassadors. |
+| Immunities | Missions receive the protections of the Vienna Convention on Diplomatic Relations. |
+| Asset protection | Assets, accounts, and representative corporations remain immune from seizure or transfer to third-party succession claimants. |
 
 ### 5.5 Troubleshooting Diplomatic Crises
 

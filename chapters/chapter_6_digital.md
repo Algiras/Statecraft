@@ -174,11 +174,7 @@ The land registry in Luxembourg would still prove who owns every house in Estoni
 
 This section provides the technical specifications, architectural designs, and legal frameworks required to deploy a decentralized, sovereign digital state.
 
-::: {.manual-panel}
-**System Architecture Manual: Sovereign Cloud State**
-
-Document ID: SC-MAN-006-REV2026. Classification: public implementation blueprint.
-:::
+**Reference metadata:** Document ID SC-MAN-006-REV2026. Classification: public implementation blueprint.
 
 ### 4.1 Decentralized Data Exchange Architecture (X-Road Model)
 
@@ -260,14 +256,12 @@ When physical sovereignty is threatened, digital sovereignty must be preserved t
 #### Legal Architecture (The Treaty Design):
 A formal bilateral treaty must be signed between the Host Country and the Guest Country. The treaty must contain the following clauses:
 
-::: {.manual-panel}
 **Article 4: Inviolability of the Data Embassy**
 
 1. The premises, racks, network equipment, and storage devices of the guest country located in the host country are inviolable.
 2. Host-country agents may not enter server racks or access stored data without the consent of the guest country’s ambassador.
 3. Servers and data are immune from search, requisition, attachment, or execution by administrative, judicial, or military authority.
 4. The host country permits cryptographic communications equipment under diplomatic-pouch privileges.
-:::
 
 #### Technical Disaster Recovery Protocol (Active-Passive Replication):
 

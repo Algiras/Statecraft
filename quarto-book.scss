@@ -179,33 +179,6 @@ figcaption {
   font-size: 0.9rem;
 }
 
-.manual-panel {
-  background: var(--statecraft-surface);
-  border: 1px solid var(--statecraft-border);
-  border-left: 4px solid var(--statecraft-accent);
-  border-radius: 8px;
-  font-family: $font-family-sans-serif;
-  margin-block: 1.6rem;
-  padding: 1rem 1.15rem;
-}
-
-.manual-panel > p:first-child {
-  color: var(--statecraft-accent);
-  font-size: 0.86rem;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.7rem;
-  text-transform: uppercase;
-}
-
-.manual-panel ul {
-  margin-bottom: 0;
-  padding-left: 1.2rem;
-}
-
-.manual-panel li {
-  margin: 0.4rem 0;
-}
-
 .table {
   font-family: $font-family-sans-serif;
 }

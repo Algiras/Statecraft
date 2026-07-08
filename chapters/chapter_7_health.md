@@ -221,11 +221,7 @@ Only then can you secure the biological foundation of your sovereignty.
 
 This section outlines the technical protocols, administrative structures, and policy frameworks required to establish a resilient, legitimate public health infrastructure.
 
-::: {.manual-panel}
-**Statecraft Manual: Volume VII, Section 4**
-
-Document class: administrative protocol. Subject: epidemic surveillance, communication, and containment.
-:::
+**Reference metadata:** Volume VII, Section 4. Document class: administrative protocol. Subject: epidemic surveillance, communication, and containment.
 
 ### I. Protocols for Epidemic Surveillance & Early Warning Systems (EWS)
 

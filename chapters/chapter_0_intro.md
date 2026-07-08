@@ -195,11 +195,7 @@ The state is not a computer program that can be hacked. It is a social, historic
 
 ## 4. The Manual Page: Technical Reference
 
-::: {.manual-panel}
-**Statecraft Manual Section 0: Foundational Concepts**
-
-Reference frame: Montevideo and Westphalia. Effective: July 2026.
-:::
+**Reference frame:** Montevideo and Westphalia. Effective July 2026.
 
 ### I. The Montevideo Convention Criteria (1933)
 

@@ -172,11 +172,7 @@ Don Pepe’s sledgehammer had not just broken a wall. It had rewritten the formu
 
 ## 4. The Manual Page: Founder's Manual: Defense & Security
 
-::: {.manual-panel}
-**Founder’s Manual: System Deployment**
-
-Module 4.1: Demilitarization protocol and alternative defense paradigms.
-:::
+**Module 4.1:** Demilitarization protocol and alternative defense paradigms.
 
 ### I. Conceptual Definitions
 

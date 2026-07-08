@@ -178,11 +178,7 @@ The payoff has been spectacular. In the 2018 PISA rankings, Estonia surpassed Fi
 
 ## 4. The Manual Page: Technical Reference
 
-::: {.manual-panel}
-**Statecraft Manual Section 8: Human Capital Engine**
-
-Document ID: HC-MAN-008-REV2026. Effective: July 2026. Classification: public blueprint for nation founders.
-:::
+**Reference metadata:** Document ID HC-MAN-008-REV2026. Effective July 2026. Classification: public blueprint for nation founders.
 
 This reference sheet outlines the specifications, metrics, and implementation frameworks required to establish a high-performance, non-industrial national human capital engine.
 
