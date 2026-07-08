@@ -1,0 +1,68 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "STATECRAFT"
+  subtitle: "A How-To Guide for the Accidental Founder"
+  author: "Antigravity & Algimantas"
+  date: "July 2026"
+  site-url: "https://algiras.github.io/Statecraft/"
+  repo-url: "https://github.com/Algiras/Statecraft"
+  favicon: statecraft_book_cover.jpg
+  downloads: [epub]
+  sharing: [twitter, facebook, linkedin]
+  search: true
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: "Front Matter"
+      chapters:
+        - chapters/front_matter.md
+    - part: "Chapters"
+      chapters:
+        - chapters/chapter_0_intro.md
+        - chapters/chapter_1_legitimacy.md
+        - chapters/chapter_2_monetary.md
+        - chapters/chapter_3_housing.md
+        - chapters/chapter_4_security.md
+        - chapters/chapter_5_recognition.md
+        - chapters/chapter_6_digital.md
+        - chapters/chapter_7_health.md
+        - chapters/chapter_8_education.md
+        - chapters/chapter_9_fiscal.md
+        - chapters/chapter_10_energy.md
+        - chapters/chapter_11_conclusion.md
+    - part: "Back Matter"
+      chapters:
+        - chapters/back_matter.md
+
+format:
+  html:
+    theme:
+      light: [cosmo, quarto-book.scss]
+      dark: [darkly, quarto-book.scss]
+    toc: true
+    number-sections: true
+    smooth-scroll: true
+    code-copy: true
+    css: quarto-book.css
+    include-in-header:
+      text: |
+        <meta property="og:title" content="STATECRAFT — A How-To Guide for the Accidental Founder">
+        <meta property="og:description" content="Why building a country is harder than you think. 67,600 words on sovereignty, legitimacy, currency, housing, and digital governance.">
+        <meta property="og:url" content="https://algiras.github.io/Statecraft/">
+        <meta property="og:image" content="https://algiras.github.io/Statecraft/statecraft_book_cover.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://algiras.github.io/Statecraft/statecraft_book_cover.jpg">
+  pdf:
+    documentclass: book
+    pdf-engine: xelatex
+    toc: true
+    number-sections: true
+  epub:
+    cover-image: statecraft_book_cover.jpg
+    toc: true
+
+execute:
+  freeze: auto

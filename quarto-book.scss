@@ -1,0 +1,174 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-serif: "Lora", Georgia, serif;
+$body-bg: #f4f4f8;
+$body-color: #1a1a24;
+$link-color: #6d5df7;
+$border-color: #d8dbe8;
+$sidebar-bg: #ffffff;
+$navbar-bg: #f4f4f8;
+$toc-color: #5c5c78;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 700;
+
+/*-- scss:rules --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --statecraft-accent: #7c6af7;
+  --statecraft-muted: #6c6c88;
+  --statecraft-surface: #ffffff;
+  --statecraft-border: #d8dbe8;
+}
+
+[data-bs-theme="dark"] {
+  --statecraft-muted: #9999b8;
+  --statecraft-surface: #17171e;
+  --statecraft-border: #2a2a38;
+}
+
+body {
+  font-family: $font-family-serif;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar,
+.sidebar,
+.toc-actions,
+.quarto-title-meta {
+  font-family: $font-family-sans-serif;
+}
+
+.book .book-body .page-wrapper .page-inner {
+  max-width: 780px;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a,
+#quarto-sidebar a {
+  border-bottom: none;
+}
+
+#quarto-sidebar {
+  border-right: 1px solid var(--statecraft-border);
+}
+
+#quarto-sidebar .sidebar-item-text {
+  line-height: 1.35;
+}
+
+.chapter-title,
+h1.title {
+  letter-spacing: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: 56px;
+  align-items: center;
+  margin: 36px auto 48px;
+  max-width: 920px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-label {
+  color: var(--statecraft-accent);
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: $font-family-sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.hero-subtitle {
+  color: var(--statecraft-muted);
+  font-size: 1.15rem;
+}
+
+.hero-meta {
+  font-family: $font-family-sans-serif;
+  font-size: 0.95rem;
+}
+
+.cover {
+  border-radius: 16px;
+  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.28);
+  width: 100%;
+}
+
+.stats {
+  border-block: 1px solid var(--statecraft-border);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 32px 0 48px;
+  padding: 28px 0;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  color: var(--statecraft-accent);
+  font-family: $font-family-sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 0.45rem;
+}
+
+.stat span {
+  display: block;
+  color: var(--statecraft-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+figure {
+  margin-block: 2rem;
+}
+
+figcaption {
+  color: var(--statecraft-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+}
+
+.table {
+  font-family: $font-family-sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .cover {
+    max-width: 280px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

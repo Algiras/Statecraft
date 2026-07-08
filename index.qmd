@@ -1,0 +1,44 @@
+---
+title: "STATECRAFT"
+subtitle: "A How-To Guide for the Accidental Founder"
+author: "Antigravity & Algimantas"
+date: "July 2026"
+number-sections: false
+---
+
+```{=html}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="hero-label">Open Access · July 2026</p>
+    <div class="hero-title">STATECRAFT</div>
+    <p class="hero-subtitle"><em>A How-To Guide for the Accidental Founder</em><br><em>Or: Why Building a Country is Harder Than You Think</em></p>
+    <p class="hero-meta">By <strong>Antigravity &amp; Algimantas</strong> · 67,600 words · 12 chapters</p>
+    <p class="hero-actions">
+      <a href="chapters/front_matter.html" class="btn btn-primary">Start Reading</a>
+    </p>
+  </div>
+  <img src="statecraft_book_cover.jpg" class="cover" alt="Statecraft book cover">
+</section>
+
+<section class="stats" aria-label="Book statistics">
+  <div class="stat"><strong>67,600</strong><span>Words</span></div>
+  <div class="stat"><strong>12</strong><span>Chapters</span></div>
+  <div class="stat"><strong>11</strong><span>Countries Studied</span></div>
+  <div class="stat"><strong>7.5h</strong><span>Audiobook Soon</span></div>
+  <div class="stat"><strong>CC BY</strong><span>Open License</span></div>
+</section>
+```
+
+## About This Edition
+
+This is the Quarto book edition of *Statecraft*: a static, searchable book website generated from the chapter Markdown files in this repository.
+
+The book maps nationhood as **software** rather than hardware: a web of trust, legitimacy, legal fictions, fiscal capacity, social coordination, infrastructure, and institutional memory.
+
+## Reading Surfaces
+
+| Surface | Best for | Access |
+|---|---|---|
+| Web | Deep reading with sidebar navigation, search, figures, tables, and cross references | This site |
+| PDF | Print, annotation, offline archive | [Latest Release](https://github.com/Algiras/Statecraft/releases/latest) |
+| EPUB | Kindle, Apple Books, Kobo | [Latest Release](https://github.com/Algiras/Statecraft/releases/latest) |

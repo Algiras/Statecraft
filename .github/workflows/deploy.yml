@@ -25,21 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Pandoc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
-
-      - name: Merge chapters into book.md
-        run: python merge_chapters.py
-
-      - name: Compile HTML
-        run: python compile_html.py
+      - name: Render Quarto book
+        run: quarto render --to html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -49,7 +39,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_book'
 
       - name: Deploy to GitHub Pages
         id: deployment

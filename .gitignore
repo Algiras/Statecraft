@@ -45,3 +45,7 @@ statecraft_audiobook_local.mp3
 sample_60s.*
 test_*.mp3
 test_ssml_options.py
+
+/.quarto/
+/_book/
+**/*.quarto_ipynb
