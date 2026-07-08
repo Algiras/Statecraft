@@ -196,29 +196,21 @@ The state is not a computer program that can be hacked. It is a social, historic
 ## 4. The Manual Page: Technical Reference
 
 ::: {.manual-panel}
-**STATECRAFT MANUAL SECTION 0: FOUNDATIONAL CONCEPTS**
+**Statecraft Manual Section 0: Foundational Concepts**
 
-- REFERENCE: MONTEVIDEO & WESTPHALIA EFFECTIVE: JULY 2026
+Reference frame: Montevideo and Westphalia. Effective: July 2026.
 :::
 
 ### I. The Montevideo Convention Criteria (1933)
 
 The Montevideo Convention on the Rights and Duties of States remains the primary treaty governing the definition of statehood under public international law. While signed as a regional treaty in the Americas, its Article 1 is widely accepted as reflective of customary international law.
 
-::: {.manual-panel}
-**MONTEVIDEO CRITERIA FOR STATEHOOD**
-
-- 1. Permanent Population 2. Defined Territory
-- - Numerical size irrelevant - Borders may be
-- - Must exhibit community life disputed or narrow
-- - Virtual/online presence - Must be a natural
-- does not qualify portion of the earth
-- 3. Government 4. Capacity for Relations
-- - Must exercise effective administrative - Ability to enter into
-- control over territory and population treaties and relations
-- - Monopoly on physical force - Requires recognition
-- (Weberian criterion) by existing states
-:::
+| Criterion | Requirement | Practical Test |
+|---|---|---|
+| Permanent population | A stable community of people | Online-only presence does not qualify. |
+| Defined territory | A natural portion of the earth | Borders may be disputed but must be territorially grounded. |
+| Government | Effective administrative control | The state must govern territory and population. |
+| Capacity for relations | Ability to enter treaties and relations | Recognition by existing states determines practical access. |
 
 #### Legal Interpretations & Operational Constraints
 
@@ -240,17 +232,11 @@ In international law, two competing schools of thought explain how a state achie
 
 Westphalian Sovereignty is the foundational organizing principle of the modern international system. It emerged from the Peace of Westphalia in 1648, which ended the Thirty Years' War in the Holy Roman Empire and the Eighty Years' War between Spain and the Dutch Republic.
 
-::: {.manual-panel}
-**THE WESTPHALIAN MODEL**
-
-- SOVEREIGN EQUALITY
-- - All states are legally equal under law
-- TERRITORIAL INTEGRITY
-- - State has exclusive authority over land
-- NON-INTERVENTION
-- - External powers cannot interfere in internal
-- affairs of a sovereign state
-:::
+| Principle | Meaning |
+|---|---|
+| Sovereign equality | All states are legally equal under international law. |
+| Territorial integrity | A state has exclusive authority over its land. |
+| Non-intervention | External powers cannot lawfully interfere in internal affairs. |
 
 #### Core Tenets
 
@@ -264,21 +250,13 @@ Westphalian Sovereignty is the foundational organizing principle of the modern i
 
 The distinction between *de facto* (in fact) and *de jure* (in law) sovereignty is one of the most critical concepts for any founder to understand. It represents the divide between physical reality and legal recognition.
 
-::: {.manual-panel}
-**SOVEREIGNTY COMPARISON MATRIX**
-
-- Feature De Facto Sovereignty De Jure Sovereignty
-- Definition Control in physical Recognition in law
-- reality
-- Source of Authority Military control, UN membership, treaties,
-- police, tax systems diplomatic recognition
-- Vulnerability High risk of military High stability; borders
-- invasion or collapse legally protected
-- Example: Taiwan High (Full control Low (Only 12 states
-- on the ground) recognize officially)
-- Example: Order of Low (No territory or High (Recognized by 113
-- Malta physical population) states; UN observer)
-:::
+| Feature | De Facto Sovereignty | De Jure Sovereignty |
+|---|---|---|
+| Definition | Control in physical reality | Recognition in law |
+| Source of authority | Military control, policing, taxation, administration | UN membership, treaties, diplomatic recognition |
+| Vulnerability | Invasion, collapse, or isolation | Lower military risk but still politically constrained |
+| Taiwan | High control on the ground | Low formal recognition |
+| Sovereign Military Order of Malta | Low territorial control | High diplomatic recognition |
 
 #### Operational Definitions
 
@@ -293,8 +271,4 @@ The distinction between *de facto* (in fact) and *de jure* (in law) sovereignty 
 
 ---
 
-::: {.manual-panel}
-**END OF SECTION 0**
 
-- [END OF SECTION 0]
-:::

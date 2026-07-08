@@ -58,19 +58,11 @@ How do you install this software? In the ancient world, it was installed through
 
 That installer is the school system.
 
-::: {.manual-panel}
-**THE STATE OPERATING SYSTEM**
-
-- [Hardware Layer]
-- - Territory, Borders, Police, Currency, Infrastructure
-- [Software Layer: Installed via School System]
-- - Language Standardization (Shared Communication Protocol)
-- - National Mythos (Shared History & Group Identity)
-- - Civic Norms (Voluntary Compliance & Punctuality)
-- - Cognitive Alignment (Shared Value Framework)
-- [User Layer: The Citizens]
-- - Uniform execution of state functions and civic duties
-:::
+| Layer | Contents | Function |
+|---|---|---|
+| Hardware layer | Territory, borders, police, currency, infrastructure | Physical substrate of the state |
+| Software layer | Language, national myth, civic norms, shared values | Installed through the school system |
+| User layer | Citizens | Execute state functions and civic duties consistently |
 
 When a child walks through the doors of a school for the first time, they are not just entering a building to learn how to read, write, and compute. They are entering the state's processing plant. The school is the place where the raw, diverse, and chaotic elements of human biology are refined and standardized into citizens. 
 
@@ -106,16 +98,11 @@ This is the industrial education model. It is so ubiquitous that we tend to view
 
 But it is not. The industrial school is a highly specific, historical piece of engineering. It was designed in the early nineteenth century in Prussia, not to optimize human learning, but to optimize human compliance. It was a model built to solve a very specific problem of the Industrial Revolution: how to take a population of independent, self-directed agricultural peasants and turn them into compliant, punctual, and reliable factory workers and infantrymen.
 
-::: {.manual-panel}
-**THE INDUSTRIAL ASSEMBLY LINE OF CITIZENSHIP (PRUSSIAN MODEL)**
-
-- Raw Material Processing Finished Output
-- (Diverse Child) → (Grade/Bell/Test) → (Standard Worker)
-- ^ ^
-- Age-Batched Standardized Compliant,
-- Raw Inputs Only Instruction Punctual, &
-- & Rote Learning Obedient
-:::
+| Stage | Mechanism | Output |
+|---|---|---|
+| Raw material | Diverse children entering the system | Uneven civic and cognitive inputs |
+| Processing | Age batching, bells, grades, tests, rote learning | Standardized instruction and behavior |
+| Finished output | Compliant, punctual worker-citizens | Predictable industrial citizenship |
 
 Think about the requirements of an early industrial factory. The factory owner did not need creative thinkers. He did not need children who could question authority, collaborate on projects, or follow their own intellectual curiosities. In fact, those qualities were a liability. 
 
@@ -144,14 +131,12 @@ How do we build a different kind of human capital engine? How do we design a sch
 
 To answer this question, we must look at two modern outliers that have broken away from the Prussian blueprint: Finland and Estonia.
 
-::: {.manual-panel}
-**THE POST-INDUSTRIAL HUMAN CAPITAL NETWORK (MODERN BLUEPRINT)**
-
-- Individualized Learner
-- / \
-- Professional Digital eID Competency-Based
-- Autonomous Teacher & e-School Continuous Path
-:::
+| Node | Role |
+|---|---|
+| Individualized learner | Owns a continuous learning path rather than a fixed school track. |
+| Professional autonomous teacher | Acts as clinician, mentor, and diagnostician. |
+| Digital eID and e-school | Maintains portable learning records. |
+| Competency-based path | Measures demonstrated capability rather than seat time. |
 
 ### The Finnish Model: The Power of Trust and Autonomy
 
@@ -194,10 +179,9 @@ The payoff has been spectacular. In the 2018 PISA rankings, Estonia surpassed Fi
 ## 4. The Manual Page: Technical Reference
 
 ::: {.manual-panel}
-**STATECRAFT MANUAL SECTION 8: HUMAN CAPITAL ENGINE**
+**Statecraft Manual Section 8: Human Capital Engine**
 
-- DOCUMENT ID: HC-MAN-008-REV2026 EFFECTIVE: JULY 2026
-- CLASSIFICATION: PUBLIC BLUEPRINT TARGET AUDIENCE: NATION FOUNDERS
+Document ID: HC-MAN-008-REV2026. Effective: July 2026. Classification: public blueprint for nation founders.
 :::
 
 This reference sheet outlines the specifications, metrics, and implementation frameworks required to establish a high-performance, non-industrial national human capital engine.
@@ -245,16 +229,11 @@ Where:
 
 Founders must choose an educational architecture. The matrix below defines the three dominant paradigms:
 
-::: {.manual-panel}
-**EDUCATIONAL ARCHITECTURAL SPECTRUM**
-
-- [EDUCATIONAL ARCHITECTURAL SPECTRUM]
-- INDUSTRIAL (Prussian) AUTONOMOUS (Finnish) DIGITAL NATIVE (Estonian)
-- - Centralized - Decentralized - Network-Centric
-- - Standardized - High Trust - Cryptographic
-- - Obedience Focus - Individualized - Equitably Scaled
-- - Low Cost/Low Val - High Cost/Teacher - Modular Competency
-:::
+| Model | Governance | Pedagogy | Statecraft Tradeoff |
+|---|---|---|---|
+| Industrial / Prussian | Centralized | Standardized obedience | Low cost, low personalization |
+| Autonomous / Finnish | Decentralized, high trust | Individualized professional teaching | High teacher quality requirement |
+| Digital-native / Estonian | Network-centric and cryptographic | Modular competency records | Equitable scaling through infrastructure |
 
 | Dimension | Standardized Industrial (Prussian) | Decentralized Autonomous (Finnish) | Digital Native (Estonian) |
 | :--- | :--- | :--- | :--- |
@@ -271,19 +250,11 @@ Founders must choose an educational architecture. The matrix below defines the t
 
 To deploy a modern human capital engine, the state founder must execute the following three-phase transition framework:
 
-::: {.manual-panel}
-**HUMAN CAPITAL ENGINE ROLLOUT TIMELINE**
-
-- Phase 1: Competency Deconstruction (Months 1–12)
-- - Abolish traditional subjects. Create 5 core competency fields.
-- - Deploy state e-School Identity Registry.
-- Phase 2: Teacher Academy & Clinical Residency (Months 13–24)
-- - Transition teacher training to Clinical Residency model.
-- - Launch micro-credentialing certification framework.
-- Phase 3: Lifelong Learning Incentives (Months 25 )
-- - Initialize Individual Learning Accounts (ILA) for citizens.
-- - Launch State Skills Credit System and Corporate Tax Credits.
-:::
+| Phase | Timeframe | Actions |
+|---|---|---|
+| Competency deconstruction | Months 1-12 | Replace traditional subjects with five core competency fields and deploy the e-school identity registry. |
+| Teacher academy and clinical residency | Months 13-24 | Move teacher training to a residency model and launch micro-credentialing. |
+| Lifelong learning incentives | Months 25+ | Fund individual learning accounts, state skills credits, and corporate tax credits. |
 
 #### Phase 1: Competency-Based Curriculum Design (Months 1–12)
 1.  **Abolish Subject Silos**: Replace traditional, isolated subjects (physics, history, geography) with five cross-disciplinary competency fields:

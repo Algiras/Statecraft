@@ -72,17 +72,13 @@ In Tilly’s view, the early monarchs of Europe operated on the exact same logic
 
 Tilly summarized this relationship in a famous, five-word dictum: "War made the state, and the state made war."
 
-::: {.manual-panel}
-**THE TILLYAN CYCLE**
-
-- 1. War Threat Arises
-- 2. Need for Military
-- 3. Extraction of Resources
-- (Taxes, Conscription)
-- 4. Development of Bureaucracy
-- (Registries, Treasuries)
-- 5. Increased State Capacity
-:::
+| Stage | Mechanism | Statecraft Result |
+|---|---|---|
+| 1 | War threat arises | Rulers need organized protection capacity. |
+| 2 | Military requirement grows | Standing forces become expensive. |
+| 3 | Resources are extracted | Taxes, conscription, and requisition expand. |
+| 4 | Bureaucracy develops | Registries, treasuries, courts, and auditors appear. |
+| 5 | State capacity increases | The state becomes more capable of both war-making and administration. |
 
 The cycle worked like this: A monarch wanted to protect his territory or conquer his neighbor. Waging war required an army. By the sixteenth century, the technology of violence had changed. The invention of gunpowder, heavy artillery, and professional standing armies meant that war had become incredibly, catastrophically expensive. 
 
@@ -92,14 +88,11 @@ The state was the accidental byproduct of an arms race. The monarchs who were su
 
 But this history presents the accidental founder of a modern nation with a delicate, high-stakes dilemma. If state-building is an exercise in extraction, how much resource extraction is too much? And how much is too little? This is the **extractive balance**, and it is one of the most critical coordinates in statecraft.
 
-::: {.manual-panel}
-**HIGH EXTRACTION ] < > [ LOW EXTRACTION**
-
-- [ HIGH EXTRACTION ] < > [ LOW EXTRACTION ]
-- Destroys legitimacy, Starves the state,
-- drives capital underground, prevents service delivery,
-- triggers tax flight/rebellion. leads to collapse/weakness.
-:::
+| Extraction Level | Failure Mode | Political Consequence |
+|---|---|---|
+| Too high | Destroys legitimacy, drives capital underground, and triggers tax flight or rebellion | The state becomes predatory and loses consent. |
+| Too low | Starves service delivery, prevents administration, and weakens security | The state becomes hollow and loses capacity. |
+| Viable range | Extracts enough to govern while preserving trust | Citizens experience taxation as reciprocal rather than confiscatory. |
 
 If a state extracts too little, it falls into the **weak state trap**. Without revenue, the state cannot pay its teachers, build roads, equip its police, or secure its borders. It becomes a paper state—a "phantom state." The institutions exist on paper, but they have no capability in reality. In this vacuum, rival organizations step in. Warlords, gang leaders, and informal networks offer the protection and services the state cannot provide, extracting their own "taxes" through extortion. The state loses its monopoly on violence because it could not finance its monopoly on administration. This is the tragedy of modern failed states like Somalia or the Democratic Republic of Congo. Their tax-to-GDP ratios are often below 5 percent.
 
@@ -119,13 +112,13 @@ In the winter of 1974, a young economist named Arthur Laffer sat in the restaura
 
 Laffer argued that raising tax rates could actually decrease tax revenues. To explain his point, Laffer took a white cloth napkin from the table and drew a simple, parabolic curve. On the vertical axis, he wrote "Tax Revenue." On the horizontal axis, he wrote "Tax Rate."
 
-::: {.manual-panel}
-**Tax Revenue**
-
-- * * * (Optimal Rate / Revenue Maximized)
-- * *
-- > Tax Rate (0% to 100%)
-:::
+| Tax Rate Zone | Revenue Effect | Statecraft Interpretation |
+|---|---|---|
+| 0% | No revenue | The state cannot fund itself. |
+| Moderate rates | Revenue rises | Compliance and productive activity remain viable. |
+| Optimal range | Revenue is maximized | Rates, enforcement, and trust are in balance. |
+| Prohibitive range | Revenue falls | Evasion, capital flight, and reduced activity shrink the base. |
+| 100% | No sustainable revenue | Citizens stop producing or exit the formal economy. |
 
 Laffer’s logic was elegant: At a 0 percent tax rate, the government collects zero revenue. At a 100 percent tax rate, the government also collects zero revenue, because no one will work if the state confiscates their entire paycheck. Therefore, there must be a point somewhere in the middle—an optimal tax rate—where revenue is maximized. If a state raises its rates past this optimal point, it enters the "prohibitive range," where higher taxes discourage economic activity, drive transactions into the underground economy, and reduce the overall tax base.
 
@@ -148,16 +141,12 @@ Levi argued that citizens will voluntarily comply with taxes if, and only if, th
 1. **Vertical Trust (Reciprocity)**: The citizen trusts that the state will use the tax revenues to provide public goods—roads, schools, security, clean water—rather than lining the pockets of political elites. The citizen believes they are getting a fair return on their investment.
 2. **Horizontal Trust (Fairness)**: The citizen trusts that their fellow citizens are also paying their fair share. No one wants to be a "sucker." If a farmer believes that his neighbor is evading taxes with impunity, his own willingness to comply evaporates, regardless of how much he values the state's services.
 
-::: {.manual-panel}
-**QUASI-VOLUNTARY COMPLIANCE**
-
-- [ VERTICAL TRUST ] [ HORIZONTAL TRUST ]
-- "The state uses my tax "My neighbors are paying
-- money to build schools their share; I am not
-- and roads, not to enrich the only one complying."
-- corrupt politicians."
-- [ HIGH VOLUNTARY COMPLIANCE ]
-:::
+| Trust Axis | Citizen Belief | Compliance Effect |
+|---|---|---|
+| Vertical trust | The state uses tax money for public goods rather than elite enrichment. | Citizens see payment as reciprocal. |
+| Horizontal trust | Neighbors and competitors are also paying their share. | Citizens do not feel like suckers. |
+| Enforcement backstop | Non-payment is credibly punished. | Compliance remains quasi-voluntary rather than purely voluntary. |
+| Result | Trust plus enforcement lowers friction. | High voluntary compliance at lower administrative cost. |
 
 When these two axes of trust are high, a state can collect taxes with incredibly low administrative costs. The citizens police themselves. But when trust breaks down, the cost of tax administration skyrockets. The state must build an expensive, intrusive auditing and enforcement apparatus to force compliance, which further alienates the population.
 
@@ -218,18 +207,12 @@ This is the holy grail of statecraft. The power to extract is not the power to t
 ### SECTION IX: FISCAL CAPACITY AND EXTRACTION
 #### SYSTEM DESIGN: THE EXTRACTION ENGINE
 
-::: {.manual-panel}
-**Sovereign Treasury**
-
-- (Allocation & Debt Mgmt)
-- ▼ ▼
-- Revenue Collection Debt Management
-- (Digital Admin Engine) (Sovereign Bonds/Loans)
-- (Debt-to-GDP < 60%)
-- ▼ ▼ ▼
-- Flat Tax VAT Engine Resource Sovereign
-- (Income) (Digital) Royalties Bonds
-:::
+| Treasury Function | Instrument | Guardrail |
+|---|---|---|
+| Revenue collection | Flat income tax, VAT engine, and resource royalties | Simple rules and digital administration reduce evasion. |
+| Debt management | Sovereign bonds and concessional loans | Keep debt-to-GDP below a prudent ceiling, such as 60%. |
+| Allocation | Budgeting, procurement, and audit controls | Spending must visibly return public goods. |
+| Legitimacy maintenance | Transparent reporting and equal enforcement | The extraction engine must not look like a racket. |
 
 ---
 

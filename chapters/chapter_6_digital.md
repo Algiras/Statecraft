@@ -175,10 +175,9 @@ The land registry in Luxembourg would still prove who owns every house in Estoni
 This section provides the technical specifications, architectural designs, and legal frameworks required to deploy a decentralized, sovereign digital state.
 
 ::: {.manual-panel}
-**SYSTEM ARCHITECTURE MANUAL: SOVEREIGN CLOUD STATE**
+**System Architecture Manual: Sovereign Cloud State**
 
-- DOCUMENT ID: SC-MAN-006-REV2026
-- CLASSIFICATION: PUBLIC / IMPLEMENTATION BLUEPRINT
+Document ID: SC-MAN-006-REV2026. Classification: public implementation blueprint.
 :::
 
 ### 4.1 Decentralized Data Exchange Architecture (X-Road Model)
@@ -216,15 +215,11 @@ A sovereign digital identity requires a Public Key Infrastructure (PKI) backed b
 *   **Cryptographic Algorithms**: Elliptic Curve Cryptography (ECDSA) with NIST P-384 or Ed25519 for signatures; RSA 4096 as a legacy fallback.
 *   **Key Storage**: Private keys must be generated directly on the smart card chip and marked as non-exportable. 
 
-::: {.manual-panel}
-**PIN Configuration Profile:**
-
-- PIN 1 (Min 4 digits): Authentication Key Access
-- → Unlocks Private Key for TLS Handshakes
-- PIN 2 (Min 5 digits): Non-Repudiation Signature Key
-- → Unlocks Private Key for Legal Document Signatures
-- PUK Code (8 digits): Admin key to unlock blocked PINs
-:::
+| Credential | Purpose | Unlocks |
+|---|---|---|
+| PIN 1 | Authentication key access | Private key for TLS handshakes |
+| PIN 2 | Non-repudiation signature key | Private key for legally binding document signatures |
+| PUK | Administrative recovery code | Unblocks locked PIN credentials |
 
 #### Verification Lifecycle Workflow:
 1.  **Enrollment**: Citizen registers in person at a physical government station. Biometrics (fingerprints, facial scans) are bound to a unique state identification number.
@@ -266,37 +261,23 @@ When physical sovereignty is threatened, digital sovereignty must be preserved t
 A formal bilateral treaty must be signed between the Host Country and the Guest Country. The treaty must contain the following clauses:
 
 ::: {.manual-panel}
-**ARTICLE 4: INVIOLABILITY OF THE DATA EMBASSY**
+**Article 4: Inviolability of the Data Embassy**
 
-- 1. The premises, server racks, network equipment, and digital storage devices
-- belonging to the Guest Country and located within the territory of the Host
-- Country shall be inviolable.
-- 2. Agents of the Host Country may not enter the server racks or access the data
-- stored therein without the express consent of the Ambassador of the Guest
-- Country.
-- 3. The servers and data shall be immune from search, requisition, attachment,
-- or execution by any administrative, judicial, or military authority of the
-- Host Country.
-- 4. The Host Country shall permit the Guest Country to import, install, and operate
-- cryptographic communication equipment under full diplomatic pouch privileges.
+1. The premises, racks, network equipment, and storage devices of the guest country located in the host country are inviolable.
+2. Host-country agents may not enter server racks or access stored data without the consent of the guest country’s ambassador.
+3. Servers and data are immune from search, requisition, attachment, or execution by administrative, judicial, or military authority.
+4. The host country permits cryptographic communications equipment under diplomatic-pouch privileges.
 :::
 
 #### Technical Disaster Recovery Protocol (Active-Passive Replication):
 
-::: {.manual-panel}
-**Primary State Node Sovereign Data Embassy**
-
-- (Physical Territory) (Luxembourg / Host)
-- Master Database Registries Mirror Database Registries
-- [Transaction Stream]
-- (Encrypted VPN Tunnel via fiber)
-- [Local Security Gateway]
-- v (Upon Physical Invasion)
-- Digital Government Protocol
-- - Cabinet convenes in cloud
-- - Identity CA verified
-- - State registers active
-:::
+| Component | Role |
+|---|---|
+| Primary state node | Holds master registries inside physical territory. |
+| Sovereign data embassy | Mirrors critical registries in a protected foreign jurisdiction. |
+| Transaction stream | Replicates database changes over encrypted links. |
+| Local security gateway | Controls secure communication from the domestic node. |
+| Digital government protocol | Allows cabinet continuity, identity verification, and active registries during invasion or occupation. |
 
 1.  **Synchronization**: Real-time write-ahead log (WAL) replication of critical databases (Land, Population, Business, Treasury) from the primary node to the Data Embassy over encrypted, dedicated fiber networks.
 2.  **Heartbeat Monitoring**: The Data Embassy monitors the primary node. If the primary node goes offline due to physical destruction, cyber war, or network partition:
