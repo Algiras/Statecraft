@@ -6,7 +6,11 @@
   <meta name="description" content="Statecraft: A How-To Guide for the Accidental Founder — an open-access narrative non-fiction book on state-building written in the style of Malcolm Gladwell.">
   <meta property="og:title" content="STATECRAFT — A How-To Guide for the Accidental Founder">
   <meta property="og:description" content="Why building a country is harder than you think. 67,600 words on sovereignty, legitimacy, currency, housing, and digital governance.">
-  <meta property="og:image" content="statecraft_book_cover.jpg">
+  <meta property="og:url" content="https://algiras.github.io/Statecraft/">
+  <meta property="og:image" content="https://algiras.github.io/Statecraft/statecraft_book_cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://algiras.github.io/Statecraft/statecraft_book_cover.jpg">
+  <link rel="canonical" href="https://algiras.github.io/Statecraft/">
   <title>STATECRAFT — A How-To Guide for the Accidental Founder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,6 +83,7 @@ body {
   font-family: var(--serif);
   font-size: 19px;
   line-height: 1.75;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -132,16 +137,17 @@ nav a:hover { color: var(--text); border-color: var(--accent); background: rgba(
 /* ── Reader controls ── */
 .reader-controls {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   align-items: center;
   margin-left: auto;
+  flex-shrink: 0;
 }
 .ctrl-btn {
   font-family: var(--sans);
   font-size: 14px;
   font-weight: 600;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -402,22 +408,52 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
   .chapter-nav { grid-template-columns: 1fr; }
   .chapter-nav-link.next { text-align: left; }
 }
+@media (max-width: 900px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    row-gap: 8px;
+  }
+  .reader-controls { grid-column: 3; margin-left: 0; }
+  .header-nav {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+}
 @media (max-width: 640px) {
+  .header-inner { gap: 8px; }
+  .header-wordmark { font-size: 13px; letter-spacing: 0.1em; }
+  .reader-controls { margin-left: auto; }
   .reader-controls .ctrl-btn:not(#btn-toc):not(#btn-theme) { display: none; }
+  .header-nav a { font-size: 12px; padding: 5px 11px; }
+  .header-nav .coming-soon { display: none; }
+  .hero-subtitle { font-size: 16px; }
+  .hero-subtitle br { display: none; }
+  .hero-meta { font-size: 13px; }
+  .header-nav { justify-content: flex-start; }
 }
 
 /* ── Hero / Cover ── */
 .hero {
   max-width: calc(var(--max-w) + 120px);
+  width: 100%;
   margin: 0 auto;
   padding: 80px 24px 60px;
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 60px;
   align-items: center;
+  overflow-x: clip;
 }
-@media (max-width: 768px) { .hero { grid-template-columns: 1fr; text-align: center; } }
-.hero-text {}
+.hero-text {
+  max-width: 560px;
+  min-width: 0;
+}
 .hero-label {
   font-family: var(--sans);
   font-size: 11px;
@@ -430,12 +466,17 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
 }
 .hero-title {
   font-family: var(--sans);
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(42px, 5vw, 68px);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.05;
   color: var(--heading);
+  margin-top: 0;
   margin-bottom: 16px;
+  padding-top: 0;
+  border-top: none;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 .hero-subtitle {
   font-family: var(--serif);
@@ -444,12 +485,14 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
   color: var(--text-muted);
   margin-bottom: 32px;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 .hero-meta {
   font-family: var(--sans);
   font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 40px;
+  overflow-wrap: break-word;
 }
 .hero-meta strong { color: var(--text); }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -502,6 +545,8 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
 }
 .cover-img {
   width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
   display: block;
@@ -516,9 +561,9 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
 
 /* ── Chapter jump bar ── */
 .chapter-jump {
-  max-width: 1280px;
+  max-width: calc(var(--max-w) + 120px);
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -561,6 +606,8 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
   scroll-margin-top: calc(var(--header-h) + 20px);
 }
 h1, h2.matter-heading { scroll-margin-top: calc(var(--header-h) + 20px); }
+h1.chapter-start .header-section-number,
+h2.matter-heading .header-section-number { display: none; }
 .heading-anchor {
   margin-left: 10px;
   font-family: var(--sans);
@@ -603,48 +650,66 @@ h2.matter-heading:hover .heading-anchor,
   color: var(--text-muted);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+    padding: 48px 18px 36px;
+    gap: 24px;
+  }
+  .hero-text {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .hero-title {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+  .hero-subtitle {
+    max-width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .btn-primary, .btn-secondary, .btn-disabled {
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+  }
+  .cover-img {
+    width: min(100%, 300px);
+  }
+  .stats-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+    padding: 28px 18px;
+  }
+  .stat-num { font-size: 28px; }
+  .stat-label { font-size: 11px; }
+}
+
+@media (max-width: 420px) {
+  .hero { padding-left: 18px; padding-right: 18px; }
+  .hero-title { font-size: clamp(34px, 10vw, 42px); }
+  .hero-subtitle { max-width: 18rem; }
+  .hero-meta { max-width: 19rem; margin-left: auto; margin-right: auto; }
+  .cover-img { width: min(100%, 270px); }
+  .stats-inner { grid-template-columns: 1fr; }
+}
+
 /* ── Reading container ── */
 .content-wrap {
   max-width: var(--max-w);
   margin: 0;
   padding: 48px 0 0;
 }
-
-/* ── TOC ── */
-#TOC {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 28px 32px;
-  margin-bottom: 64px;
-}
-#TOC h2 {
-  font-family: var(--sans);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 12px;
-}
-#TOC ul { list-style: none; display: grid; gap: 4px; }
-#TOC li { font-family: var(--sans); font-size: 15px; }
-#TOC a {
-  color: var(--text-muted);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  transition: all 0.15s;
-}
-#TOC a::before { content: '→'; color: var(--accent); opacity: 0; transition: opacity 0.15s; font-size: 13px; }
-#TOC a:hover { background: rgba(124,106,247,0.08); color: var(--text); }
-#TOC a:hover::before { opacity: 1; }
-.toc-page-list a::before { display: none; }
 
 /* ── Headings ── */
 h1, h2, h3, h4 { font-family: var(--sans); line-height: 1.2; }
@@ -750,10 +815,13 @@ pre.mermaid svg {
 
 /* ── Tables ── */
 .table-wrap {
+  max-width: 100%;
   overflow-x: auto;
+  contain: inline-size;
   margin: 32px 0;
   border-radius: var(--r);
   border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
 }
 code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9em; color: var(--accent2); }
 pre code { color: var(--text); }
@@ -815,7 +883,7 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
 
 <header>
   <div class="header-inner">
-    <a href="#" class="header-wordmark">Statecraft</a>
+    <a href="#TOC" class="header-wordmark">Statecraft</a>
     <div class="reader-controls" role="toolbar" aria-label="Reading controls">
       <button type="button" class="ctrl-btn" id="btn-toc" title="Table of contents" aria-label="Table of contents">☰</button>
       <button type="button" class="ctrl-btn" id="btn-font-down" title="Smaller text" aria-label="Decrease font size">A−</button>
@@ -831,8 +899,6 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
       <a href="#intro">Intro</a>
       <a href="#references">References</a>
       <a href="#sources">Sources</a>
-      <a href="https://github.com/Algiras/Statecraft/releases/latest/download/statecraft_manual.pdf" target="_blank" rel="noopener">↓ PDF</a>
-      <a href="https://github.com/Algiras/Statecraft/releases/latest/download/statecraft.epub" target="_blank" rel="noopener">↓ EPUB</a>
       <span class="nav-pill coming-soon">🎧 Audiobook Soon</span>
     </nav>
   </div>
@@ -842,7 +908,7 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
   <div class="hero-text">
     <span class="hero-label">Open Access · July 2026</span>
     <h1 class="hero-title">STATECRAFT</h1>
-    <p class="hero-subtitle">A How-To Guide for the Accidental Founder<br><em>Or: Why Building a Country is Harder Than You Think</em></p>
+    <p class="hero-subtitle">A How-To Guide for the Accidental Founder<br> <em>Or: Why Building a Country is Harder Than You Think</em></p>
     <p class="hero-meta">By <strong>Antigravity &amp; Algimantas</strong> · 67,600 words · 12 Chapters</p>
     <div class="hero-actions">
       <a href="#TOC" class="btn-primary">📖 Start Reading</a>
@@ -893,30 +959,30 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
     </div>
     <div class="toc-groups sidebar-groups"><div class="toc-group">
   <h3 class="toc-group-title">Front Matter</h3>
-  <ol class="toc-list sidebar-list"><li><a href="#copyright"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.1 Copyright Notice</span></a></li>
-<li><a href="#about-the-authors"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.2 About the Authors</span></a></li>
-<li><a href="#how-to-use"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.3 How to Use This Edition</span></a></li>
-<li><a href="#pillars-glance"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.4 The Twelve Pillars at a Glance</span></a></li></ol>
+  <ol class="toc-list sidebar-list"><li><a href="#copyright"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Copyright Notice</span></a></li>
+<li><a href="#about-the-authors"><span class="toc-num toc-num-dot">·</span><span class="toc-title">About the Authors</span></a></li>
+<li><a href="#how-to-use"><span class="toc-num toc-num-dot">·</span><span class="toc-title">How to Use This Edition</span></a></li>
+<li><a href="#pillars-glance"><span class="toc-num toc-num-dot">·</span><span class="toc-title">The Twelve Pillars at a Glance</span></a></li></ol>
 </div><div class="toc-group">
   <h3 class="toc-group-title">Chapters</h3>
-  <ol class="toc-list sidebar-list"><li><a href="#intro"><span class="toc-num">1</span><span class="toc-title">Introduction: The Sandbox Fallacy</span></a></li>
-<li><a href="#chapter-1"><span class="toc-num">2</span><span class="toc-title">Chapter 1: The Parliament of Elders (The Paradox of…</span></a></li>
-<li><a href="#chapter-2"><span class="toc-num">3</span><span class="toc-title">Chapter 2: The Infrastructure of Trust (The Gold in…</span></a></li>
-<li><a href="#chapter-3"><span class="toc-num">4</span><span class="toc-title">Chapter 3: The Apartment Lottery (The Architecture …</span></a></li>
-<li><a href="#chapter-4"><span class="toc-num">5</span><span class="toc-title">Chapter 4: The Country Without a Shield (The Parado…</span></a></li>
-<li><a href="#chapter-5"><span class="toc-num">6</span><span class="toc-title">Chapter 5: The Legal Ghosts (The Sovereign Club)</span></a></li>
-<li><a href="#chapter-6"><span class="toc-num">7</span><span class="toc-title">Chapter 6: The Digital Fortress (The Cloud State an…</span></a></li>
-<li><a href="#chapter-7"><span class="toc-num">8</span><span class="toc-title">Chapter 7: The Pump Handle (The Biosecurity Paradox)</span></a></li>
-<li><a href="#chapter-8"><span class="toc-num">9</span><span class="toc-title">Chapter 8: The Human Engine (Education, Culture, an…</span></a></li>
-<li><a href="#chapter-9"><span class="toc-num">10</span><span class="toc-title">Chapter 9: The Extraction Engine (The Paradox of Fi…</span></a></li>
-<li><a href="#chapter-10"><span class="toc-num">11</span><span class="toc-title">Chapter 10: The Messmer Gambit (The Thermodynamics …</span></a></li>
-<li><a href="#conclusion"><span class="toc-num">12</span><span class="toc-title">Conclusion: The Architecture of the Accidental State</span></a></li></ol>
+  <ol class="toc-list sidebar-list"><li><a href="#intro"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Introduction: The Sandbox Fallacy</span></a></li>
+<li><a href="#chapter-1"><span class="toc-num">1</span><span class="toc-title">Chapter 1: The Parliament of Elders (The Paradox of…</span></a></li>
+<li><a href="#chapter-2"><span class="toc-num">2</span><span class="toc-title">Chapter 2: The Infrastructure of Trust (The Gold in…</span></a></li>
+<li><a href="#chapter-3"><span class="toc-num">3</span><span class="toc-title">Chapter 3: The Apartment Lottery (The Architecture …</span></a></li>
+<li><a href="#chapter-4"><span class="toc-num">4</span><span class="toc-title">Chapter 4: The Country Without a Shield (The Parado…</span></a></li>
+<li><a href="#chapter-5"><span class="toc-num">5</span><span class="toc-title">Chapter 5: The Legal Ghosts (The Sovereign Club)</span></a></li>
+<li><a href="#chapter-6"><span class="toc-num">6</span><span class="toc-title">Chapter 6: The Digital Fortress (The Cloud State an…</span></a></li>
+<li><a href="#chapter-7"><span class="toc-num">7</span><span class="toc-title">Chapter 7: The Pump Handle (The Biosecurity Paradox)</span></a></li>
+<li><a href="#chapter-8"><span class="toc-num">8</span><span class="toc-title">Chapter 8: The Human Engine (Education, Culture, an…</span></a></li>
+<li><a href="#chapter-9"><span class="toc-num">9</span><span class="toc-title">Chapter 9: The Extraction Engine (The Paradox of Fi…</span></a></li>
+<li><a href="#chapter-10"><span class="toc-num">10</span><span class="toc-title">Chapter 10: The Messmer Gambit (The Thermodynamics …</span></a></li>
+<li><a href="#conclusion"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Conclusion: The Architecture of the Accidental State</span></a></li></ol>
 </div><div class="toc-group">
   <h3 class="toc-group-title">Back Matter</h3>
-  <ol class="toc-list sidebar-list"><li><a href="#acknowledgments"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.6 Acknowledgments</span></a></li>
-<li><a href="#references"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.7 References</span></a></li>
-<li><a href="#sources"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.8 Sources and Further Reading</span></a></li>
-<li><a href="#methods"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.9 A Note on Methods</span></a></li></ol>
+  <ol class="toc-list sidebar-list"><li><a href="#acknowledgments"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Acknowledgments</span></a></li>
+<li><a href="#references"><span class="toc-num toc-num-dot">·</span><span class="toc-title">References</span></a></li>
+<li><a href="#sources"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Sources and Further Reading</span></a></li>
+<li><a href="#methods"><span class="toc-num toc-num-dot">·</span><span class="toc-title">A Note on Methods</span></a></li></ol>
 </div></div>
   </div>
 </aside>
@@ -928,35 +994,35 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
   <p class="toc-lead">A complete open-access manual on the software of nationhood — from copyright and reading guide through twelve narrative chapters to references and sources.</p>
   <div class="toc-groups"><div class="toc-group">
   <h3 class="toc-group-title">Front Matter</h3>
-  <ol class="toc-list toc-front-list"><li><a href="#copyright"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.1 Copyright Notice</span></a></li>
-<li><a href="#about-the-authors"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.2 About the Authors</span></a></li>
-<li><a href="#how-to-use"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.3 How to Use This Edition</span></a></li>
-<li><a href="#pillars-glance"><span class="toc-num toc-num-dot">·</span><span class="toc-title">0.4 The Twelve Pillars at a Glance</span></a></li></ol>
+  <ol class="toc-list toc-front-list"><li><a href="#copyright"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Copyright Notice</span></a></li>
+<li><a href="#about-the-authors"><span class="toc-num toc-num-dot">·</span><span class="toc-title">About the Authors</span></a></li>
+<li><a href="#how-to-use"><span class="toc-num toc-num-dot">·</span><span class="toc-title">How to Use This Edition</span></a></li>
+<li><a href="#pillars-glance"><span class="toc-num toc-num-dot">·</span><span class="toc-title">The Twelve Pillars at a Glance</span></a></li></ol>
 </div><div class="toc-group">
   <h3 class="toc-group-title">Chapters</h3>
-  <ol class="toc-list toc-page-list"><li><a href="#intro"><span class="toc-num">1</span><span class="toc-title">Introduction: The Sandbox Fallacy</span></a></li>
-<li><a href="#chapter-1"><span class="toc-num">2</span><span class="toc-title">Chapter 1: The Parliament of Elders (The Paradox of…</span></a></li>
-<li><a href="#chapter-2"><span class="toc-num">3</span><span class="toc-title">Chapter 2: The Infrastructure of Trust (The Gold in…</span></a></li>
-<li><a href="#chapter-3"><span class="toc-num">4</span><span class="toc-title">Chapter 3: The Apartment Lottery (The Architecture …</span></a></li>
-<li><a href="#chapter-4"><span class="toc-num">5</span><span class="toc-title">Chapter 4: The Country Without a Shield (The Parado…</span></a></li>
-<li><a href="#chapter-5"><span class="toc-num">6</span><span class="toc-title">Chapter 5: The Legal Ghosts (The Sovereign Club)</span></a></li>
-<li><a href="#chapter-6"><span class="toc-num">7</span><span class="toc-title">Chapter 6: The Digital Fortress (The Cloud State an…</span></a></li>
-<li><a href="#chapter-7"><span class="toc-num">8</span><span class="toc-title">Chapter 7: The Pump Handle (The Biosecurity Paradox)</span></a></li>
-<li><a href="#chapter-8"><span class="toc-num">9</span><span class="toc-title">Chapter 8: The Human Engine (Education, Culture, an…</span></a></li>
-<li><a href="#chapter-9"><span class="toc-num">10</span><span class="toc-title">Chapter 9: The Extraction Engine (The Paradox of Fi…</span></a></li>
-<li><a href="#chapter-10"><span class="toc-num">11</span><span class="toc-title">Chapter 10: The Messmer Gambit (The Thermodynamics …</span></a></li>
-<li><a href="#conclusion"><span class="toc-num">12</span><span class="toc-title">Conclusion: The Architecture of the Accidental State</span></a></li></ol>
+  <ol class="toc-list toc-page-list"><li><a href="#intro"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Introduction: The Sandbox Fallacy</span></a></li>
+<li><a href="#chapter-1"><span class="toc-num">1</span><span class="toc-title">Chapter 1: The Parliament of Elders (The Paradox of…</span></a></li>
+<li><a href="#chapter-2"><span class="toc-num">2</span><span class="toc-title">Chapter 2: The Infrastructure of Trust (The Gold in…</span></a></li>
+<li><a href="#chapter-3"><span class="toc-num">3</span><span class="toc-title">Chapter 3: The Apartment Lottery (The Architecture …</span></a></li>
+<li><a href="#chapter-4"><span class="toc-num">4</span><span class="toc-title">Chapter 4: The Country Without a Shield (The Parado…</span></a></li>
+<li><a href="#chapter-5"><span class="toc-num">5</span><span class="toc-title">Chapter 5: The Legal Ghosts (The Sovereign Club)</span></a></li>
+<li><a href="#chapter-6"><span class="toc-num">6</span><span class="toc-title">Chapter 6: The Digital Fortress (The Cloud State an…</span></a></li>
+<li><a href="#chapter-7"><span class="toc-num">7</span><span class="toc-title">Chapter 7: The Pump Handle (The Biosecurity Paradox)</span></a></li>
+<li><a href="#chapter-8"><span class="toc-num">8</span><span class="toc-title">Chapter 8: The Human Engine (Education, Culture, an…</span></a></li>
+<li><a href="#chapter-9"><span class="toc-num">9</span><span class="toc-title">Chapter 9: The Extraction Engine (The Paradox of Fi…</span></a></li>
+<li><a href="#chapter-10"><span class="toc-num">10</span><span class="toc-title">Chapter 10: The Messmer Gambit (The Thermodynamics …</span></a></li>
+<li><a href="#conclusion"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Conclusion: The Architecture of the Accidental State</span></a></li></ol>
 </div><div class="toc-group">
   <h3 class="toc-group-title">Back Matter</h3>
-  <ol class="toc-list toc-back-list"><li><a href="#acknowledgments"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.6 Acknowledgments</span></a></li>
-<li><a href="#references"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.7 References</span></a></li>
-<li><a href="#sources"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.8 Sources and Further Reading</span></a></li>
-<li><a href="#methods"><span class="toc-num toc-num-dot">·</span><span class="toc-title">12.9 A Note on Methods</span></a></li></ol>
+  <ol class="toc-list toc-back-list"><li><a href="#acknowledgments"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Acknowledgments</span></a></li>
+<li><a href="#references"><span class="toc-num toc-num-dot">·</span><span class="toc-title">References</span></a></li>
+<li><a href="#sources"><span class="toc-num toc-num-dot">·</span><span class="toc-title">Sources and Further Reading</span></a></li>
+<li><a href="#methods"><span class="toc-num toc-num-dot">·</span><span class="toc-title">A Note on Methods</span></a></li></ol>
 </div></div>
   <p class="toc-actions"><a href="#copyright" class="btn-secondary">Front Matter</a> <a href="#intro" class="btn-primary">Start Reading →</a></p>
 </section>
 <section class="book-part front-matter" id="front-matter" aria-label="Front matter">
-<span id="copyright" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="0.1" id="copyright"><a class="heading-anchor" href="#copyright" aria-label="Link to 0.1 Copyright Notice" title="#copyright">¶</a><span
+<h2 class="matter-heading" data-number="0.1" id="copyright"><a class="heading-anchor" href="#copyright" aria-label="Link to Copyright Notice" title="#copyright">¶</a><span
 class="header-section-number">0.1</span> Copyright Notice</h2>
 <p><strong>STATECRAFT: A How-To Guide for the Accidental
 Founder</strong><br />
@@ -978,7 +1044,7 @@ policy analysis written for education. It is not legal, financial, or
 diplomatic advice. State-building scenarios described are
 illustrative.</p>
 <hr />
-<span id="about-the-authors" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="0.2" id="about-the-authors"><a class="heading-anchor" href="#about-the-authors" aria-label="Link to 0.2 About the Authors" title="#about-the-authors">¶</a><span
+<h2 class="matter-heading" data-number="0.2" id="about-the-authors"><a class="heading-anchor" href="#about-the-authors" aria-label="Link to About the Authors" title="#about-the-authors">¶</a><span
 class="header-section-number">0.2</span> About the Authors</h2>
 <p><strong>Statecraft</strong> was written collaboratively by
 <strong>Antigravity</strong> (AI research assistant) and
@@ -990,7 +1056,7 @@ journalism — particularly the narrative non-fiction of <strong>Malcolm
 Gladwell</strong> — while grounding each chapter in peer-reviewed
 research, treaty law, and documented case studies.</p>
 <hr />
-<span id="how-to-use" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="0.3" id="how-to-use"><a class="heading-anchor" href="#how-to-use" aria-label="Link to 0.3 How to Use This Edition" title="#how-to-use">¶</a><span
+<h2 class="matter-heading" data-number="0.3" id="how-to-use"><a class="heading-anchor" href="#how-to-use" aria-label="Link to How to Use This Edition" title="#how-to-use">¶</a><span
 class="header-section-number">0.3</span> How to Use This Edition</h2>
 <p>This edition is designed to work across three reading surfaces:</p>
 <div class="table-wrap"><table>
@@ -1049,7 +1115,7 @@ comparison</li>
 and diagnostic tools</li>
 </ol>
 <hr />
-<span id="pillars-glance" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="0.4" id="pillars-glance"><a class="heading-anchor" href="#pillars-glance" aria-label="Link to 0.4 The Twelve Pillars at a Glance" title="#pillars-glance">¶</a><span
+<h2 class="matter-heading" data-number="0.4" id="pillars-glance"><a class="heading-anchor" href="#pillars-glance" aria-label="Link to The Twelve Pillars at a Glance" title="#pillars-glance">¶</a><span
 class="header-section-number">0.4</span> The Twelve Pillars at a
 Glance</h2>
 <p>The book maps nationhood as <strong>software</strong> — not merely
@@ -9797,10 +9863,9 @@ founders who ignored the plumbing.</p>
 loops, and build with the patience of the elders under the acacia tree,
 the prize is immortality. You are building the home where humanity will
 survive the storms of tomorrow. Welcome to the club.</p>
-<span id="acknowledgments" class="anchor-target" aria-hidden="true"></span>
 </article>
 <section class="book-part back-matter" id="back-matter" aria-label="Back matter">
-<h2 class="matter-heading" data-number="12.6" id="acknowledgments"><a class="heading-anchor" href="#acknowledgments" aria-label="Link to 12.6 Acknowledgments" title="#acknowledgments">¶</a><span
+<h2 class="matter-heading" data-number="12.6" id="acknowledgments"><a class="heading-anchor" href="#acknowledgments" aria-label="Link to Acknowledgments" title="#acknowledgments">¶</a><span
 class="header-section-number">12.6</span> Acknowledgments</h2>
 <p>This book draws on decades of scholarship in political science,
 development economics, legal theory, and comparative history. We are
@@ -9813,7 +9878,7 @@ make works like this distributable under <strong>CC BY 4.0</strong>, and
 to everyone who read early drafts and stress-tested the Manual
 Pages.</p>
 <hr />
-<span id="references" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="12.7" id="references"><a class="heading-anchor" href="#references" aria-label="Link to 12.7 References" title="#references">¶</a><span
+<h2 class="matter-heading" data-number="12.7" id="references"><a class="heading-anchor" href="#references" aria-label="Link to References" title="#references">¶</a><span
 class="header-section-number">12.7</span> References</h2>
 <p>Works cited directly or substantially informing the arguments in this
 book:</p>
@@ -9850,7 +9915,7 @@ Oxford University Press, 1946.</p>
 <p>World Health Organization. <em>International Health Regulations</em>
 (2005). Third edition, 2016.</p>
 <hr />
-<span id="sources" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="12.8" id="sources"><a class="heading-anchor" href="#sources" aria-label="Link to 12.8 Sources and Further Reading" title="#sources">¶</a><span
+<h2 class="matter-heading" data-number="12.8" id="sources"><a class="heading-anchor" href="#sources" aria-label="Link to Sources and Further Reading" title="#sources">¶</a><span
 class="header-section-number">12.8</span> Sources and Further
 Reading</h2>
 <p><strong>Legitimacy &amp; customary law:</strong> Michael van Notten,
@@ -9884,7 +9949,7 @@ Germany’s Energiewende and Nord Stream dependency analysis.</p>
 Point</em>, <em>Outliers</em>, and <em>David and Goliath</em> — for
 structure, not empirical claims.</p>
 <hr />
-<span id="methods" class="anchor-target" aria-hidden="true"></span><h2 class="matter-heading" data-number="12.9" id="methods"><a class="heading-anchor" href="#methods" aria-label="Link to 12.9 A Note on Methods" title="#methods">¶</a><span
+<h2 class="matter-heading" data-number="12.9" id="methods"><a class="heading-anchor" href="#methods" aria-label="Link to A Note on Methods" title="#methods">¶</a><span
 class="header-section-number">12.9</span> A Note on Methods</h2>
 <p><strong>Statecraft</strong> is written as <em>narrative
 non-fiction</em>: historical scenes are reconstructed from published

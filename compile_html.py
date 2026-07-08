@@ -20,8 +20,10 @@ CHARTS = {
 }
 
 RELEASE_URL = "https://github.com/Algiras/Statecraft/releases/latest/download"
+SITE_URL = "https://algiras.github.io/Statecraft"
 PDF_URL = f"{RELEASE_URL}/statecraft_manual.pdf"
 EPUB_URL = f"{RELEASE_URL}/statecraft.epub"
+COVER_IMAGE_URL = f"{SITE_URL}/statecraft_book_cover.jpg"
 
 def fix_tight_lists(md):
     """Insert blank lines before list items that follow paragraph text."""
@@ -36,6 +38,14 @@ def fix_tight_lists(md):
         result.append(line)
     return "\n".join(result)
 
+def clean_heading_title(raw_html):
+    """Strip tags and Pandoc section numbers (e.g. 0.1, 12.7) from heading text."""
+    title = re.sub(r"<[^>]+>", "", raw_html)
+    title = re.sub(r"\s+", " ", title).strip()
+    title = re.sub(r"^¶\s*", "", title)
+    title = re.sub(r"^\d+(?:\.\d+)*\s+", "", title)
+    return title
+
 def extract_chapters(body):
     chapters = []
     for m in re.finditer(r'<h1\s+[^>]*id="([^"]+)"[^>]*>(.*?)</h1>', body, re.DOTALL):
@@ -46,8 +56,7 @@ def extract_chapters(body):
         else:
             num = str(len(chapters) + 1)
             title_html = inner
-        title = re.sub(r"<[^>]+>", "", title_html)
-        title = re.sub(r"\s+", " ", title).strip()
+        title = clean_heading_title(title_html)
         chapters.append({"id": m.group(1), "num": num, "title": title})
     return chapters
 
@@ -56,8 +65,7 @@ def extract_sections(body, level, prefix=""):
     sections = []
     pattern = rf'<h{level}\s+[^>]*id="([^"]+)"[^>]*>(.*?)</h{level}>'
     for m in re.finditer(pattern, body, re.DOTALL):
-        title = re.sub(r"<[^>]+>", "", m.group(2))
-        title = re.sub(r"\s+", " ", title).strip()
+        title = clean_heading_title(m.group(2))
         sections.append({"id": m.group(1), "title": title, "num": prefix})
     return sections
 
@@ -71,9 +79,10 @@ def build_toc_list_items(sections, numbered=True):
     for sec in sections:
         label = shorten_title(sec["title"])
         anchor = sec.get("anchor", sec["id"])
+        display_num = sec.get("display_num", sec.get("num"))
         num_html = (
-            f'<span class="toc-num">{sec["num"]}</span>'
-            if numbered and sec.get("num")
+            f'<span class="toc-num">{display_num}</span>'
+            if numbered and display_num
             else '<span class="toc-num toc-num-dot">·</span>'
         )
         items.append(
@@ -181,10 +190,13 @@ def assign_chapter_anchors(chapters):
     for i, ch in enumerate(chapters):
         if i == 0:
             ch["anchor"] = "intro"
+            ch["display_num"] = None
         elif i == len(chapters) - 1:
             ch["anchor"] = "conclusion"
+            ch["display_num"] = None
         else:
             ch["anchor"] = f"chapter-{i}"
+            ch["display_num"] = str(i)
     return chapters
 
 def assign_section_anchors(sections):
@@ -193,9 +205,12 @@ def assign_section_anchors(sections):
     return sections
 
 def inject_anchor_targets(body, sections, tag):
+    """Add scroll targets before headings when stable anchor differs from Pandoc slug."""
     for sec in sections:
         anchor = sec.get("anchor", sec["id"])
         sid = sec["id"]
+        if anchor == sid:
+            continue
         pattern = rf'(<{tag}[^>]*\bid="{re.escape(sid)}"[^>]*>)'
         replacement = f'<span id="{anchor}" class="anchor-target" aria-hidden="true"></span>\\1'
         body = re.sub(pattern, replacement, body, count=1)
@@ -462,6 +477,7 @@ body {
   font-family: var(--serif);
   font-size: 19px;
   line-height: 1.75;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -515,16 +531,17 @@ nav a:hover { color: var(--text); border-color: var(--accent); background: rgba(
 /* ── Reader controls ── */
 .reader-controls {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   align-items: center;
   margin-left: auto;
+  flex-shrink: 0;
 }
 .ctrl-btn {
   font-family: var(--sans);
   font-size: 14px;
   font-weight: 600;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -785,22 +802,52 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
   .chapter-nav { grid-template-columns: 1fr; }
   .chapter-nav-link.next { text-align: left; }
 }
+@media (max-width: 900px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    row-gap: 8px;
+  }
+  .reader-controls { grid-column: 3; margin-left: 0; }
+  .header-nav {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+}
 @media (max-width: 640px) {
+  .header-inner { gap: 8px; }
+  .header-wordmark { font-size: 13px; letter-spacing: 0.1em; }
+  .reader-controls { margin-left: auto; }
   .reader-controls .ctrl-btn:not(#btn-toc):not(#btn-theme) { display: none; }
+  .header-nav a { font-size: 12px; padding: 5px 11px; }
+  .header-nav .coming-soon { display: none; }
+  .hero-subtitle { font-size: 16px; }
+  .hero-subtitle br { display: none; }
+  .hero-meta { font-size: 13px; }
+  .header-nav { justify-content: flex-start; }
 }
 
 /* ── Hero / Cover ── */
 .hero {
   max-width: calc(var(--max-w) + 120px);
+  width: 100%;
   margin: 0 auto;
   padding: 80px 24px 60px;
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 60px;
   align-items: center;
+  overflow-x: clip;
 }
-@media (max-width: 768px) { .hero { grid-template-columns: 1fr; text-align: center; } }
-.hero-text {}
+.hero-text {
+  max-width: 560px;
+  min-width: 0;
+}
 .hero-label {
   font-family: var(--sans);
   font-size: 11px;
@@ -813,12 +860,17 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
 }
 .hero-title {
   font-family: var(--sans);
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(42px, 5vw, 68px);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.05;
   color: var(--heading);
+  margin-top: 0;
   margin-bottom: 16px;
+  padding-top: 0;
+  border-top: none;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 .hero-subtitle {
   font-family: var(--serif);
@@ -827,12 +879,14 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
   color: var(--text-muted);
   margin-bottom: 32px;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 .hero-meta {
   font-family: var(--sans);
   font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 40px;
+  overflow-wrap: break-word;
 }
 .hero-meta strong { color: var(--text); }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -885,6 +939,8 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
 }
 .cover-img {
   width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
   display: block;
@@ -899,9 +955,9 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
 
 /* ── Chapter jump bar ── */
 .chapter-jump {
-  max-width: 1280px;
+  max-width: calc(var(--max-w) + 120px);
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -944,6 +1000,8 @@ a.footnote-back { color: var(--accent2); margin-left: 6px; }
   scroll-margin-top: calc(var(--header-h) + 20px);
 }
 h1, h2.matter-heading { scroll-margin-top: calc(var(--header-h) + 20px); }
+h1.chapter-start .header-section-number,
+h2.matter-heading .header-section-number { display: none; }
 .heading-anchor {
   margin-left: 10px;
   font-family: var(--sans);
@@ -986,48 +1044,66 @@ h2.matter-heading:hover .heading-anchor,
   color: var(--text-muted);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+    padding: 48px 18px 36px;
+    gap: 24px;
+  }
+  .hero-text {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .hero-title {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+  .hero-subtitle {
+    max-width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .btn-primary, .btn-secondary, .btn-disabled {
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+  }
+  .cover-img {
+    width: min(100%, 300px);
+  }
+  .stats-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+    padding: 28px 18px;
+  }
+  .stat-num { font-size: 28px; }
+  .stat-label { font-size: 11px; }
+}
+
+@media (max-width: 420px) {
+  .hero { padding-left: 18px; padding-right: 18px; }
+  .hero-title { font-size: clamp(34px, 10vw, 42px); }
+  .hero-subtitle { max-width: 18rem; }
+  .hero-meta { max-width: 19rem; margin-left: auto; margin-right: auto; }
+  .cover-img { width: min(100%, 270px); }
+  .stats-inner { grid-template-columns: 1fr; }
+}
+
 /* ── Reading container ── */
 .content-wrap {
   max-width: var(--max-w);
   margin: 0;
   padding: 48px 0 0;
 }
-
-/* ── TOC ── */
-#TOC {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 28px 32px;
-  margin-bottom: 64px;
-}
-#TOC h2 {
-  font-family: var(--sans);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 12px;
-}
-#TOC ul { list-style: none; display: grid; gap: 4px; }
-#TOC li { font-family: var(--sans); font-size: 15px; }
-#TOC a {
-  color: var(--text-muted);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  transition: all 0.15s;
-}
-#TOC a::before { content: '→'; color: var(--accent); opacity: 0; transition: opacity 0.15s; font-size: 13px; }
-#TOC a:hover { background: rgba(124,106,247,0.08); color: var(--text); }
-#TOC a:hover::before { opacity: 1; }
-.toc-page-list a::before { display: none; }
 
 /* ── Headings ── */
 h1, h2, h3, h4 { font-family: var(--sans); line-height: 1.2; }
@@ -1133,10 +1209,13 @@ pre.mermaid svg {
 
 /* ── Tables ── */
 .table-wrap {
+  max-width: 100%;
   overflow-x: auto;
+  contain: inline-size;
   margin: 32px 0;
   border-radius: var(--r);
   border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
 }
 code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9em; color: var(--accent2); }
 pre code { color: var(--text); }
@@ -1200,7 +1279,11 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
   <meta name="description" content="Statecraft: A How-To Guide for the Accidental Founder — an open-access narrative non-fiction book on state-building written in the style of Malcolm Gladwell.">
   <meta property="og:title" content="STATECRAFT — A How-To Guide for the Accidental Founder">
   <meta property="og:description" content="Why building a country is harder than you think. 67,600 words on sovereignty, legitimacy, currency, housing, and digital governance.">
-  <meta property="og:image" content="statecraft_book_cover.jpg">
+  <meta property="og:url" content="{SITE_URL}/">
+  <meta property="og:image" content="{COVER_IMAGE_URL}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{COVER_IMAGE_URL}">
+  <link rel="canonical" href="{SITE_URL}/">
   <title>STATECRAFT — A How-To Guide for the Accidental Founder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1230,7 +1313,7 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
 
 <header>
   <div class="header-inner">
-    <a href="#" class="header-wordmark">Statecraft</a>
+    <a href="#TOC" class="header-wordmark">Statecraft</a>
     <div class="reader-controls" role="toolbar" aria-label="Reading controls">
       <button type="button" class="ctrl-btn" id="btn-toc" title="Table of contents" aria-label="Table of contents">☰</button>
       <button type="button" class="ctrl-btn" id="btn-font-down" title="Smaller text" aria-label="Decrease font size">A−</button>
@@ -1246,8 +1329,6 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
       <a href="#intro">Intro</a>
       <a href="#references">References</a>
       <a href="#sources">Sources</a>
-      <a href="{PDF_URL}" target="_blank" rel="noopener">↓ PDF</a>
-      <a href="{EPUB_URL}" target="_blank" rel="noopener">↓ EPUB</a>
       <span class="nav-pill coming-soon">🎧 Audiobook Soon</span>
     </nav>
   </div>
@@ -1257,7 +1338,7 @@ tr:hover td { background: rgba(255,255,255,0.025); color: var(--text); }
   <div class="hero-text">
     <span class="hero-label">Open Access · July 2026</span>
     <h1 class="hero-title">STATECRAFT</h1>
-    <p class="hero-subtitle">A How-To Guide for the Accidental Founder<br><em>Or: Why Building a Country is Harder Than You Think</em></p>
+    <p class="hero-subtitle">A How-To Guide for the Accidental Founder<br> <em>Or: Why Building a Country is Harder Than You Think</em></p>
     <p class="hero-meta">By <strong>Antigravity &amp; Algimantas</strong> · 67,600 words · 12 Chapters</p>
     <div class="hero-actions">
       <a href="#TOC" class="btn-primary">📖 Start Reading</a>
