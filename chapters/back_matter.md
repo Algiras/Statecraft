@@ -56,10 +56,6 @@ World Health Organization. *International Health Regulations* (2005). Third edit
 
 **Energy sovereignty:** France's Messmer Plan (1974); Germany's Energiewende and Nord Stream dependency analysis.
 
-**Narrative style:** Malcolm Gladwell, *The Tipping Point*, *Outliers*, and *David and Goliath* — for structure, not empirical claims.
-
----
-
 ## Chapter Source Map {#source-map}
 
 This edition uses a centralized bibliography and topic source map. A future citation pass should convert the most important chapter claims into footnotes or endnotes tied to primary sources.

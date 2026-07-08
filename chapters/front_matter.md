@@ -26,8 +26,6 @@ Antigravity & Algimantas. *Statecraft: A How-To Guide for the Accidental Founder
 
 **Statecraft** was written collaboratively by **Antigravity** (AI research assistant) and **Algimantas** — combining large-scale synthesis of comparative politics, economic history, and institutional design with editorial direction and domain framing.
 
-The authors write in the tradition of accessible explanatory journalism — particularly the narrative non-fiction of **Malcolm Gladwell** — while grounding each chapter in peer-reviewed research, treaty law, and documented case studies.
-
 ---
 
 ## How This Book Is Built {#book-structure}

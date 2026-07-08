@@ -253,7 +253,7 @@ While a Currency Board provides immediate credibility and price stability, it in
 
 ---
 
-## 5. The Gladwellian Epilogue: The Outlier of the Baltics
+## 5. Narrative Epilogue: The Outlier of the Baltics
 
 In the study of economic transitions, there is a concept known as path dependency. It is the idea that the decisions made in the first hours of a crisis create a groove so deep that the nation is bound to travel along it for decades, regardless of where it leads. 
 

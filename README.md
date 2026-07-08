@@ -70,7 +70,7 @@ Each chapter follows four sections: **The Hook** → **The Pivot** → **The Inv
 
 ## About the Book
 
-**Statecraft** is an open-access research manual and how-to guide for state-building, written in the narrative non-fiction style of **Malcolm Gladwell**. It is designed to dismantle the common illusion that building a country is a simple, modular task (what we call the **Sandbox Fallacy**).
+**Statecraft** is an open-access research manual and how-to guide for state-building, written as narrative non-fiction. It is designed to dismantle the common illusion that building a country is a simple, modular task (what we call the **Sandbox Fallacy**).
 
 Through compelling real-world stories, academic research, and concrete policy checklists, the book explores the deep, counter-intuitive systems of power, legitimacy, economics, and sociology that dictate a nation's survival.
 

@@ -16,15 +16,11 @@ book:
   site-url: "https://algiras.github.io/Statecraft/"
   repo-url: "https://github.com/Algiras/Statecraft"
   favicon: assets/images/statecraft_book_cover.jpg
-  downloads: [epub]
   sharing: [twitter, facebook, linkedin]
   search: true
   page-navigation: true
   sidebar:
     tools:
-      - icon: github
-        href: https://github.com/Algiras/Statecraft
-        text: Source repository
       - icon: linkedin
         href: https://www.linkedin.com/in/asimplek/
         text: Questions on LinkedIn

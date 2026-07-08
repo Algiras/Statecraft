@@ -299,7 +299,7 @@ When tax revenues are insufficient to cover capital expenditures, the state must
 
 ---
 
-## 5. The Gladwellian Epilogue: The Outlier of the Taxmen
+## 5. Narrative Epilogue: The Outlier of the Taxmen
 
 In the study of economics, there is a concept known as **path dependency**. It is the idea that the first choice a country makes—often a small, seemingly insignificant decision made in the heat of a crisis—creates a groove so deep that the nation remains locked in it for decades, long after the original crisis has passed.
 
