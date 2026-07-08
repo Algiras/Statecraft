@@ -1,5 +1,7 @@
 # Chapter 1: The Parliament of Elders (The Paradox of Legitimacy)
 
+![How Somaliland succeeded with bottom-up legitimacy where Somalia's top-down state-building failed.](../img_somaliland_vs_somalia.jpg){#fig-somaliland-somalia fig-align="center"}
+
 ## 1. The Hook: Mogadishu’s Mirage and the Acacia Tree
 
 In the early morning hours of January 5, 1991, the hum of the air conditioners inside the United States Embassy compound in Mogadishu was drowned out by the rhythmic, deafening chop of helicopter blades. Operation Eastern Exit was underway. For weeks, the capital of Somalia had been disintegrating. The regime of Mohamed Siad Barre—a dictator who had spent twenty-one years balancing clan rivalries through a combination of Marxist rhetoric, Soviet heavy weaponry, and American financial aid—was collapsing. Barre, now mockingly referred to by his own citizens as the "Mayor of Mogadishu" because his authority ceased at the city limits, was preparing to flee in a tank. Outside the embassy gates, the streets belonged to teenage militiamen armed with Soviet-made Kalashnikovs, driving "technicals"—pickup trucks with heavy machine guns bolted to the cargo beds. 

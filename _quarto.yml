@@ -43,7 +43,7 @@ format:
       light: [cosmo, quarto-book.scss]
       dark: [darkly, quarto-book.scss]
     toc: true
-    number-sections: true
+    number-sections: false
     smooth-scroll: true
     code-copy: true
     css: quarto-book.css

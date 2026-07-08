@@ -1,5 +1,7 @@
 # Chapter 2: The Infrastructure of Trust (The Gold in the Vaults)
 
+![Estonia's currency board was a commitment device: every kroon issued had to be backed by reserves.](../img_currency_board.jpg){#fig-currency-board fig-align="center"}
+
 ## 1. The Hook: The Cold Winter of Tallinn
 
 In the early morning hours of January 11, 1992, the Baltic wind off the Gulf of Finland did not merely blow through the streets of Tallinn; it seemed to inhabit them. It was a wind that carried the scent of frozen salt, damp concrete, and the sulfurous tang of low-grade Russian oil. Tallinn, the medieval capital of Estonia, was a city caught in a peculiar state of suspension. On paper, it was free. Five months earlier, during the chaotic collapse of the Soviet Union, the Estonian parliament had declared the restoration of its independent republic. The red, green, and white flag of the Estonian Soviet Socialist Republic had been lowered from the Tall Hermann tower, replaced by the blue, black, and white tricolor of a sovereign nation. 

@@ -1,5 +1,7 @@
 # Chapter 5: The Legal Ghosts (The Sovereign Club)
 
+![The sovereignty spectrum runs from zero recognition to full de jure status.](../img_sovereignty_spectrum.jpg){#fig-sovereignty-spectrum fig-align="center"}
+
 ## I. The Via Condotti Paradox
 
 If you take a taxi to the Via Condotti in the heart of Rome’s luxury shopping district on a warm afternoon, you will find yourself in one of the most intensely commercialized, highly congested corridors on the planet. This is a street of sensory overload, a glittering runway of human aspiration. The air is thick with the scent of dark espresso, expensive leather, and the heavy, sweet perfume wafting from the open doorways of high-end boutiques. On any given day, the narrow cobblestones are crowded with tourists, influencers, and window shoppers gazing at the latest displays from Gucci, Valentino, Prada, and Bulgari. It is a temple dedicated to the material markers of modern success and physical presence.

@@ -1,5 +1,7 @@
 # Introduction: The Sandbox Fallacy
 
+![The central thesis: nationhood is software, not hardware.](../img_hardware_vs_software.jpg){#fig-hardware-software fig-align="center"}
+
 ## 1. The Hook: The Danube Anomaly
 
 If you travel to the borderlands where Croatia meets Serbia, about halfway between the cities of Zagreb and Belgrade, you will find yourself in a landscape that feels suspended in time. Here, the Danube River flows slow and heavy, a muddy artery cutting through low-lying floodplains, dense willow forests, and silent marshes. The air in summer is thick with humidity and the high-pitched hum of millions of mosquitoes. It is a quiet place, where the only sounds are the occasional call of a heron and the gentle lapping of the river against the clay banks. But in the spring of 2015, this damp, forgotten corridor of Eastern Europe suddenly became the center of a bizarre global drama.

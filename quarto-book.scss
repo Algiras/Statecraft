@@ -147,6 +147,15 @@ figure {
   margin-block: 2rem;
 }
 
+figure img {
+  border: 1px solid var(--statecraft-border);
+  border-radius: 8px;
+  display: block;
+  margin-inline: auto;
+  max-height: min(760px, 82vh);
+  object-fit: contain;
+}
+
 figcaption {
   color: var(--statecraft-muted);
   font-family: $font-family-sans-serif;
