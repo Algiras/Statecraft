@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 470" role="img" aria-labelledby="title desc">
+  <title id="title">Transition path from hybridity to consolidated institutions</title>
+  <desc id="desc">Three phases showing traditional clans narrowing from dominance to advisory ritual while modern institutions grow from paper shell to statutory bureaucracy.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7c6af7"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="470" rx="22" fill="#11131d"/>
+  <text x="520" y="56" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="800" fill="#f6f7fb">Scaling Beyond Hybridity</text>
+  <text x="520" y="88" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a8acc6">Traditional authority narrows as modern institutions earn legitimacy.</text>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(60 128)">
+      <text x="140" y="0" font-size="17" font-weight="800" fill="#9f92ff">Stabilization</text>
+      <rect x="0" y="28" width="280" height="86" rx="14" fill="#253049" stroke="#485275"/>
+      <text x="140" y="63" font-size="17" font-weight="700" fill="#fff">Traditional clans</text>
+      <text x="140" y="88" font-size="13" fill="#c9cede">Guurti / Xeer dominant</text>
+      <rect x="0" y="212" width="280" height="86" rx="14" fill="#1d2636" stroke="#40506a"/>
+      <text x="140" y="247" font-size="17" font-weight="700" fill="#fff">Modern institutions</text>
+      <text x="140" y="272" font-size="13" fill="#c9cede">Minimal / paper</text>
+    </g>
+    <g transform="translate(380 128)">
+      <text x="140" y="0" font-size="17" font-weight="800" fill="#9f92ff">Transition</text>
+      <rect x="0" y="28" width="280" height="86" rx="14" fill="#203c4b" stroke="#3f7081"/>
+      <text x="140" y="63" font-size="17" font-weight="700" fill="#fff">Traditional clans</text>
+      <text x="140" y="88" font-size="13" fill="#c7d4df">Guurti advisory</text>
+      <rect x="0" y="212" width="280" height="86" rx="14" fill="#243f36" stroke="#4b7968"/>
+      <text x="140" y="247" font-size="17" font-weight="700" fill="#fff">Modern institutions</text>
+      <text x="140" y="272" font-size="13" fill="#c8ded6">Electoral / tax base</text>
+    </g>
+    <g transform="translate(700 128)">
+      <text x="140" y="0" font-size="17" font-weight="800" fill="#9f92ff">Consolidation</text>
+      <rect x="0" y="28" width="280" height="86" rx="14" fill="#4a3722" stroke="#8a6841"/>
+      <text x="140" y="63" font-size="17" font-weight="700" fill="#fff">Traditional clans</text>
+      <text x="140" y="88" font-size="13" fill="#ead9c1">Customary / ritual</text>
+      <rect x="0" y="212" width="280" height="86" rx="14" fill="#2d3454" stroke="#59649a"/>
+      <text x="140" y="247" font-size="17" font-weight="700" fill="#fff">Modern institutions</text>
+      <text x="140" y="272" font-size="13" fill="#d2d7f2">Statutory / bureaucratic</text>
+    </g>
+  </g>
+  <g stroke="#7c6af7" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M200 242 V328"/>
+    <path d="M520 242 V328"/>
+    <path d="M840 242 V328"/>
+    <path d="M342 383 H376"/>
+    <path d="M662 383 H696"/>
+  </g>
+  <g stroke="#8a8faa" stroke-width="3" stroke-dasharray="8 8" fill="none" marker-end="url(#arrow)">
+    <path d="M342 199 H376"/>
+    <path d="M662 199 H696"/>
+  </g>
+</svg>

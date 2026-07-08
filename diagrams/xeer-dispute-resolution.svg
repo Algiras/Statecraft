@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 720" role="img" aria-labelledby="title desc">
+  <title id="title">The Xeer dispute resolution flow</title>
+  <desc id="desc">A six-step flow from homicide through clan mobilization, elder assembly, diya negotiation, settlement execution, and social restoration.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7c6af7"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="920" height="720" rx="22" fill="#11131d"/>
+  <rect x="34" y="34" width="852" height="652" rx="18" fill="#181b27" stroke="#2f3447"/>
+  <text x="460" y="84" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#f6f7fb">The Xeer Dispute Resolution Flow</text>
+  <text x="460" y="118" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a8acc6">Customary law converts revenge risk into compensated settlement.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" fill="#f6f7fb" text-anchor="middle" filter="url(#shadow)">
+    <g transform="translate(140 160)">
+      <rect width="640" height="62" rx="12" fill="#253049" stroke="#485275"/>
+      <text x="320" y="38">1. Homicide occurs</text>
+    </g>
+    <g transform="translate(140 248)">
+      <rect width="640" height="72" rx="12" fill="#203c4b" stroke="#3f7081"/>
+      <text x="320" y="31">2. Clans mobilize</text>
+      <text x="320" y="55" font-size="14" fill="#c7d4df">Elders step in immediately to prevent a feud</text>
+    </g>
+    <g transform="translate(140 356)">
+      <rect width="640" height="72" rx="12" fill="#243f36" stroke="#4b7968"/>
+      <text x="320" y="31">3. Ad-hoc assembly</text>
+      <text x="320" y="55" font-size="14" fill="#c8ded6">Elders from Clan A and Clan B meet under the acacia tree</text>
+    </g>
+    <g transform="translate(140 464)">
+      <rect width="640" height="72" rx="12" fill="#4a3722" stroke="#8a6841"/>
+      <text x="320" y="31">4. Negotiation</text>
+      <text x="320" y="55" font-size="14" fill="#ead9c1">Calculate diya: 100 camels standard for a male</text>
+    </g>
+    <g transform="translate(140 572)">
+      <rect width="300" height="72" rx="12" fill="#492c38" stroke="#87556a"/>
+      <text x="150" y="31">5. Settlement</text>
+      <text x="150" y="55" font-size="14" fill="#ecd1dc">Damiin guarantor provided</text>
+    </g>
+    <g transform="translate(480 572)">
+      <rect width="300" height="72" rx="12" fill="#2d3454" stroke="#59649a"/>
+      <text x="150" y="31">6. Social restoration</text>
+      <text x="150" y="55" font-size="14" fill="#d2d7f2">Peace feast; balance restored</text>
+    </g>
+  </g>
+  <g stroke="#7c6af7" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M460 222 V244"/>
+    <path d="M460 320 V352"/>
+    <path d="M460 428 V460"/>
+    <path d="M460 536 V568"/>
+    <path d="M440 608 H476"/>
+  </g>
+</svg>

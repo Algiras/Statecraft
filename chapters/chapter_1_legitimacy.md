@@ -105,34 +105,12 @@ Under the *Xeer*, there is no distinction between civil and criminal law. All in
 
 Consider how a serious crime, such as a homicide, is resolved under the *Xeer*:
 
-```
-+-----------------------------------------------------------------------+
-|                    THE XEER DISPUTE RESOLUTION FLOW                   |
-+-----------------------------------------------------------------------+
-|                                                                       |
-|   1. Homicide Occurs                                                  |
-|          |                                                            |
-|          v                                                            |
-|   2. Clans Mobilize (Elders step in immediately to prevent a feud)    |
-|          |                                                            |
-|          v                                                            |
-|   3. Ad-hoc Assembly (Elders from Clan A & B meet under acacia tree)   |
-|          |                                                            |
-|          v                                                            |
-|   4. Negotiation (Calculate Diya: 100 camels standard for a male)     |
-|          |                                                            |
-|          v                                                            |
-|   5. Execution of Settlement (Surety/Damiin provided by guarantor)    |
-|          |                                                            |
-|          v                                                            |
-|   6. Social Restoration (Peace feast; balance restored between clans)  |
-|                                                                       |
-+-----------------------------------------------------------------------+
-```
+![The Xeer dispute resolution flow converts revenge risk into compensated settlement.](../diagrams/xeer-dispute-resolution.svg){#fig-xeer-dispute-resolution fig-align="center"}
 
 When a murder occurs, the victim's clan does not contact the police. Instead, the elders of the victim's clan and the killer's clan immediately step in to prevent a blood feud. A blood feud occurs when the victim's relatives seek revenge by killing any member of the killer's clan. To prevent this cycle of violence, the elders declare a temporary truce.
 
 The elders then convene an ad-hoc court, sitting in a circle under an acacia tree. They do not refer to a written legal code. Instead, they rely on their memory of legal precedents (*xeer-hure*). The rules of the *Xeer* are highly structured:
+
 *   **The standard *diya* (blood money)** for the killing of a man is 100 camels. For a woman, it is 50 camels.
 *   **The distribution of the payment**: The killer’s immediate family is responsible for a portion of the camels, while the wider *jifo* pays the rest. This ensures that the financial burden is shared, but the individual family still feels the cost.
 *   **The receipt of the payment**: The compensation is distributed to the victim’s close family and their *jifo*.
@@ -210,13 +188,7 @@ Before you design an institution, you must master three fundamental concepts:
 
 If you are building an organization in an environment where trust is low and formal institutions are weak, you must follow the Borama Process. This is a five-stage framework designed to cultivate bottom-up legitimacy.
 
-```mermaid
-graph LR
-    A[1. Identify Existing Software] --> B[2. Establish Local Financing]
-    B --> C[3. Design the Hybrid Interface]
-    C --> D[4. Accept Polycentric Rule-Making]
-    D --> E[5. Test via Stress and Resolve]
-```
+![The Borama Process is a five-stage framework for cultivating bottom-up legitimacy.](../diagrams/borama-process.svg){#fig-borama-process fig-align="center"}
 
 #### Step 1: Identify the Existing Software (The Diagnostic Stage)
 Before you write a single rule or draft a charter, you must map the existing systems of authority and dispute resolution. 
@@ -236,11 +208,13 @@ Create a formal structure that incorporates, rather than replaces, the informal 
 
 #### Step 4: Accept Polycentric Rule-Making (The Legal Pluralism Stage)
 Do not attempt to establish a single, centralized code of conduct immediately. Allow different subgroups to maintain their own internal rules, as long as they agree on a common interface for inter-group disputes.
+
 *   **The Rule**: Customary law is not a relic of the past; it is a highly adaptive technology.
 *   *Action*: Design dispute resolution mechanisms that prioritize mediation, compensation, and relationship restoration over punishment and exclusion.
 
 #### Step 5: Test and Iterate (The Stress-Test Stage)
 Do not assume your design is perfect. Wait for the first crisis. When the crisis occurs, do not rely on formal rules to resolve it; use the hybrid interface.
+
 *   *Action*: Use the mediation power of the traditional council to resolve the crisis, then update your formal rules to reflect the settlement.
 
 ---
@@ -279,19 +253,7 @@ A common criticism of hybrid political orders is that they are structurally stat
 
 Somaliland’s recent history offers an instructive, albeit imperfect, model for this transition. The country has spent the last two decades engaged in a slow, sometimes painful process of **rational-legal encroachment**. The strategy is not to replace the traditional software, but to slowly expand the domain of the modern hardware.
 
-```
-       STABILIZATION PHASE                     TRANSITION PHASE                     CONSOLIDATION PHASE
-   +-------------------------+            +-------------------------+            +-------------------------+
-   |   Traditional Clans     |            |    Traditional Clans    |            |    Traditional Clans    |
-   |   (Guurti / Xeer dominant) |         |      (Guurti Advisory)  |            |   (Customary / Ritual)  |
-   +------------+------------+            +------------+------------+            +------------+------------+
-                |                                      |                                      |
-                v                                      v                                      v
-   +------------+------------+            +------------+------------+            +------------+------------+
-   |    Modern Institutions  |  =======>  |   Modern Institutions   |  =======>  |   Modern Institutions   |
-   |      (Minimal / Paper)  |            |   (Electoral / Tax base)|            |    (Statutory / Bureaucratic)|
-   +-------------------------+            +-------------------------+            +-------------------------+
-```
+![The transition path narrows traditional authority while modern institutions earn legitimacy.](../diagrams/hybrid-transition-path.svg){#fig-hybrid-transition-path fig-align="center"}
 
 1.  **Phase 1: Stabilization (The Borama Era)**: Traditional structures are dominant. The modern state is a shell, and the *Guurti* acts as the primary executive and legislative arbitrator. The law is almost entirely *Xeer*.
 2.  **Phase 2: Encroachment (The Electoral Era)**: The state introduces political parties and popular elections, but limits them to three national parties to prevent direct alignment with the three major clans. The lower house becomes fully democratic, while the *Guurti* remains customary. The state begins to collect taxes and build a professional bureaucracy, slowly replacing the lineage-based dispute resolution with statutory courts for commercial and administrative disputes.

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" role="img" aria-labelledby="title desc">
+  <title id="title">The Borama process</title>
+  <desc id="desc">A five-step framework for building bottom-up legitimacy from existing social structures.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7c6af7"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="320" rx="22" fill="#11131d"/>
+  <text x="500" y="56" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#f6f7fb">The Borama Process</text>
+  <text x="500" y="86" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a8acc6">A framework for cultivating bottom-up legitimacy before formal state capacity.</text>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(46 132)">
+      <rect width="150" height="96" rx="14" fill="#253049" stroke="#485275"/>
+      <text x="75" y="34" font-size="16" font-weight="700" fill="#fff">1. Identify</text>
+      <text x="75" y="58" font-size="13" fill="#c9cede">Existing software</text>
+    </g>
+    <g transform="translate(236 132)">
+      <rect width="150" height="96" rx="14" fill="#203c4b" stroke="#3f7081"/>
+      <text x="75" y="34" font-size="16" font-weight="700" fill="#fff">2. Finance</text>
+      <text x="75" y="58" font-size="13" fill="#c9cede">Local ownership</text>
+    </g>
+    <g transform="translate(426 132)">
+      <rect width="150" height="96" rx="14" fill="#243f36" stroke="#4b7968"/>
+      <text x="75" y="34" font-size="16" font-weight="700" fill="#fff">3. Interface</text>
+      <text x="75" y="58" font-size="13" fill="#c9cede">Hybrid authority</text>
+    </g>
+    <g transform="translate(616 132)">
+      <rect width="150" height="96" rx="14" fill="#4a3722" stroke="#8a6841"/>
+      <text x="75" y="34" font-size="16" font-weight="700" fill="#fff">4. Pluralism</text>
+      <text x="75" y="58" font-size="13" fill="#ead9c1">Many rule systems</text>
+    </g>
+    <g transform="translate(806 132)">
+      <rect width="150" height="96" rx="14" fill="#2d3454" stroke="#59649a"/>
+      <text x="75" y="34" font-size="16" font-weight="700" fill="#fff">5. Stress test</text>
+      <text x="75" y="58" font-size="13" fill="#d2d7f2">Resolve and adapt</text>
+    </g>
+  </g>
+  <g stroke="#7c6af7" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M200 180 H232"/>
+    <path d="M390 180 H422"/>
+    <path d="M580 180 H612"/>
+    <path d="M770 180 H802"/>
+  </g>
+</svg>
