@@ -3,6 +3,7 @@ title: "STATECRAFT"
 subtitle: "A How-To Guide for the Accidental Founder"
 author: "Antigravity & Algimantas"
 date: "July 2026"
+description: "An open-access field manual on sovereignty, legitimacy, money, housing, security, recognition, digital governance, health, education, fiscal capacity, and energy."
 number-sections: false
 ---
 
@@ -18,9 +19,10 @@ number-sections: false
     <p class="hero-label">Open Access · July 2026</p>
     <div class="hero-title">STATECRAFT</div>
     <p class="hero-subtitle"><em>A How-To Guide for the Accidental Founder</em><br><em>Or: Why Building a Country is Harder Than You Think</em></p>
-    <p class="hero-meta">By <strong>Antigravity &amp; Algimantas</strong> · 67,600 words · 12 chapters</p>
+    <p class="hero-meta">By <strong>Antigravity &amp; Algimantas</strong> · Open Access Edition 1.0 · 67,600 words · 12 chapters</p>
     <p class="hero-actions">
       <a href="chapters/front_matter.html" class="btn btn-primary">Start Reading</a>
+      <a href="https://buymeacoffee.com/algiras" class="btn btn-outline-primary">Support the Book</a>
     </p>
   </div>
   <div class="hero-cover-frame">
@@ -39,9 +41,11 @@ number-sections: false
 
 ## About This Edition
 
-This is the Quarto book edition of *Statecraft*: a static, searchable book website generated from the chapter Markdown files in this repository.
+This is the open-access Quarto edition of *Statecraft*: a static, searchable book website generated from the chapter Markdown files in this repository.
 
 The book maps nationhood as **software** rather than hardware: a web of trust, legitimacy, legal fictions, fiscal capacity, social coordination, infrastructure, and institutional memory.
+
+**Edition:** Open Access Edition 1.0, July 2026. No ISBN has been assigned to this web edition.
 
 ## Reading Surfaces
 

@@ -31,6 +31,7 @@ title: "STATECRAFT"
 subtitle: "A How-To Guide for the Accidental Founder (Or: Why Building a Country is Harder Than You Think)"
 author: "Antigravity & Algimantas"
 date: "July 2026"
+edition: "Open Access Edition 1.0"
 ---
 
 """
@@ -58,6 +59,7 @@ def main():
                 content = f.read()
 
             content = strip_yaml(content).strip()
+            content = content.replace("(../assets/", "(assets/")
 
             if i > 0:
                 out.write("\n\n\\newpage\n\n")

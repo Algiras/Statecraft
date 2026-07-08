@@ -7,6 +7,7 @@ book:
   subtitle: "A How-To Guide for the Accidental Founder"
   author: "Antigravity & Algimantas"
   date: "July 2026"
+  edition: "Open Access Edition 1.0"
   site-url: "https://algiras.github.io/Statecraft/"
   repo-url: "https://github.com/Algiras/Statecraft"
   favicon: assets/images/statecraft_book_cover.jpg
@@ -14,6 +15,14 @@ book:
   sharing: [twitter, facebook, linkedin]
   search: true
   page-navigation: true
+  sidebar:
+    tools:
+      - icon: github
+        href: https://github.com/Algiras/Statecraft
+        text: Source repository
+      - icon: cup-hot
+        href: https://buymeacoffee.com/algiras
+        text: Support the book
   chapters:
     - index.qmd
     - part: "Front Matter"
@@ -49,12 +58,33 @@ format:
     css: quarto-book.css
     include-in-header:
       text: |
+        <meta name="description" content="Statecraft is an open-access field manual on sovereignty, legitimacy, money, housing, security, recognition, digital governance, health, education, fiscal capacity, and energy.">
+        <meta name="author" content="Antigravity & Algimantas">
+        <link rel="canonical" href="https://algiras.github.io/Statecraft/">
         <meta property="og:title" content="STATECRAFT — A How-To Guide for the Accidental Founder">
         <meta property="og:description" content="Why building a country is harder than you think. 67,600 words on sovereignty, legitimacy, currency, housing, and digital governance.">
         <meta property="og:url" content="https://algiras.github.io/Statecraft/">
         <meta property="og:image" content="https://algiras.github.io/Statecraft/assets/images/statecraft_book_cover.jpg">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:image" content="https://algiras.github.io/Statecraft/assets/images/statecraft_book_cover.jpg">
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Book",
+          "name": "STATECRAFT",
+          "alternateName": "A How-To Guide for the Accidental Founder",
+          "author": [
+            { "@type": "Person", "name": "Algimantas" },
+            { "@type": "Organization", "name": "Antigravity" }
+          ],
+          "datePublished": "2026-07",
+          "bookEdition": "Open Access Edition 1.0",
+          "inLanguage": "en",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "url": "https://algiras.github.io/Statecraft/",
+          "image": "https://algiras.github.io/Statecraft/assets/images/statecraft_book_cover.jpg"
+        }
+        </script>
   pdf:
     documentclass: book
     pdf-engine: xelatex

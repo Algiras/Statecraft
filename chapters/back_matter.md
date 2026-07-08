@@ -67,3 +67,5 @@ World Health Organization. *International Health Regulations* (2005). Third edit
 Case studies (Liberland, Somaliland, Estonia, Singapore, Costa Rica, Taiwan, SMOM, etc.) are selected for **illustrative contrast**, not exhaustive survey. The Manual Pages are **normative frameworks** — diagnostic tools for founders, policymakers, and students — not prescriptions for any specific territory.
 
 Corrections and citations for future editions may be submitted via the [GitHub repository](https://github.com/Algiras/Statecraft).
+
+Open-access publishing, visual production, and audiobook work can be supported at [buymeacoffee.com/algiras](https://buymeacoffee.com/algiras).

@@ -5,6 +5,8 @@
 
 Copyright © 2026 **Antigravity & Algimantas**
 
+**Edition:** Open Access Edition 1.0, July 2026. No ISBN has been assigned to this web edition.
+
 This work is published under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).[^cc] You are free to share, adapt, and build upon this material for any purpose, including commercially, provided you give appropriate credit, link to the license, and indicate if changes were made.
 
 [^cc]: Creative Commons Corporation. *CC BY 4.0 Legal Code*. https://creativecommons.org/licenses/by/4.0/
@@ -13,6 +15,8 @@ This work is published under the [Creative Commons Attribution 4.0 International
 Antigravity & Algimantas. *Statecraft: A How-To Guide for the Accidental Founder*. Open Access Edition, July 2026. https://algiras.github.io/Statecraft/
 
 **Disclaimer:** This book is narrative non-fiction and policy analysis written for education. It is not legal, financial, or diplomatic advice. State-building scenarios described are illustrative.
+
+**Support:** If this open-access edition is useful, you can [support future editions and audiobook production](https://buymeacoffee.com/algiras).
 
 ---
 

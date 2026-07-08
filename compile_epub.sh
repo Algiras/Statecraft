@@ -22,11 +22,12 @@ pandoc book_epub.md \
   --from markdown+footnotes \
   --toc \
   --toc-depth=2 \
-  --epub-cover-image=statecraft_book_cover.jpg \
+  --epub-cover-image=assets/images/statecraft_book_cover.jpg \
   --metadata title="STATECRAFT" \
   --metadata subtitle="A How-To Guide for the Accidental Founder" \
   --metadata author="Antigravity & Algimantas" \
   --metadata date="July 2026" \
+  --metadata edition="Open Access Edition 1.0" \
   --metadata lang="en"
 
 rm -f book_epub.md

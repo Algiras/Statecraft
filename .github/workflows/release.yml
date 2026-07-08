@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Run book QA
+        run: python3 scripts/qa_book.py
+
       - name: Install Pandoc & XeLaTeX
         run: |
           sudo apt-get update
@@ -47,7 +50,7 @@ jobs:
             - 📚 **statecraft.epub** — E-reader edition (Kindle, Apple Books, etc.)
             - 📖 **book.md** — Full Markdown manuscript (67,600+ words)
 
-            > Audiobook edition coming soon — voiced with Resemble AI's Chatterbox.
+            Support future editions and audiobook production at https://buymeacoffee.com/algiras.
           files: |
             statecraft_manual.pdf
             statecraft.epub

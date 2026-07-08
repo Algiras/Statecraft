@@ -28,6 +28,9 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Run book QA
+        run: python3 scripts/qa_book.py
+
       - name: Render Quarto book
         run: quarto render --to html
 
