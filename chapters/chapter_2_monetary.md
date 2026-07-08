@@ -158,7 +158,7 @@ The currency board was the foundation of this miracle. It was not a perfect syst
 ### SECTION II: MONETARY INFRASTRUCTURE
 #### SYSTEM DESIGN: THE CURRENCY BOARD ARCHITECTURE
 
-![┌─────────────────────────────────────────────────────────────┐](../assets/diagrams/manual-blocks/chapter_2_monetary-01-block.svg){#fig-chapter-2-monetary-01-block fig-align="center"}
+![Currency board system architecture](../assets/diagrams/manual-blocks/chapter_2_monetary-01-block.svg){#fig-chapter-2-monetary-01-block fig-align="center"}
 
 #### I. Core Operational Principles
 

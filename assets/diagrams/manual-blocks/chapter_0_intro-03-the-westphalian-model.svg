@@ -1,25 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="458" viewBox="0 0 900 458" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="736" viewBox="0 0 1200 736" role="img" aria-labelledby="title desc">
   <title id="title">THE WESTPHALIAN MODEL</title>
-  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
-  <rect width="900" height="458" rx="14" fill="#171821"/>
-  <rect x="1" y="1" width="898" height="456" rx="13" fill="none" stroke="#32354a"/>
-  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
-  <text x="32" y="54" class="line">                   THE WESTPHALIAN MODEL</text>
-  <text x="32" y="76" class="line">                   </text>
-  <text x="32" y="98" class="line">     +-----------------------------------------------+</text>
-  <text x="32" y="120" class="line">     |              SOVEREIGN EQUALITY               |</text>
-  <text x="32" y="142" class="line">     |  - All states are legally equal under law    |</text>
-  <text x="32" y="164" class="line">     +-----------------------+-----------------------+</text>
-  <text x="32" y="186" class="line">                             |</text>
-  <text x="32" y="208" class="line">     +-----------------------v-----------------------+</text>
-  <text x="32" y="230" class="line">     |             TERRITORIAL INTEGRITY             |</text>
-  <text x="32" y="252" class="line">     |  - State has exclusive authority over land    |</text>
-  <text x="32" y="274" class="line">     +-----------------------+-----------------------+</text>
-  <text x="32" y="296" class="line">                             |</text>
-  <text x="32" y="318" class="line">     +-----------------------v-----------------------+</text>
-  <text x="32" y="340" class="line">     |               NON-INTERVENTION                |</text>
-  <text x="32" y="362" class="line">     |  - External powers cannot interfere in internal |</text>
-  <text x="32" y="384" class="line">     |    affairs of a sovereign state               |</text>
-  <text x="32" y="406" class="line">     +-----------------------------------------------+</text>
-  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+  <desc id="desc">Clean Statecraft figure rendered from manual source material.</desc>
+  <rect width="1200" height="736" rx="18" fill="#151620"/>
+  <rect x="1" y="1" width="1198" height="734" rx="17" fill="none" stroke="#34384f"/>
+  <text x="48" y="42" class="eyebrow">STATECRAFT MANUAL FIGURE</text>
+  <text x="48" y="78" class="heading">THE WESTPHALIAN MODEL</text>
+  <rect x="48" y="112" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="146" class="body">THE WESTPHALIAN MODEL</text>
+  <path d="M600 174 v8" class="arrow"/>
+  <rect x="48" y="186" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="220" class="body">SOVEREIGN EQUALITY</text>
+  <path d="M600 248 v8" class="arrow"/>
+  <rect x="48" y="260" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="294" class="body">- All states are legally equal under law</text>
+  <path d="M600 322 v8" class="arrow"/>
+  <rect x="48" y="334" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="368" class="body">TERRITORIAL INTEGRITY</text>
+  <path d="M600 396 v8" class="arrow"/>
+  <rect x="48" y="408" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="442" class="body">- State has exclusive authority over land</text>
+  <path d="M600 470 v8" class="arrow"/>
+  <rect x="48" y="482" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="516" class="body">NON-INTERVENTION</text>
+  <path d="M600 544 v8" class="arrow"/>
+  <rect x="48" y="556" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="590" class="body">- External powers cannot interfere in internal</text>
+  <path d="M600 618 v8" class="arrow"/>
+  <rect x="48" y="630" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="664" class="body">affairs of a sovereign state</text>
+  <style>
+    .eyebrow{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2.4px;fill:#8b7cff}.heading{font:700 28px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#f6f6fb}.card{fill:#20222e;stroke:#3a3e55}.body{font:18px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#dfe1f1}.arrow{stroke:#8b7cff;stroke-width:3;marker-end:url(#arrow)}
+  </style><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto"><path d="M1,1 L5,9 L9,1" fill="none" stroke="#8b7cff" stroke-width="2"/></marker></defs>
 </svg>

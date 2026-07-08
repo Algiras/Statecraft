@@ -1,190 +1,400 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="4088" viewBox="0 0 900 4088" role="img" aria-labelledby="title desc">
-  <title id="title">SECTION 5.1: THE SOVEREIGN CLINIC [ADMINISTRATIVE PROTOCOL]</title>
-  <desc id="desc">Manual figure generated from a source block in the Statecraft manuscript.</desc>
-  <rect width="900" height="4088" rx="14" fill="#171821"/>
-  <rect x="1" y="1" width="898" height="4086" rx="13" fill="none" stroke="#32354a"/>
-  <text x="32" y="30" class="label">STATECRAFT MANUAL FIGURE</text>
-  <text x="32" y="54" class="line">================================================================================</text>
-  <text x="32" y="76" class="line">SECTION 5.1: THE SOVEREIGN CLINIC                  [ADMINISTRATIVE PROTOCOL]</text>
-  <text x="32" y="98" class="line">================================================================================</text>
-  <text x="32" y="120" class="line"></text>
-  <text x="32" y="142" class="line">This document outlines the playbook for securing, managing, and leveraging </text>
-  <text x="32" y="164" class="line">sovereignty under international law. In statecraft, sovereignty is a dual-key </text>
-  <text x="32" y="186" class="line">system requiring both de facto functionality (Declarative) and de jure </text>
-  <text x="32" y="208" class="line">acceptance (Constitutive). </text>
-  <text x="32" y="230" class="line"></text>
-  <text x="32" y="252" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="274" class="line">1. THE DUAL-KEY SOVEREIGNTY MATRIX</text>
-  <text x="32" y="296" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="318" class="line"></text>
-  <text x="32" y="340" class="line">A founder must monitor their state's status across both dimensions. Failure </text>
-  <text x="32" y="362" class="line">in either matrix results in systemic vulnerability.</text>
-  <text x="32" y="384" class="line"></text>
-  <text x="32" y="406" class="line">+------------------+-----------------------------+-----------------------------+</text>
-  <text x="32" y="428" class="line">| PARAMETER        | DECLARATIVE STATEHOOD       | CONSTITUTIVE STATEHOOD      |</text>
-  <text x="32" y="450" class="line">+------------------+-----------------------------+-----------------------------+</text>
-  <text x="32" y="472" class="line">| Legal Source     | Montevideo Convention (1933)| International Consensus      |</text>
-  <text x="32" y="494" class="line">| Focus            | Internal Reality (Facts)    | External Recognition (Club) |</text>
-  <text x="32" y="516" class="line">| Core Requirement | Control of Territory &amp; Pop. | Diplomatic Treaties &amp; Votes |</text>
-  <text x="32" y="538" class="line">| Primary Tool     | Bureaucracy, Police, Taxes  | Foreign Relations Office    |</text>
-  <text x="32" y="560" class="line">| Vulnerability    | Diplomatic Isolation        | Territorial Eviction        |</text>
-  <text x="32" y="582" class="line">| Example          | Taiwan (High Fact, Low Club)| SMOM (Low Fact, High Club)  |</text>
-  <text x="32" y="604" class="line">+------------------+-----------------------------+-----------------------------+</text>
-  <text x="32" y="626" class="line"></text>
-  <text x="32" y="648" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="670" class="line">2. THE MONTEVIDEO COMPLIANCE PROTOCOL (DECLARATIVE PATHWAY)</text>
-  <text x="32" y="692" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="714" class="line"></text>
-  <text x="32" y="736" class="line">Before seeking external recognition, you must establish a baseline of de facto </text>
-  <text x="32" y="758" class="line">control that satisfies the four criteria of the Montevideo Convention:</text>
-  <text x="32" y="780" class="line"></text>
-  <text x="32" y="802" class="line">A. Population Stabilization:</text>
-  <text x="32" y="824" class="line">   * Establish a registry of citizens with unique biometric identifiers.</text>
-  <text x="32" y="846" class="line">   * Document a permanent residency requirement (minimum 183 days per year).</text>
-  <text x="32" y="868" class="line">   * Issue physical identity documents to prevent nomadic dilution.</text>
-  <text x="32" y="890" class="line"></text>
-  <text x="32" y="912" class="line">B. Territorial Delineation:</text>
-  <text x="32" y="934" class="line">   * Map borders using GPS coordinates registered with the International </text>
-  <text x="32" y="956" class="line">     Hydrographic Organization or relevant regional body.</text>
-  <text x="32" y="978" class="line">   * Establish border checkpoints, even if they are symbolic or virtual.</text>
-  <text x="32" y="1000" class="line">   * Maintain physical infrastructure on the claimed land to show occupancy.</text>
-  <text x="32" y="1022" class="line"></text>
-  <text x="32" y="1044" class="line">C. Administrative Execution (Government):</text>
-  <text x="32" y="1066" class="line">   * Create a centralized system for the collection of taxes or duties.</text>
-  <text x="32" y="1088" class="line">   * Deploy a security force holding a monopoly on the legitimate use of </text>
-  <text x="32" y="1110" class="line">     violence within the defined territory.</text>
-  <text x="32" y="1132" class="line">   * Establish a dispute resolution mechanism (courts) accessible to citizens.</text>
-  <text x="32" y="1154" class="line"></text>
-  <text x="32" y="1176" class="line">D. Capacity for External Relations:</text>
-  <text x="32" y="1198" class="line">   * Establish a Ministry of Foreign Affairs (MFA).</text>
-  <text x="32" y="1220" class="line">   * Appoint diplomatic representatives with clear credentials.</text>
-  <text x="32" y="1242" class="line">   * Create a communications network capable of sending secure cables.</text>
-  <text x="32" y="1264" class="line"></text>
-  <text x="32" y="1286" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="1308" class="line">3. THE RECOGNITION PLAYBOOK (CONSTITUTIVE PATHWAY)</text>
-  <text x="32" y="1330" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="1352" class="line"></text>
-  <text x="32" y="1374" class="line">Gaining entry to the Sovereign Club is a progressive, non-linear process. A </text>
-  <text x="32" y="1396" class="line">founder should follow the &quot;Staircase of Recognition&quot; to minimize risk and </text>
-  <text x="32" y="1418" class="line">maximize diplomatic return.</text>
-  <text x="32" y="1440" class="line"></text>
-  <text x="32" y="1462" class="line">       THE STAIRCASE OF DIPLOMATIC RECOGNITION</text>
-  <text x="32" y="1484" class="line">  </text>
-  <text x="32" y="1506" class="line">  [ LEVEL 4: UN MEMBERSHIP ] -----------&gt; The Ultimate Goal (Veto Barrier)</text>
-  <text x="32" y="1528" class="line">       ^</text>
-  <text x="32" y="1550" class="line">  [ LEVEL 3: BILATERAL TREATIES ] ------&gt; Formal Recognition (Ambassadors)</text>
-  <text x="32" y="1572" class="line">       ^</text>
-  <text x="32" y="1594" class="line">  [ LEVEL 2: UNOFFICIAL MISSIONS ] -----&gt; De Facto Relations (Trade Offices)</text>
-  <text x="32" y="1616" class="line">       ^</text>
-  <text x="32" y="1638" class="line">  [ LEVEL 1: TECHNICAL ENGAGEMENT ] ----&gt; Functional Recognition (ITU, ISO)</text>
-  <text x="32" y="1660" class="line"></text>
-  <text x="32" y="1682" class="line">### LEVEL 1: Technical &amp; Functional Engagement</text>
-  <text x="32" y="1704" class="line">Do not begin by asking superpowers for recognition. Instead, target functional, </text>
-  <text x="32" y="1726" class="line">apolitical international bodies where entry criteria are technical rather </text>
-  <text x="32" y="1748" class="line">than political.</text>
-  <text x="32" y="1770" class="line">*   **The Postal Play**: Apply for UPU membership or sign treaties with </text>
-  <text x="32" y="1792" class="line">    neighboring postal authorities. Postal delivery is a soft marker of sovereignty.</text>
-  <text x="32" y="1814" class="line">*   **The Standards Game**: Join the ISO to obtain a country code (e.g., ISO </text>
-  <text x="32" y="1836" class="line">    3166-1 alpha-2). A two-letter code is required for internet TLDs (.tw, .ee) </text>
-  <text x="32" y="1858" class="line">    and financial routing.</text>
-  <text x="32" y="1880" class="line">*   **The Registries**: Establish ship and aviation registries that conform </text>
-  <text x="32" y="1902" class="line">    strictly to international safety standards.</text>
-  <text x="32" y="1924" class="line"></text>
-  <text x="32" y="1946" class="line">### LEVEL 2: The Unofficial Representation Model (The &quot;Taiwan Playbook&quot;)</text>
-  <text x="32" y="1968" class="line">When formal recognition is blocked by a geopolitical rival, establish a </text>
-  <text x="32" y="1990" class="line">dual-track system to conduct relations without official status.</text>
-  <text x="32" y="2012" class="line"></text>
-  <text x="32" y="2034" class="line">*   **Corporate Shelling**: In target countries, incorporate a private, </text>
-  <text x="32" y="2056" class="line">    non-profit entity (e.g., &quot;The [State Name] Economic and Cultural Center&quot;). </text>
-  <text x="32" y="2078" class="line">    This entity will act as your de facto embassy.</text>
-  <text x="32" y="2100" class="line">*   **Staffing Fictions**: Staff these offices with MFA officials who are </text>
-  <text x="32" y="2122" class="line">    placed on &quot;temporary leave&quot; or &quot;secondment&quot; from the civil service. This </text>
-  <text x="32" y="2144" class="line">    protects their career path while maintaining operational professionalism.</text>
-  <text x="32" y="2166" class="line">*   **Consular Services Under the Table**:</text>
-  <text x="32" y="2188" class="line">    *   Do not issue visas directly from the representative office. Instead, </text>
-  <text x="32" y="2210" class="line">        issue &quot;travel authorizations&quot; online.</text>
-  <text x="32" y="2232" class="line">    *   Use a private database to verify identities, printing the entry permit </text>
-  <text x="32" y="2254" class="line">        as a PDF that the traveler presents at your border.</text>
-  <text x="32" y="2276" class="line">*   **Asset Protection**: Store all state property abroad in the name of these </text>
-  <text x="32" y="2298" class="line">    private corporations. This prevents a rival from claiming them under </text>
-  <text x="32" y="2320" class="line">    sovereign succession laws.</text>
-  <text x="32" y="2342" class="line"></text>
-  <text x="32" y="2364" class="line">### LEVEL 3: Bilateral Treaties &amp; Mutual Recognition</text>
-  <text x="32" y="2386" class="line">Target vulnerable, small, or transactionally minded members of the UN. </text>
-  <text x="32" y="2408" class="line"></text>
-  <text x="32" y="2430" class="line">*   **The Microstate Coalition**: Target Pacific, Caribbean, or African microstates </text>
-  <text x="32" y="2452" class="line">    who have low geopolitical exposure. These countries often trade diplomatic </text>
-  <text x="32" y="2474" class="line">    recognition for economic development assistance or trade agreements.</text>
-  <text x="32" y="2496" class="line">*   **The Mutual Recognition Treaty (MRT)**: Draft bilateral treaties that focus </text>
-  <text x="32" y="2518" class="line">    on mutual benefits. Frame the treaty around joint challenges:</text>
-  <text x="32" y="2540" class="line">    *   *Double Taxation Treaties*: Crucial for business flows.</text>
-  <text x="32" y="2562" class="line">    *   *Extradition Treaties*: Establishes mutual trust in legal systems.</text>
-  <text x="32" y="2584" class="line">    *   *Visa-Free Agreements*: Enhances the value of your passport.</text>
-  <text x="32" y="2606" class="line"></text>
-  <text x="32" y="2628" class="line">### LEVEL 4: UN Membership (The Sovereign Apex)</text>
-  <text x="32" y="2650" class="line">UN membership is the ultimate legal shield, but it is defended by the five </text>
-  <text x="32" y="2672" class="line">permanent members of the Security Council (P5), who hold veto power.</text>
-  <text x="32" y="2694" class="line"></text>
-  <text x="32" y="2716" class="line">*   **The Observer Pathway**: If a veto is guaranteed, apply for Permanent </text>
-  <text x="32" y="2738" class="line">    Observer status under the precedent of the Holy See and the Sovereign </text>
-  <text x="32" y="2760" class="line">    Military Order of Malta. This requires a majority vote in the General </text>
-  <text x="32" y="2782" class="line">    Assembly but avoids the Security Council veto.</text>
-  <text x="32" y="2804" class="line">*   **The Leverage Strategy**: Build a coalition of G77 (developing) nations by </text>
-  <text x="32" y="2826" class="line">    aligning your diplomatic positions with their resource demands. A large </text>
-  <text x="32" y="2848" class="line">    bloc of votes in the General Assembly can force concessions from the P5.</text>
-  <text x="32" y="2870" class="line"></text>
-  <text x="32" y="2892" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="2914" class="line">4. TREATY DRAFTING PROTOCOL: THE MUTUAL RECOGNITION AGREEMENT (MRA)</text>
-  <text x="32" y="2936" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="2958" class="line"></text>
-  <text x="32" y="2980" class="line">When drafting an MRA, use the following standardized clauses to ensure </text>
-  <text x="32" y="3002" class="line">compliance with international legal norms.</text>
-  <text x="32" y="3024" class="line"></text>
-  <text x="32" y="3046" class="line">                  MUTUAL RECOGNITION AGREEMENT</text>
-  <text x="32" y="3068" class="line">                  </text>
-  <text x="32" y="3090" class="line">Between: The State of [Founder's State] (&quot;Party A&quot;)</text>
-  <text x="32" y="3112" class="line">And:     The Republic of [Partner State] (&quot;Party B&quot;)</text>
-  <text x="32" y="3134" class="line"></text>
-  <text x="32" y="3156" class="line">ARTICLE I: RECOGNITION OF SOVEREIGNTY</text>
-  <text x="32" y="3178" class="line">The Parties formally recognize each other as sovereign, independent states under </text>
-  <text x="32" y="3200" class="line">the principles of international law, and agree to conduct relations in </text>
-  <text x="32" y="3222" class="line">accordance with the Charter of the United Nations.</text>
-  <text x="32" y="3244" class="line"></text>
-  <text x="32" y="3266" class="line">ARTICLE II: DIPLOMATIC MISSIONS</text>
-  <text x="32" y="3288" class="line">The Parties agree to establish formal diplomatic relations and to exchange </text>
-  <text x="32" y="3310" class="line">diplomatic representatives at the rank of Ambassador Extraordinary and </text>
-  <text x="32" y="3332" class="line">Plenipotentiary. The properties, personnel, and communications of these </text>
-  <text x="32" y="3354" class="line">missions shall enjoy the immunities set forth in the Vienna Convention on </text>
-  <text x="32" y="3376" class="line">Diplomatic Relations of 1961.</text>
-  <text x="32" y="3398" class="line"></text>
-  <text x="32" y="3420" class="line">ARTICLE III: APPLICABILITY OF LAW</text>
-  <text x="32" y="3442" class="line">Party B agrees that all assets, properties, and accounts registered in the name </text>
-  <text x="32" y="3464" class="line">of Party A, its agencies, or its designated representative corporations within </text>
-  <text x="32" y="3486" class="line">the jurisdiction of Party B shall remain the exclusive property of Party A, </text>
-  <text x="32" y="3508" class="line">immune from seizure, expropriation, or transfer to any third party claiming </text>
-  <text x="32" y="3530" class="line">sovereign succession.</text>
-  <text x="32" y="3552" class="line"></text>
-  <text x="32" y="3574" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="3596" class="line">5. TROUBLESHOOTING DIPLOMATIC CRISES</text>
-  <text x="32" y="3618" class="line">--------------------------------------------------------------------------------</text>
-  <text x="32" y="3640" class="line"></text>
-  <text x="32" y="3662" class="line">A. Derecognition Event:</text>
-  <text x="32" y="3684" class="line">   * *Symptom*: A key ally announces they are switching recognition to a rival.</text>
-  <text x="32" y="3706" class="line">   * *Immediate Action*: Within 24 hours, transfer all embassy real estate and </text>
-  <text x="32" y="3728" class="line">     bank assets to a pre-established private foundation.</text>
-  <text x="32" y="3750" class="line">   * *Mitigation*: Restructure the official embassy into an &quot;Economic Office&quot; </text>
-  <text x="32" y="3772" class="line">     under the Taiwan model to preserve operational channels.</text>
-  <text x="32" y="3794" class="line"></text>
-  <text x="32" y="3816" class="line">B. Passport Rejection:</text>
-  <text x="32" y="3838" class="line">   * *Symptom*: A major transit hub refuses to accept your citizens' passports.</text>
-  <text x="32" y="3860" class="line">   * *Immediate Action*: Negotiate a bilateral transit document agreement. </text>
-  <text x="32" y="3882" class="line">     Agree to issue a secondary identity document read by standard scanners.</text>
-  <text x="32" y="3904" class="line">   * *Mitigation*: Ensure your passport chip conforms strictly to the International </text>
-  <text x="32" y="3926" class="line">     Civil Aviation Organization (ICAO) Doc 9303 standards. Many rejections </text>
-  <text x="32" y="3948" class="line">     are technical, not political.</text>
-  <text x="32" y="3970" class="line"></text>
-  <text x="32" y="3992" class="line">================================================================================</text>
-  <text x="32" y="4014" class="line">END OF FILE                                           [STATECRAFT INSTRUCTIONS]</text>
-  <text x="32" y="4036" class="line">================================================================================</text>
-  <style>.label{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2px;fill:#8b7cff}.line{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#d8d9ea}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="9764" viewBox="0 0 1200 9764" role="img" aria-labelledby="title desc">
+  <title id="title">SECTION 5.1: THE SOVEREIGN CLINIC [ADMINISTRATIVE PROTOCOL</title>
+  <desc id="desc">Clean Statecraft figure rendered from manual source material.</desc>
+  <rect width="1200" height="9764" rx="18" fill="#151620"/>
+  <rect x="1" y="1" width="1198" height="9762" rx="17" fill="none" stroke="#34384f"/>
+  <text x="48" y="42" class="eyebrow">STATECRAFT MANUAL FIGURE</text>
+  <text x="48" y="78" class="heading">SECTION 5.1: THE SOVEREIGN CLINIC [ADMINISTRATIVE PROTOCOL</text>
+  <rect x="48" y="112" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="146" class="body">SECTION 5.1: THE SOVEREIGN CLINIC [ADMINISTRATIVE PROTOCOL]</text>
+  <path d="M600 174 v8" class="arrow"/>
+  <rect x="48" y="186" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="220" class="body">This document outlines the playbook for securing, managing, and leveraging</text>
+  <path d="M600 248 v8" class="arrow"/>
+  <rect x="48" y="260" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="294" class="body">sovereignty under international law. In statecraft, sovereignty is a dual-key</text>
+  <path d="M600 322 v8" class="arrow"/>
+  <rect x="48" y="334" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="368" class="body">system requiring both de facto functionality (Declarative) and de jure</text>
+  <path d="M600 396 v8" class="arrow"/>
+  <rect x="48" y="408" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="442" class="body">acceptance (Constitutive).</text>
+  <path d="M600 470 v8" class="arrow"/>
+  <rect x="48" y="482" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="516" class="body">1. THE DUAL-KEY SOVEREIGNTY MATRIX</text>
+  <path d="M600 544 v8" class="arrow"/>
+  <rect x="48" y="556" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="590" class="body">A founder must monitor their state's status across both dimensions. Failure</text>
+  <path d="M600 618 v8" class="arrow"/>
+  <rect x="48" y="630" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="664" class="body">in either matrix results in systemic vulnerability.</text>
+  <path d="M600 692 v8" class="arrow"/>
+  <rect x="48" y="704" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="738" class="body">PARAMETER DECLARATIVE STATEHOOD CONSTITUTIVE STATEHOOD</text>
+  <path d="M600 766 v8" class="arrow"/>
+  <rect x="48" y="778" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="812" class="body">Legal Source Montevideo Convention (1933) International Consensus</text>
+  <path d="M600 840 v8" class="arrow"/>
+  <rect x="48" y="852" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="886" class="body">Focus Internal Reality (Facts) External Recognition (Club)</text>
+  <path d="M600 914 v8" class="arrow"/>
+  <rect x="48" y="926" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="960" class="body">Core Requirement Control of Territory &amp; Pop. Diplomatic Treaties &amp; Votes</text>
+  <path d="M600 988 v8" class="arrow"/>
+  <rect x="48" y="1000" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1034" class="body">Primary Tool Bureaucracy, Police, Taxes Foreign Relations Office</text>
+  <path d="M600 1062 v8" class="arrow"/>
+  <rect x="48" y="1074" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1108" class="body">Vulnerability Diplomatic Isolation Territorial Eviction</text>
+  <path d="M600 1136 v8" class="arrow"/>
+  <rect x="48" y="1148" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1182" class="body">Example Taiwan (High Fact, Low Club) SMOM (Low Fact, High Club)</text>
+  <path d="M600 1210 v8" class="arrow"/>
+  <rect x="48" y="1222" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1256" class="body">2. THE MONTEVIDEO COMPLIANCE PROTOCOL (DECLARATIVE PATHWAY)</text>
+  <path d="M600 1284 v8" class="arrow"/>
+  <rect x="48" y="1296" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1330" class="body">Before seeking external recognition, you must establish a baseline of de facto</text>
+  <path d="M600 1358 v8" class="arrow"/>
+  <rect x="48" y="1370" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1404" class="body">control that satisfies the four criteria of the Montevideo Convention:</text>
+  <path d="M600 1432 v8" class="arrow"/>
+  <rect x="48" y="1444" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1478" class="body">A. Population Stabilization:</text>
+  <path d="M600 1506 v8" class="arrow"/>
+  <rect x="48" y="1518" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1552" class="body">* Establish a registry of citizens with unique biometric identifiers.</text>
+  <path d="M600 1580 v8" class="arrow"/>
+  <rect x="48" y="1592" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1626" class="body">* Document a permanent residency requirement (minimum 183 days per year).</text>
+  <path d="M600 1654 v8" class="arrow"/>
+  <rect x="48" y="1666" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1700" class="body">* Issue physical identity documents to prevent nomadic dilution.</text>
+  <path d="M600 1728 v8" class="arrow"/>
+  <rect x="48" y="1740" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1774" class="body">B. Territorial Delineation:</text>
+  <path d="M600 1802 v8" class="arrow"/>
+  <rect x="48" y="1814" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1848" class="body">* Map borders using GPS coordinates registered with the International</text>
+  <path d="M600 1876 v8" class="arrow"/>
+  <rect x="48" y="1888" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1922" class="body">Hydrographic Organization or relevant regional body.</text>
+  <path d="M600 1950 v8" class="arrow"/>
+  <rect x="48" y="1962" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="1996" class="body">* Establish border checkpoints, even if they are symbolic or virtual.</text>
+  <path d="M600 2024 v8" class="arrow"/>
+  <rect x="48" y="2036" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2070" class="body">* Maintain physical infrastructure on the claimed land to show occupancy.</text>
+  <path d="M600 2098 v8" class="arrow"/>
+  <rect x="48" y="2110" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2144" class="body">C. Administrative Execution (Government):</text>
+  <path d="M600 2172 v8" class="arrow"/>
+  <rect x="48" y="2184" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2218" class="body">* Create a centralized system for the collection of taxes or duties.</text>
+  <path d="M600 2246 v8" class="arrow"/>
+  <rect x="48" y="2258" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2292" class="body">* Deploy a security force holding a monopoly on the legitimate use of</text>
+  <path d="M600 2320 v8" class="arrow"/>
+  <rect x="48" y="2332" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2366" class="body">violence within the defined territory.</text>
+  <path d="M600 2394 v8" class="arrow"/>
+  <rect x="48" y="2406" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2440" class="body">* Establish a dispute resolution mechanism (courts) accessible to citizens.</text>
+  <path d="M600 2468 v8" class="arrow"/>
+  <rect x="48" y="2480" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2514" class="body">D. Capacity for External Relations:</text>
+  <path d="M600 2542 v8" class="arrow"/>
+  <rect x="48" y="2554" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2588" class="body">* Establish a Ministry of Foreign Affairs (MFA).</text>
+  <path d="M600 2616 v8" class="arrow"/>
+  <rect x="48" y="2628" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2662" class="body">* Appoint diplomatic representatives with clear credentials.</text>
+  <path d="M600 2690 v8" class="arrow"/>
+  <rect x="48" y="2702" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2736" class="body">* Create a communications network capable of sending secure cables.</text>
+  <path d="M600 2764 v8" class="arrow"/>
+  <rect x="48" y="2776" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2810" class="body">3. THE RECOGNITION PLAYBOOK (CONSTITUTIVE PATHWAY)</text>
+  <path d="M600 2838 v8" class="arrow"/>
+  <rect x="48" y="2850" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2884" class="body">Gaining entry to the Sovereign Club is a progressive, non-linear process. A</text>
+  <path d="M600 2912 v8" class="arrow"/>
+  <rect x="48" y="2924" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="2958" class="body">founder should follow the &quot;Staircase of Recognition&quot; to minimize risk and</text>
+  <path d="M600 2986 v8" class="arrow"/>
+  <rect x="48" y="2998" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3032" class="body">maximize diplomatic return.</text>
+  <path d="M600 3060 v8" class="arrow"/>
+  <rect x="48" y="3072" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3106" class="body">THE STAIRCASE OF DIPLOMATIC RECOGNITION</text>
+  <path d="M600 3134 v8" class="arrow"/>
+  <rect x="48" y="3146" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3180" class="body">[ LEVEL 4: UN MEMBERSHIP ] &gt; The Ultimate Goal (Veto Barrier)</text>
+  <path d="M600 3208 v8" class="arrow"/>
+  <rect x="48" y="3220" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3254" class="body">[ LEVEL 3: BILATERAL TREATIES ] &gt; Formal Recognition (Ambassadors)</text>
+  <path d="M600 3282 v8" class="arrow"/>
+  <rect x="48" y="3294" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3328" class="body">[ LEVEL 2: UNOFFICIAL MISSIONS ] &gt; De Facto Relations (Trade Offices)</text>
+  <path d="M600 3356 v8" class="arrow"/>
+  <rect x="48" y="3368" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3402" class="body">[ LEVEL 1: TECHNICAL ENGAGEMENT ] &gt; Functional Recognition (ITU, ISO)</text>
+  <path d="M600 3430 v8" class="arrow"/>
+  <rect x="48" y="3442" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3476" class="body">### LEVEL 1: Technical &amp; Functional Engagement</text>
+  <path d="M600 3504 v8" class="arrow"/>
+  <rect x="48" y="3516" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3550" class="body">Do not begin by asking superpowers for recognition. Instead, target functional,</text>
+  <path d="M600 3578 v8" class="arrow"/>
+  <rect x="48" y="3590" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3624" class="body">apolitical international bodies where entry criteria are technical rather</text>
+  <path d="M600 3652 v8" class="arrow"/>
+  <rect x="48" y="3664" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3698" class="body">than political.</text>
+  <path d="M600 3726 v8" class="arrow"/>
+  <rect x="48" y="3738" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3772" class="body">* **The Postal Play**: Apply for UPU membership or sign treaties with</text>
+  <path d="M600 3800 v8" class="arrow"/>
+  <rect x="48" y="3812" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3846" class="body">neighboring postal authorities. Postal delivery is a soft marker of sovereignty.</text>
+  <path d="M600 3874 v8" class="arrow"/>
+  <rect x="48" y="3886" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3920" class="body">* **The Standards Game**: Join the ISO to obtain a country code (e.g., ISO</text>
+  <path d="M600 3948 v8" class="arrow"/>
+  <rect x="48" y="3960" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="3994" class="body">3166-1 alpha-2). A two-letter code is required for internet TLDs (.tw, .ee)</text>
+  <path d="M600 4022 v8" class="arrow"/>
+  <rect x="48" y="4034" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4068" class="body">and financial routing.</text>
+  <path d="M600 4096 v8" class="arrow"/>
+  <rect x="48" y="4108" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4142" class="body">* **The Registries**: Establish ship and aviation registries that conform</text>
+  <path d="M600 4170 v8" class="arrow"/>
+  <rect x="48" y="4182" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4216" class="body">strictly to international safety standards.</text>
+  <path d="M600 4244 v8" class="arrow"/>
+  <rect x="48" y="4256" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4290" class="body">### LEVEL 2: The Unofficial Representation Model (The &quot;Taiwan Playbook&quot;)</text>
+  <path d="M600 4318 v8" class="arrow"/>
+  <rect x="48" y="4330" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4364" class="body">When formal recognition is blocked by a geopolitical rival, establish a</text>
+  <path d="M600 4392 v8" class="arrow"/>
+  <rect x="48" y="4404" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4438" class="body">dual-track system to conduct relations without official status.</text>
+  <path d="M600 4466 v8" class="arrow"/>
+  <rect x="48" y="4478" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4512" class="body">* **Corporate Shelling**: In target countries, incorporate a private,</text>
+  <path d="M600 4540 v8" class="arrow"/>
+  <rect x="48" y="4552" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4586" class="body">non-profit entity (e.g., &quot;The [State Name] Economic and Cultural Center&quot;).</text>
+  <path d="M600 4614 v8" class="arrow"/>
+  <rect x="48" y="4626" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4660" class="body">This entity will act as your de facto embassy.</text>
+  <path d="M600 4688 v8" class="arrow"/>
+  <rect x="48" y="4700" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4734" class="body">* **Staffing Fictions**: Staff these offices with MFA officials who are</text>
+  <path d="M600 4762 v8" class="arrow"/>
+  <rect x="48" y="4774" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4808" class="body">placed on &quot;temporary leave&quot; or &quot;secondment&quot; from the civil service. This</text>
+  <path d="M600 4836 v8" class="arrow"/>
+  <rect x="48" y="4848" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4882" class="body">protects their career path while maintaining operational professionalism.</text>
+  <path d="M600 4910 v8" class="arrow"/>
+  <rect x="48" y="4922" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="4956" class="body">* **Consular Services Under the Table**:</text>
+  <path d="M600 4984 v8" class="arrow"/>
+  <rect x="48" y="4996" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5030" class="body">* Do not issue visas directly from the representative office. Instead,</text>
+  <path d="M600 5058 v8" class="arrow"/>
+  <rect x="48" y="5070" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5104" class="body">issue &quot;travel authorizations&quot; online.</text>
+  <path d="M600 5132 v8" class="arrow"/>
+  <rect x="48" y="5144" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5178" class="body">* Use a private database to verify identities, printing the entry permit</text>
+  <path d="M600 5206 v8" class="arrow"/>
+  <rect x="48" y="5218" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5252" class="body">as a PDF that the traveler presents at your border.</text>
+  <path d="M600 5280 v8" class="arrow"/>
+  <rect x="48" y="5292" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5326" class="body">* **Asset Protection**: Store all state property abroad in the name of these</text>
+  <path d="M600 5354 v8" class="arrow"/>
+  <rect x="48" y="5366" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5400" class="body">private corporations. This prevents a rival from claiming them under</text>
+  <path d="M600 5428 v8" class="arrow"/>
+  <rect x="48" y="5440" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5474" class="body">sovereign succession laws.</text>
+  <path d="M600 5502 v8" class="arrow"/>
+  <rect x="48" y="5514" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5548" class="body">### LEVEL 3: Bilateral Treaties &amp; Mutual Recognition</text>
+  <path d="M600 5576 v8" class="arrow"/>
+  <rect x="48" y="5588" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5622" class="body">Target vulnerable, small, or transactionally minded members of the UN.</text>
+  <path d="M600 5650 v8" class="arrow"/>
+  <rect x="48" y="5662" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5696" class="body">* **The Microstate Coalition**: Target Pacific, Caribbean, or African microstates</text>
+  <path d="M600 5724 v8" class="arrow"/>
+  <rect x="48" y="5736" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5770" class="body">who have low geopolitical exposure. These countries often trade diplomatic</text>
+  <path d="M600 5798 v8" class="arrow"/>
+  <rect x="48" y="5810" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5844" class="body">recognition for economic development assistance or trade agreements.</text>
+  <path d="M600 5872 v8" class="arrow"/>
+  <rect x="48" y="5884" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5918" class="body">* **The Mutual Recognition Treaty (MRT)**: Draft bilateral treaties that focus</text>
+  <path d="M600 5946 v8" class="arrow"/>
+  <rect x="48" y="5958" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="5992" class="body">on mutual benefits. Frame the treaty around joint challenges:</text>
+  <path d="M600 6020 v8" class="arrow"/>
+  <rect x="48" y="6032" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6066" class="body">* *Double Taxation Treaties*: Crucial for business flows.</text>
+  <path d="M600 6094 v8" class="arrow"/>
+  <rect x="48" y="6106" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6140" class="body">* *Extradition Treaties*: Establishes mutual trust in legal systems.</text>
+  <path d="M600 6168 v8" class="arrow"/>
+  <rect x="48" y="6180" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6214" class="body">* *Visa-Free Agreements*: Enhances the value of your passport.</text>
+  <path d="M600 6242 v8" class="arrow"/>
+  <rect x="48" y="6254" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6288" class="body">### LEVEL 4: UN Membership (The Sovereign Apex)</text>
+  <path d="M600 6316 v8" class="arrow"/>
+  <rect x="48" y="6328" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6362" class="body">UN membership is the ultimate legal shield, but it is defended by the five</text>
+  <path d="M600 6390 v8" class="arrow"/>
+  <rect x="48" y="6402" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6436" class="body">permanent members of the Security Council (P5), who hold veto power.</text>
+  <path d="M600 6464 v8" class="arrow"/>
+  <rect x="48" y="6476" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6510" class="body">* **The Observer Pathway**: If a veto is guaranteed, apply for Permanent</text>
+  <path d="M600 6538 v8" class="arrow"/>
+  <rect x="48" y="6550" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6584" class="body">Observer status under the precedent of the Holy See and the Sovereign</text>
+  <path d="M600 6612 v8" class="arrow"/>
+  <rect x="48" y="6624" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6658" class="body">Military Order of Malta. This requires a majority vote in the General</text>
+  <path d="M600 6686 v8" class="arrow"/>
+  <rect x="48" y="6698" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6732" class="body">Assembly but avoids the Security Council veto.</text>
+  <path d="M600 6760 v8" class="arrow"/>
+  <rect x="48" y="6772" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6806" class="body">* **The Leverage Strategy**: Build a coalition of G77 (developing) nations by</text>
+  <path d="M600 6834 v8" class="arrow"/>
+  <rect x="48" y="6846" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6880" class="body">aligning your diplomatic positions with their resource demands. A large</text>
+  <path d="M600 6908 v8" class="arrow"/>
+  <rect x="48" y="6920" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="6954" class="body">bloc of votes in the General Assembly can force concessions from the P5.</text>
+  <path d="M600 6982 v8" class="arrow"/>
+  <rect x="48" y="6994" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7028" class="body">4. TREATY DRAFTING PROTOCOL: THE MUTUAL RECOGNITION AGREEMENT (MRA)</text>
+  <path d="M600 7056 v8" class="arrow"/>
+  <rect x="48" y="7068" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7102" class="body">When drafting an MRA, use the following standardized clauses to ensure</text>
+  <path d="M600 7130 v8" class="arrow"/>
+  <rect x="48" y="7142" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7176" class="body">compliance with international legal norms.</text>
+  <path d="M600 7204 v8" class="arrow"/>
+  <rect x="48" y="7216" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7250" class="body">MUTUAL RECOGNITION AGREEMENT</text>
+  <path d="M600 7278 v8" class="arrow"/>
+  <rect x="48" y="7290" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7324" class="body">Between: The State of [Founder's State] (&quot;Party A&quot;)</text>
+  <path d="M600 7352 v8" class="arrow"/>
+  <rect x="48" y="7364" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7398" class="body">And: The Republic of [Partner State] (&quot;Party B&quot;)</text>
+  <path d="M600 7426 v8" class="arrow"/>
+  <rect x="48" y="7438" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7472" class="body">ARTICLE I: RECOGNITION OF SOVEREIGNTY</text>
+  <path d="M600 7500 v8" class="arrow"/>
+  <rect x="48" y="7512" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7546" class="body">The Parties formally recognize each other as sovereign, independent states under</text>
+  <path d="M600 7574 v8" class="arrow"/>
+  <rect x="48" y="7586" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7620" class="body">the principles of international law, and agree to conduct relations in</text>
+  <path d="M600 7648 v8" class="arrow"/>
+  <rect x="48" y="7660" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7694" class="body">accordance with the Charter of the United Nations.</text>
+  <path d="M600 7722 v8" class="arrow"/>
+  <rect x="48" y="7734" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7768" class="body">ARTICLE II: DIPLOMATIC MISSIONS</text>
+  <path d="M600 7796 v8" class="arrow"/>
+  <rect x="48" y="7808" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7842" class="body">The Parties agree to establish formal diplomatic relations and to exchange</text>
+  <path d="M600 7870 v8" class="arrow"/>
+  <rect x="48" y="7882" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7916" class="body">diplomatic representatives at the rank of Ambassador Extraordinary and</text>
+  <path d="M600 7944 v8" class="arrow"/>
+  <rect x="48" y="7956" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="7990" class="body">Plenipotentiary. The properties, personnel, and communications of these</text>
+  <path d="M600 8018 v8" class="arrow"/>
+  <rect x="48" y="8030" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8064" class="body">missions shall enjoy the immunities set forth in the Vienna Convention on</text>
+  <path d="M600 8092 v8" class="arrow"/>
+  <rect x="48" y="8104" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8138" class="body">Diplomatic Relations of 1961.</text>
+  <path d="M600 8166 v8" class="arrow"/>
+  <rect x="48" y="8178" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8212" class="body">ARTICLE III: APPLICABILITY OF LAW</text>
+  <path d="M600 8240 v8" class="arrow"/>
+  <rect x="48" y="8252" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8286" class="body">Party B agrees that all assets, properties, and accounts registered in the name</text>
+  <path d="M600 8314 v8" class="arrow"/>
+  <rect x="48" y="8326" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8360" class="body">of Party A, its agencies, or its designated representative corporations within</text>
+  <path d="M600 8388 v8" class="arrow"/>
+  <rect x="48" y="8400" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8434" class="body">the jurisdiction of Party B shall remain the exclusive property of Party A,</text>
+  <path d="M600 8462 v8" class="arrow"/>
+  <rect x="48" y="8474" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8508" class="body">immune from seizure, expropriation, or transfer to any third party claiming</text>
+  <path d="M600 8536 v8" class="arrow"/>
+  <rect x="48" y="8548" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8582" class="body">sovereign succession.</text>
+  <path d="M600 8610 v8" class="arrow"/>
+  <rect x="48" y="8622" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8656" class="body">5. TROUBLESHOOTING DIPLOMATIC CRISES</text>
+  <path d="M600 8684 v8" class="arrow"/>
+  <rect x="48" y="8696" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8730" class="body">A. Derecognition Event:</text>
+  <path d="M600 8758 v8" class="arrow"/>
+  <rect x="48" y="8770" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8804" class="body">* *Symptom*: A key ally announces they are switching recognition to a rival.</text>
+  <path d="M600 8832 v8" class="arrow"/>
+  <rect x="48" y="8844" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8878" class="body">* *Immediate Action*: Within 24 hours, transfer all embassy real estate and</text>
+  <path d="M600 8906 v8" class="arrow"/>
+  <rect x="48" y="8918" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="8952" class="body">bank assets to a pre-established private foundation.</text>
+  <path d="M600 8980 v8" class="arrow"/>
+  <rect x="48" y="8992" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9026" class="body">* *Mitigation*: Restructure the official embassy into an &quot;Economic Office&quot;</text>
+  <path d="M600 9054 v8" class="arrow"/>
+  <rect x="48" y="9066" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9100" class="body">under the Taiwan model to preserve operational channels.</text>
+  <path d="M600 9128 v8" class="arrow"/>
+  <rect x="48" y="9140" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9174" class="body">B. Passport Rejection:</text>
+  <path d="M600 9202 v8" class="arrow"/>
+  <rect x="48" y="9214" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9248" class="body">* *Symptom*: A major transit hub refuses to accept your citizens' passports.</text>
+  <path d="M600 9276 v8" class="arrow"/>
+  <rect x="48" y="9288" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9322" class="body">* *Immediate Action*: Negotiate a bilateral transit document agreement.</text>
+  <path d="M600 9350 v8" class="arrow"/>
+  <rect x="48" y="9362" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9396" class="body">Agree to issue a secondary identity document read by standard scanners.</text>
+  <path d="M600 9424 v8" class="arrow"/>
+  <rect x="48" y="9436" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9470" class="body">* *Mitigation*: Ensure your passport chip conforms strictly to the International</text>
+  <path d="M600 9498 v8" class="arrow"/>
+  <rect x="48" y="9510" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9544" class="body">Civil Aviation Organization (ICAO) Doc 9303 standards. Many rejections</text>
+  <path d="M600 9572 v8" class="arrow"/>
+  <rect x="48" y="9584" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9618" class="body">are technical, not political.</text>
+  <path d="M600 9646 v8" class="arrow"/>
+  <rect x="48" y="9658" width="1104" height="58" rx="14" class="card"/>
+  <text x="74" y="9692" class="body">END OF FILE [STATECRAFT INSTRUCTIONS]</text>
+  <style>
+    .eyebrow{font:700 12px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:2.4px;fill:#8b7cff}.heading{font:700 28px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#f6f6fb}.card{fill:#20222e;stroke:#3a3e55}.body{font:18px ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#dfe1f1}.arrow{stroke:#8b7cff;stroke-width:3;marker-end:url(#arrow)}
+  </style><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto"><path d="M1,1 L5,9 L9,1" fill="none" stroke="#8b7cff" stroke-width="2"/></marker></defs>
 </svg>

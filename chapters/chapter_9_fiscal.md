@@ -186,7 +186,7 @@ This is the holy grail of statecraft. The power to extract is not the power to t
 ### SECTION IX: FISCAL CAPACITY AND EXTRACTION
 #### SYSTEM DESIGN: THE EXTRACTION ENGINE
 
-![┌──────────────────────────┐](../assets/diagrams/manual-blocks/chapter_9_fiscal-05-block.svg){#fig-chapter-9-fiscal-05-block fig-align="center"}
+![Sovereign treasury operating model](../assets/diagrams/manual-blocks/chapter_9_fiscal-05-block.svg){#fig-chapter-9-fiscal-05-block fig-align="center"}
 
 ---
 
