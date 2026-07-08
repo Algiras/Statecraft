@@ -1,6 +1,11 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - llms.txt
+    - llms-full.txt
+    - robots.txt
+    - ERRATA.md
 
 book:
   title: "STATECRAFT"
@@ -20,6 +25,9 @@ book:
       - icon: github
         href: https://github.com/Algiras/Statecraft
         text: Source repository
+      - icon: linkedin
+        href: https://www.linkedin.com/in/asimplek/
+        text: Questions on LinkedIn
       - icon: cup-hot
         href: https://buymeacoffee.com/algiras
         text: Support the book
@@ -45,6 +53,7 @@ book:
     - part: "Back Matter"
       chapters:
         - chapters/back_matter.md
+        - chapters/ai_readers.md
 
 format:
   html:
@@ -74,7 +83,15 @@ format:
           "name": "STATECRAFT",
           "alternateName": "A How-To Guide for the Accidental Founder",
           "author": [
-            { "@type": "Person", "name": "Algimantas" },
+            {
+              "@type": "Person",
+              "name": "Algimantas Krasauskas",
+              "url": "https://www.linkedin.com/in/asimplek/",
+              "sameAs": [
+                "https://github.com/Algiras",
+                "https://algiras.github.io/"
+              ]
+            },
             { "@type": "Organization", "name": "Antigravity" }
           ],
           "datePublished": "2026-07",

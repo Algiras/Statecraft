@@ -18,6 +18,8 @@ Antigravity & Algimantas. *Statecraft: A How-To Guide for the Accidental Founder
 
 **Support:** If this open-access edition is useful, you can [support future editions and audiobook production](https://buymeacoffee.com/algiras).
 
+**Questions and corrections:** Contact Algimantas on [LinkedIn](https://www.linkedin.com/in/asimplek/) or open an issue in the [GitHub repository](https://github.com/Algiras/Statecraft/issues).
+
 ---
 
 ## About the Authors {#about-the-authors}
@@ -25,6 +27,21 @@ Antigravity & Algimantas. *Statecraft: A How-To Guide for the Accidental Founder
 **Statecraft** was written collaboratively by **Antigravity** (AI research assistant) and **Algimantas** — combining large-scale synthesis of comparative politics, economic history, and institutional design with editorial direction and domain framing.
 
 The authors write in the tradition of accessible explanatory journalism — particularly the narrative non-fiction of **Malcolm Gladwell** — while grounding each chapter in peer-reviewed research, treaty law, and documented case studies.
+
+---
+
+## How This Book Is Built {#book-structure}
+
+Each chapter follows a recurring structure so the reader can move between story, theory, evidence, and application without losing the thread.
+
+| Section | What it does |
+|---|---|
+| **The Hook** | Opens with a concrete historical scene or institutional failure. |
+| **The Pivot** | Turns the story into the chapter's central statecraft problem. |
+| **The Investigation** | Compares cases, mechanisms, tradeoffs, and failure modes. |
+| **The Manual Page** | Converts the lesson into founder-facing protocols, matrices, checklists, or design rules. |
+
+The structure is deliberate: every chapter begins with a narrative example, extracts the institutional mechanism underneath it, tests that mechanism against contrasts, and ends with practical diagnostic tools. The Manual Pages are not legal, diplomatic, medical, financial, or engineering advice; they are frameworks for thinking clearly about state formation.
 
 ---
 

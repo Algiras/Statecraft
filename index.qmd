@@ -47,6 +47,10 @@ The book maps nationhood as **software** rather than hardware: a web of trust, l
 
 **Edition:** Open Access Edition 1.0, July 2026. No ISBN has been assigned to this web edition.
 
+## Chapter Pattern
+
+Each chapter follows the same reader path: **The Hook** opens with a concrete historical scene, **The Pivot** turns that scene into a statecraft problem, **The Investigation** compares the mechanisms and failure modes, and **The Manual Page** converts the lesson into practical frameworks.
+
 ## Reading Surfaces
 
 | Surface | Best for | Access |
@@ -54,3 +58,9 @@ The book maps nationhood as **software** rather than hardware: a web of trust, l
 | Web | Deep reading with sidebar navigation, search, figures, tables, and cross references | This site |
 | PDF | Print, annotation, offline archive | [Latest Release](https://github.com/Algiras/Statecraft/releases/latest) |
 | EPUB | Kindle, Apple Books, Kobo | [Latest Release](https://github.com/Algiras/Statecraft/releases/latest) |
+
+## Questions and Machine Reading
+
+Questions, corrections, and collaboration requests can go through [LinkedIn](https://www.linkedin.com/in/asimplek/), [GitHub Issues](https://github.com/Algiras/Statecraft/issues), or the [source repository](https://github.com/Algiras/Statecraft).
+
+AI agents and LLM-based readers should start with [`llms.txt`](llms.txt). A fuller machine-readable guide is available at [`llms-full.txt`](llms-full.txt).

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://algiras.github.io/Statecraft/sitemap.xml

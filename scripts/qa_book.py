@@ -11,6 +11,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_SOURCES = [ROOT / "index.qmd", *sorted((ROOT / "chapters").glob("*.md"))]
 README = ROOT / "README.md"
+DISCOVERY_FILES = {
+    "llms.txt": [
+        "https://algiras.github.io/Statecraft/",
+        "https://www.linkedin.com/in/asimplek/",
+        "https://github.com/Algiras/Statecraft/issues",
+    ],
+    "llms-full.txt": [
+        "Open Access Edition 1.0",
+        "https://algiras.github.io/Statecraft/chapters/ai_readers.html",
+        "https://buymeacoffee.com/algiras",
+    ],
+    "robots.txt": [
+        "User-agent: *",
+        "Allow: /",
+        "Sitemap: https://algiras.github.io/Statecraft/sitemap.xml",
+    ],
+}
 
 FORBIDDEN_SOURCE_PATTERNS = {
     "manual-panel legacy markup": re.compile(r"manual-panel|manual-blocks"),
@@ -79,6 +96,18 @@ def check_readme(text: str, issues: list[str]) -> None:
         add_issue(issues, README, "support link is missing")
 
 
+def check_discovery_files(issues: list[str]) -> None:
+    for filename, required_fragments in DISCOVERY_FILES.items():
+        path = ROOT / filename
+        if not path.exists():
+            add_issue(issues, path, "discovery file is missing")
+            continue
+        text = path.read_text(encoding="utf-8")
+        for fragment in required_fragments:
+            if fragment not in text:
+                add_issue(issues, path, f"missing required discovery fragment: {fragment}")
+
+
 def main() -> int:
     issues: list[str] = []
 
@@ -89,6 +118,7 @@ def main() -> int:
 
     readme_text = README.read_text(encoding="utf-8")
     check_readme(readme_text, issues)
+    check_discovery_files(issues)
 
     if issues:
         print("Book QA failed:")

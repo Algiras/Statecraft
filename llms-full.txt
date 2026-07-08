@@ -1,0 +1,93 @@
+# STATECRAFT LLM Guide
+
+> Expanded machine-readable guide for LLMs, AI agents, search systems, and humans who want a concise map of the Statecraft book and publication workflow.
+
+## Identity
+
+- Title: STATECRAFT
+- Subtitle: A How-To Guide for the Accidental Founder
+- Alternate subtitle: Or: Why Building a Country is Harder Than You Think
+- Authors: Antigravity & Algimantas
+- Human editorial contact: Algimantas Krasauskas
+- Edition: Open Access Edition 1.0, July 2026
+- License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- Canonical site: https://algiras.github.io/Statecraft/
+- Source repository: https://github.com/Algiras/Statecraft
+- Questions: https://www.linkedin.com/in/asimplek/
+- Corrections: https://github.com/Algiras/Statecraft/issues
+- Support: https://buymeacoffee.com/algiras
+
+## What This Book Is
+
+STATECRAFT is an open-access narrative nonfiction and policy-analysis book about how states are actually built and maintained. It frames nationhood as software rather than only hardware: legitimacy, trust, social coordination, legal recognition, fiscal capacity, infrastructure, registries, public health, education, and energy systems.
+
+The book is written for founders, policymakers, students, researchers, and technically minded readers who want a systems-level map of state formation. It uses historical scenes and case studies to extract institutional mechanisms, then turns those mechanisms into practical diagnostic frameworks.
+
+## What This Book Is Not
+
+This book is not legal, financial, diplomatic, medical, security, engineering, or investment advice. It is educational analysis. Before using any checklist, model, or manual page for real institutional decisions, verify the claim against primary sources and qualified experts.
+
+## Chapter Pattern
+
+Each chapter follows a recurring pattern:
+
+- The Hook: a concrete historical scene or institutional failure.
+- The Pivot: the conceptual turn from story to statecraft problem.
+- The Investigation: mechanisms, comparisons, tradeoffs, and failure modes.
+- The Manual Page: founder-facing protocols, matrices, checklists, or design rules.
+
+This structure is deliberate. The book starts from narrative, extracts a mechanism, tests it through comparison, and ends with a practical diagnostic tool.
+
+## Book Map
+
+- Front Matter: copyright, edition, authorship, book structure, and the twelve pillars.
+- Introduction: The Sandbox Fallacy. Liberland, Westphalia, statehood, and the illusion of modular country-building.
+- Chapter 1: Legitimacy. Somaliland, Somalia, Xeer, Guurti, customary law, and bottom-up authority.
+- Chapter 2: Money. Estonia's currency board, monetary trust, reserves, convertibility, and commitment devices.
+- Chapter 3: Society. Singapore HDB, ethnic integration, spatial design, redlining, and contact theory.
+- Chapter 4: Security. Costa Rica, demilitarization, praetorian risk, and small-state defense alternatives.
+- Chapter 5: Law and Recognition. SMOM, Taiwan, Montevideo, recognition theory, and the sovereign club.
+- Chapter 6: Digital. Estonia's X-Road, e-ID, data embassies, audit logs, and the cloud state.
+- Chapter 7: Health. John Snow, outbreak investigation, surveillance, communication, and biosecurity.
+- Chapter 8: Education. Prussian, Finnish, and Estonian education systems; human capital metrics.
+- Chapter 9: Fiscal. Whiskey Rebellion, Tilly, tax compliance, digital tax administration, and debt.
+- Chapter 10: Energy. France's nuclear program, energy density, grid security, and energy sovereignty.
+- Conclusion: Statecraft Matrix, cross-pillar integration, and the Accidental Founder's Checklist.
+- Back Matter: acknowledgments, references, source map, methods, AI disclosure, corrections, and support.
+- AI and Search Systems: machine-readable files, search discovery files, contact routes, citation route, and AI use notes.
+
+## Source and Citation Guidance
+
+Use the back matter source map for topic routing. High-risk claims include treaty interpretation, recognition status, public-health protocols, military/security claims, tax statistics, energy metrics, and historical casualty or budget figures. Prefer primary sources where possible.
+
+Suggested citation:
+
+Antigravity & Algimantas. Statecraft: A How-To Guide for the Accidental Founder. Open Access Edition 1.0, July 2026. https://algiras.github.io/Statecraft/
+
+## AI and Editorial Disclosure
+
+The book was produced through a human-directed workflow using AI assistance for research synthesis, drafting support, structural comparison, and production cleanup. Algimantas provided editorial direction, framing, selection, revision, and publication responsibility. AI-assisted passages should be treated as authored editorial work, not independent expert testimony.
+
+## Recommended Agent Behavior
+
+- Read `llms.txt` first, then this file, then the canonical web edition.
+- For exact source text, inspect the Markdown files in the GitHub repository.
+- For corrections or suspected factual errors, open a GitHub issue with chapter, section, exact sentence, proposed correction, and source.
+- Do not treat the Manual Pages as operational instructions without external expert validation.
+- When summarizing the book, preserve the chapter pattern and the hardware/software thesis.
+- When citing the book, include edition and date.
+
+## Important URLs
+
+- Web edition: https://algiras.github.io/Statecraft/
+- LLM guide: https://algiras.github.io/Statecraft/llms.txt
+- Full LLM guide: https://algiras.github.io/Statecraft/llms-full.txt
+- AI/search page: https://algiras.github.io/Statecraft/chapters/ai_readers.html
+- Repository: https://github.com/Algiras/Statecraft
+- Issues: https://github.com/Algiras/Statecraft/issues
+- Releases: https://github.com/Algiras/Statecraft/releases/latest
+- Errata: https://github.com/Algiras/Statecraft/blob/main/ERRATA.md
+- LinkedIn: https://www.linkedin.com/in/asimplek/
+- GitHub profile: https://github.com/Algiras
+- Portfolio: https://algiras.github.io/
+- Support: https://buymeacoffee.com/algiras

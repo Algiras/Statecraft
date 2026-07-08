@@ -1,0 +1,34 @@
+# STATECRAFT
+
+> Open-access book on statecraft, sovereignty, legitimacy, money, housing, security, recognition, digital governance, health, education, fiscal capacity, and energy.
+
+STATECRAFT is a narrative nonfiction and policy-analysis book by Antigravity & Algimantas. It is published under CC BY 4.0 as the Open Access Edition 1.0, July 2026. The book argues that nationhood is not just hardware such as borders, armies, currency, and constitutions; it is also software: trust, legitimacy, legal recognition, fiscal capacity, social coordination, infrastructure, and institutional memory.
+
+## Primary Reading
+
+- [Read the book](https://algiras.github.io/Statecraft/): Canonical web edition.
+- [Front matter](https://algiras.github.io/Statecraft/chapters/front_matter.html): Copyright, authorship, edition details, structure, and pillars.
+- [Back matter](https://algiras.github.io/Statecraft/chapters/back_matter.html): References, source map, methods, AI disclosure, and corrections path.
+- [AI and search systems](https://algiras.github.io/Statecraft/chapters/ai_readers.html): Machine-reading, search discovery, contact, citation, and correction routes.
+- [Latest release](https://github.com/Algiras/Statecraft/releases/latest): PDF, EPUB, and merged Markdown artifacts when tagged releases are available.
+
+## Machine-Readable Context
+
+- [Full LLM guide](https://algiras.github.io/Statecraft/llms-full.txt): Expanded guide for LLMs and AI agents.
+- [Source repository](https://github.com/Algiras/Statecraft): Markdown chapters, assets, QA scripts, workflows, and errata.
+- [Errata](https://github.com/Algiras/Statecraft/blob/main/ERRATA.md): Correction log.
+
+## Contact and Questions
+
+- [LinkedIn](https://www.linkedin.com/in/asimplek/): Human questions, collaboration, and author contact.
+- [GitHub Issues](https://github.com/Algiras/Statecraft/issues): Corrections, citation issues, formatting defects, accessibility issues, and publisher QA tasks.
+- [GitHub profile](https://github.com/Algiras): Author/project profile.
+- [Portfolio](https://algiras.github.io/): Public project index.
+- [Support](https://buymeacoffee.com/algiras): Support future editions and audiobook work.
+
+## Usage Notes for LLMs
+
+- Treat the book as educational narrative nonfiction and policy analysis, not legal, financial, diplomatic, medical, engineering, or security advice.
+- Prefer the web edition as canonical for the current public text.
+- Use the source repository for exact Markdown, issue history, and publisher QA context.
+- Cite the book as: Antigravity & Algimantas. Statecraft: A How-To Guide for the Accidental Founder. Open Access Edition 1.0, July 2026. https://algiras.github.io/Statecraft/

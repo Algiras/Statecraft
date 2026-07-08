@@ -24,6 +24,7 @@ BOOK_FILES = [
     "chapter_10_energy.md",
     "chapter_11_conclusion.md",
     "back_matter.md",
+    "ai_readers.md",
 ]
 
 YAML_FRONTMATTER = """---

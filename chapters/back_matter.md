@@ -60,12 +60,39 @@ World Health Organization. *International Health Regulations* (2005). Third edit
 
 ---
 
+## Chapter Source Map {#source-map}
+
+This edition uses a centralized bibliography and topic source map. A future citation pass should convert the most important chapter claims into footnotes or endnotes tied to primary sources.
+
+| Chapter | Source priorities for future editions |
+|---|---|
+| **Introduction** | Montevideo Convention text; Weber's "Politics as a Vocation"; Liberland primary statements and reporting; Sealand, Minerva, and Hutt River historical records. |
+| **Chapter 1: Legitimacy** | Somaliland conference records; scholarship on *Xeer*, the *Guurti*, and Somali customary law; UN Somalia intervention documentation; state-capability literature. |
+| **Chapter 2: Money** | Bank of Estonia archives; currency board laws; reserve and exchange-rate documentation; Hanke and Schuler currency board research. |
+| **Chapter 3: Society** | Singapore HDB and Ethnic Integration Policy documentation; Allport contact hypothesis; HOLC maps; housing segregation scholarship. |
+| **Chapter 4: Security** | Costa Rican constitutional history; military abolition records; Rio Treaty text; comparative small-state defense literature. |
+| **Chapter 5: Recognition** | Montevideo Convention; UN Resolution 2758; SMOM diplomatic materials; recognition theory scholarship and treaty practice. |
+| **Chapter 6: Digital** | Estonia X-Road documentation; e-ID and digital-signature law; e-Estonia and data embassy materials; KSI/blockchain technical documentation. |
+| **Chapter 7: Health** | John Snow primary materials; WHO International Health Regulations; outbreak investigation protocols; public-health communication literature. |
+| **Chapter 8: Education** | Humboldt/Prussian reform scholarship; Finnish and Estonian education policy documentation; World Bank Human Capital Index and LAYS methodology. |
+| **Chapter 9: Fiscal** | Tilly state-formation scholarship; Whiskey Rebellion primary/historical sources; IMF/OECD tax-capacity data; Estonia e-Tax documentation. |
+| **Chapter 10: Energy** | French Messmer Plan records; energy-density and EROI literature; France nuclear-sector data; German Energiewende and Nord Stream analyses. |
+| **Conclusion** | Cross-chapter synthesis; Statecraft Matrix definitions; future-state and space-settlement governance literature. |
+
+---
+
 ## A Note on Methods {#methods}
 
 **Statecraft** is written as *narrative non-fiction*: historical scenes are reconstructed from published accounts, memoirs, and journalism; quantitative claims are drawn from official statistics and peer-reviewed studies where available.
 
 Case studies (Liberland, Somaliland, Estonia, Singapore, Costa Rica, Taiwan, SMOM, etc.) are selected for **illustrative contrast**, not exhaustive survey. The Manual Pages are **normative frameworks** — diagnostic tools for founders, policymakers, and students — not prescriptions for any specific territory.
 
-Corrections and citations for future editions may be submitted via the [GitHub repository](https://github.com/Algiras/Statecraft).
+## AI and Editorial Disclosure {#ai-disclosure}
+
+This book was produced through a human-directed workflow using AI assistance for research synthesis, drafting support, structural comparison, and production cleanup. Algimantas provided editorial direction, framing, selection, revision, and publication responsibility. AI-assisted passages should be read as authored editorial work, not as independent expert testimony.
+
+Because the subject touches law, public health, diplomacy, finance, energy, and security, readers should treat the book as educational analysis. Claims, models, and checklists should be verified against primary sources and qualified experts before being used in real institutional decisions.
+
+Corrections and citations for future editions may be submitted via the [GitHub repository](https://github.com/Algiras/Statecraft) or [GitHub Issues](https://github.com/Algiras/Statecraft/issues). Reader questions can be directed to Algimantas on [LinkedIn](https://www.linkedin.com/in/asimplek/).
 
 Open-access publishing, visual production, and audiobook work can be supported at [buymeacoffee.com/algiras](https://buymeacoffee.com/algiras).
